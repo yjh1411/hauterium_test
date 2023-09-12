@@ -1,0 +1,30 @@
+
+.cs_header{border-bottom: 1px solid var(--cr-cool-gray20--);position: fixed;top: 0;width: 100%;background-color: #fff;z-index: 100;}
+.cs_header--wrap{height: 80px;display: flex;align-items: center;justify-content: space-between;}
+
+.cs_header--l{display: flex;;max-width:736px;justify-content: space-between;gap: 18px;}
+.cs_header--logo{display: flex;align-items: center;}
+.cs_header--logo img{width: 172px;display: block;}
+.cs_header--mp-asideSwitch{width: 24px;height: 24px;display: none;align-items: center;justify-content: center;flex-direction: column;gap: 3px;cursor: pointer;position: relative;}
+.cs_header--mp-asideSwitch span{height: 1px;width: 18px;background-color: var(--cr-cool-gray90--);transform: scaleY(1.5);}
+.cs_header--mp-asideSwitch.open span{position: absolute;top: 50%;left: 50%;height: 2px;}
+.cs_header--mp-asideSwitch.open span:nth-child(1){transform: translate(-50%,-50%) rotate(-45deg);}
+.cs_header--mp-asideSwitch.open span:nth-child(2){transform: translate(-50%,-50%) rotate(45deg);}
+.cs_header--mp-asideSwitch.open span:nth-child(3),
+.cs_header--mp-asideSwitch.open span:nth-child(4){display: none;}
+
+.cs_header--r{display: flex;max-width: 326px;justify-content: flex-end;}
+.cs_header--search{position: relative;height: 36px;}
+.cs_header--search input{width: 180px;height: 100%;border-radius: 20px;border: 1px solid var(--cr-cool-gray20--);padding: 0 20px;}
+.cs_header--search label{position: absolute;top: 56%;right: 10px;transform: translateY(-50%);cursor: pointer;}
+.cs_header--member{display: flex;align-items: center;gap: 10px;padding: 0 7px;cursor: pointer;}
+.cs_header--member img{width: 24px;display: block;}
+.cs_header--member-btn{display: flex;align-items: center;gap: 16px;cursor: pointer;}
+.cs_header--member-btn span{display: block;width: 6px;height: 6px;border: solid var(--cr-cool-gray50--);border-width: 0 1px 1px 0 ;transform:translateY(-25%) rotate(45deg);}
+@media all and (max-width:769px) {
+    .cs_header--member{transform: translateX(7px);}
+    .cs_header--member-btn{display: none;}
+    .cs_header--wrap{height: 60px;}
+    .cs_header--logo img{width: 150px;}
+    .cs_header--mp-asideSwitch{display: flex;}
+}

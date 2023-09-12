@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/landing/css/basic_font.css">
+    <link rel="stylesheet" href="/landing/css/basic_public.css">
+
+    <link rel="stylesheet" href="./css/landing.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="public--wrap">
+            <div class="header--wrap">
+                <div class="header--l">
+                    <div class="header--l-logoWrap">
+                        <a class="header--l-logo" href="/" title="메인페이지로 이동">
+                            <img class="white" src="./img/landing_hd_logo_white.png" alt="">
+                            <img class="black" src="./img/landing_hd_logo_black.png" alt="">
+                        </a>
+                        <div class="headerBetaLogo">Beta</div>
+                    </div>
+                    <ul class="header--anchor" role="tablist">
+                        <li id="tab1" role="tab" tabindex="0" class="header--anchor-btn" data-to-scroll=".s1">about BWDC</li>
+                        <li id="tab2" role="tab" tabindex="0" class="header--anchor-btn" data-to-scroll=".s2--title">Background of BWDC</li>
+                        <li id="tab3" role="tab" tabindex="0" class="header--anchor-btn" data-to-scroll=".s3">What can I do</li>
+                        <li id="tab4" role="tab" tabindex="0" class="header--anchor-btn" data-to-scroll=".s5">Download</li>
+                    </ul>
+                </div>
+                <div class="header--r">
+                    <div class="header--lang gnbPopParent">
+                        <button tabindex="0" class="header--lang-button showGnbPopBtn" aria-expanded="false" aria-controls="language-select" aria-label="언어 메뉴 보기">
+                            <img class="white" src="./img/icon/white-16/Wikis.svg" alt="select language button">
+                            <img class="black" src="./img/icon/Wikis_gray90.svg" alt="select language button">
+                        </button>
+                        <div id="language-select" class="header--gnbPop" aria-hidden="true">
+                            <a class="gnbPopBtn header--gnbPop-text01" href="" title="한국어 사이트로 이동">한국어</a>
+                            <a class="gnbPopBtn header--gnbPop-text01" href="" title="go to english site">English</a>
+                        </div>
+                    </div>
+                    <div class="header--user gnbPopParent">
+                        <button tabindex="0" class="header--user-button showGnbPopBtn"  aria-expanded="false" aria-controls="user-menu" aria-label="유저 메뉴 보기">
+                            <img class="white" src="./img/icon/white-16/User--avatar-g3.svg" alt="open user navigation">
+                            <img class="black" src="./img/icon/User--avatar-g3_gray90.svg" alt="open user navigation">
+                            Niepce<span></span>
+                        </button>
+                        <div id="user-menu" class="header--gnbPop" aria-hidden="true">
+                            <div class="header--gnbPop-userInfo">
+                                <p class="header--gnbPop-name">Niepce 님</p>
+                                <p class="header--gnbPop-mail">1234@mail.com</p>
+                            </div>
+                            <a class="gnbPopBtn header--gnbPop-btn" href="" title="나의 부스 관리하기로 이동"><p>나의 부스 관리하기</p></a>
+                            <a class="gnbPopBtn header--gnbPop-text01" href="" title="마이페이지로 이동"><p>마이페이지</p></a>
+                            <a class="gnbPopBtn header--gnbPop-text01" href="" title="로그아웃"><p>로그아웃</p></a>
+                        </div>
+                    </div>
+                    <div class="header--hostCenter">
+                        <a href="" title="호스트 센터 페이지로 이동">호스트센터</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="s1" data-scroll="1" aria-labelledby="tab1">
+        <video loop muted autoplay src="https://player.vimeo.com/progressive_redirect/playback/849322499/rendition/720p/file.mp4?loc=external&signature=f23b353e396f14dbbea16d913bc889241679d3b5012b69898249443b1fca60a2"></video>
+        <div class="s1--dim"></div>
+        <div class="s1--bot">
+            <div class="s1--bot-boxWrap">
+                <a href="" class="s1--bot-box s1--bot-box01" title="윈도우 혹은 맥 전용 메타버스로 접속하기">
+                    <div class="s1--bot-txt">
+                        <div class="s1--bot-box-txt01">메타버스 접속하기</div>
+                        <div class="s1--bot-box-txt02">Window 또는 Mac PC로 <br>접속하셨다면 클릭해주세요</div>
+                    </div>
+                    <div class="s1--bot-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+                <a href="" class="s1--bot-box s1--bot-box02" title="안드로이드용 앱 다운로드">
+                    <div class="s1--bot-txt">
+                        <div class="s1--bot-box-txt01">앱 다운받기</div>
+                        <div class="s1--bot-box-txt02">모바일로 접속하셨다면 클릭해주세요 <br>(Android만 가능합니다)</div>
+                    </div>
+                    <div class="s1--bot-icon">
+                        <span></span>
+                        <span></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="s1--anime">
+            <div class="public--wrap"><span></span><p>scroll down</p></div>
+        </div>
+    </div>
+    <div class="s2">
+        <div class="s2--bg">
+            <img class="ellipse5" src="./img/ellipse5.png" alt="">
+            <img class="ellipse6" src="./img/ellipse6.png" alt="">
+            <img class="ellipse7" src="./img/ellipse7.png" alt="">
+        </div>
+        <div class="public--wrap s2Wrap">
+            <div class="s2--top">
+                <div class="s2--top-txt">
+                    <div class="s2--top-txt01">Global Metaverse Platform</div>
+                    <div class="s2--top-txt02">시·공간적 제약을 해소한 <br>벡스코 공간에서 선보이는 메타버스 <br><b>2023 부산세계장애인대회</b>로 놀러오세요!</div>
+                </div>
+                <div class="s1--bot-boxWrap">
+                    <a href="" class="s1--bot-box s1--bot-box01" title="윈도우 혹은 맥 전용 메타버스로 접속하기">
+                        <div class="s1--bot-txt">
+                            <div class="s1--bot-box-txt01">메타버스 접속하기</div>
+                            <div class="s1--bot-box-txt02">Window 또는 Mac PC로 <br>접속하셨다면 클릭해주세요</div>
+                        </div>
+                        <div class="s1--bot-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                    <a href="" class="s1--bot-box s1--bot-box02" title="안드로이드용 앱 다운로드">
+                        <div class="s1--bot-txt">
+                            <div class="s1--bot-box-txt01">앱 다운받기</div>
+                            <div class="s1--bot-box-txt02">모바일로 접속하셨다면 클릭해주세요 <br>(Android만 가능합니다)</div>
+                        </div>
+                        <div class="s1--bot-icon">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </a>
+                </div>
+                <div class="s2--bot-bwdc">
+                    <img src="./img/bwdc2023_logo.png" alt="">
+                    <div class="s2--bot-bwdc-txt">
+                        <b>2023 부산세계장애인대회</b>는<br>
+                        글로벌 메타버스 플랫폼 “오뜨리움” 과 함께합니다.
+                    </div>
+                </div>
+            </div>
+            <div class="s2--title" data-scroll="2" aria-labelledby="tab1">
+                <p class="s2--title01">2023 부산세계장애인대회</p>
+                <p class="s2--title02">추진배경</p>
+            </div>
+            <ul class="s2--figWrap">
+                <li tabindex="0" class="s2--fig" aria-label="1. 기후변화, 환경오염, 자연재해, 팬데믹, 전쟁 등 심각한 지구촌 위기와 디지털 정보기술의 대전환의 시기에 장애인의 활동과 사회 참여의 기회 확대를 통한 장애인의 삶과 인권 보장">
+                    <div class="s2--fig-bg" style="background-image: url('./img/landing_s2_fig01.png');"></div>
+                    <div class="s2--fig-dim"></div>
+                    <div class="s2--fig-txt">
+                        <p class="s2--fig-txt01">01</p>
+                        <span class="s2--fig-txtSpan"></span>
+                        <p class="s2--fig-txt02">기후변화, 환경오염, 자연재해, 팬데믹, 전쟁 등 <br>심각한 지구촌 위기와 디지털 정보기술의 <br>대전환의 시기에 장애인의 활동과 <br>사회 참여의 기회 확대를 통한 <br>장애인의 삶과 인권 보장</p>
+                    </div>
+                    <p class="s2--fig-txt02-mob">기후변화, 환경오염, 자연재해, 팬데믹, 전쟁 등 <br>심각한 지구촌 위기와 디지털 정보기술의 <br>대전환의 시기에 장애인의 활동과 <br>사회 참여의 기회 확대를 통한 <br>장애인의 삶과 인권 보장</p>
+                </li>
+                <li tabindex="0" class="s2--fig" aria-label="2. 장애인권리협약(CRPD), 지속적개발협력목표(SDGs), 아태장애인10년 (’23~‘32) 등 장애 관련 국제프레임워크의 이행 증진을 위한 국제적 연대 및 협력의 강화와 이에 맞는 한국의 리더쉽과 위상 제고">
+                    <div class="s2--fig-bg"  style="background-image: url('./img/landing_s2_fig02.png');"></div>
+                    <div class="s2--fig-dim"></div>
+                    <div class="s2--fig-txt">
+                        <p class="s2--fig-txt01">02</p>
+                        <span class="s2--fig-txtSpan"></span>
+                        <p class="s2--fig-txt02">장애인권리협약(CRPD), 지속적개발협력목표(SDGs), <br>아태장애인10년 (’23~‘32) 등 <br>장애 관련 국제프레임워크의 <br>이행 증진을 위한 국제적 연대 및 협력의 강화와 <br>이에 맞는 한국의 리더쉽과 위상 제고</p>
+                    </div>
+                    <p class="s2--fig-txt02-mob">장애인권리협약(CRPD), 지속적개발협력목표(SDGs), <br>아태장애인10년 (’23~‘32) 등 <br>장애 관련 국제프레임워크의 <br>이행 증진을 위한 국제적 연대 및 협력의 강화와 <br>이에 맞는 한국의 리더쉽과 위상 제고</p>
+                </li>
+                <li tabindex="0" class="s2--fig" aria-label="3. 부산시 최초 장애복지 분야 국제행사 개최를 통한 장애인식개선 및 장애친화 인권선도 도시로의 국제적 위상 제고 및 도시브랜드 가치 상승">
+                    <div class="s2--fig-bg"  style="background-image: url('./img/landing_s2_fig03.png');"></div>
+                    <div class="s2--fig-dim"></div>
+                    <div class="s2--fig-txt">
+                        <p class="s2--fig-txt01">03</p>
+                        <span class="s2--fig-txtSpan"></span>
+                        <p class="s2--fig-txt02">부산시 최초 장애복지 분야 국제행사 개최를 통한 <br>장애인식개선 및 장애친화 인권선도 도시로의 국제적 <br>위상 제고 및 도시브랜드 가치 상승</p>
+                    </div>
+                    <p class="s2--fig-txt02-mob">부산시 최초 장애복지 분야 국제행사 개최를 통한 <br>장애인식개선 및 장애친화 인권선도 도시로의 국제적 <br>위상 제고 및 도시브랜드 가치 상승</p>
+                </li>
+            </ul>
+            <div class="s3" data-scroll="3" aria-labelledby="tab3">
+                <div class="s3--wrap">
+                    <div class="s3--titleWrap">
+                        <div class="s3--title">
+                            <div class="s3--title01">2023 부산세계장애인대회</div>
+                            <div class="s3--title02">메타버스에서 <br>무엇을 할 수 있나요?</div>
+                        </div>
+                    </div>
+                    <ul class="s3--figWrap">
+                        <li tabindex="0" class="s3--fig" aria-label="벡스코, 이렇게 더운날 집에서 부산 벡스코를 볼 수 있다면?! 실제 벡스코를 그대로 옮긴 부산 벡스코! 부산세계장애인대회 메타버스에서 만나보세요!">
+                            <div class="s3--fig-img" style="background-image: url('./img/landing_s3_fig01.png');"></div>
+                            <div class="s3--fig-txt">
+                                <div class="s3--fig-txt01">벡스코</div>
+                                <div class="s3--fig-txt02">이렇게 더운날, 집에서 부산 벡스코를 볼 수 있다면?! <br>실제 벡스코를 그대로 옮긴 부산 벡스코! <br>부산세계장애인대회 메타버스에서 만나보세요!</div>
+                            </div>
+                        </li>
+                        <li tabindex="0" class="s3--fig" aria-label="전시, 부산세계장애인대회에서 전시중인 업체들을 메타버스에서 바로 확인해보세요!">
+                            <div class="s3--fig-img" style="background-image: url('./img/landing_s3_fig02.png');"></div>
+                            <div class="s3--fig-txt">
+                                <div class="s3--fig-txt01">전시</div>
+                                <div class="s3--fig-txt02">부산세계장애인대회에서 전시중인 업체들을 <br>메타버스에서 바로 확인해보세요!</div>
+                            </div>
+                        </li>
+                        <li tabindex="0" class="s3--fig" aria-label="컨퍼런스, 오프라인으로 직접 보지 못하는 컨퍼런스, 그 아쉬움 메타버스에서 생중계로 다른 사람들과 함께 보면서 즐겁게 즐겨보세요!">
+                            <div class="s3--fig-img" style="background-image: url('./img/landing_s3_fig03.png');"></div>
+                            <div class="s3--fig-txt">
+                                <div class="s3--fig-txt01">컨퍼런스</div>
+                                <div class="s3--fig-txt02">오프라인으로 직접 보지 못하는 컨퍼런스, <br>그 아쉬움 메타버스에서 생중계로 다른 사람들과 함께 보면서 <br>즐겁게 즐겨보세요!</div>
+                            </div>
+                        </li>
+                        <li tabindex="0" class="s3--fig" aria-label="홍보관, 부산세계장애인대회와 부산세계박람회에 대해 더 자세히 알고싶으신가요? 어서 들어와서 홍보관을 살펴보세요!">
+                            <div class="s3--fig-img" style="background-image: url('./img/landing_s3_fig04.png');"></div>
+                            <div class="s3--fig-txt">
+                                <div class="s3--fig-txt01">홍보관</div>
+                                <div class="s3--fig-txt02">부산세계장애인대회, 부산세계박람회에 대해 더 자세히 알고싶으신가요? 어서 들어와서 홍보관을 살펴보세요!</div>
+                            </div>
+                        </li>
+                        <li tabindex="0" class="s3--fig" aria-label="실사아바타, 귀여운 아바타 생성은 기본! 나를 꼭 닮은 아바타, 그 정도를 넘은 실사아바타 생성이 가능합니다! 지금 바로 경험해보세요!">
+                            <div class="s3--fig-img" style="background-image: url('./img/landing_s3_fig05.png');"></div>
+                            <div class="s3--fig-txt">
+                                <div class="s3--fig-txt01">실사아바타</div>
+                                <div class="s3--fig-txt02">귀여운 아바타 생성은 기본! <br>나를 꼭 닮은 아바타, <br>그 정도를 넘은 실사아바타 생성이 가능합니다! <br>지금 바로 경험해보세요!</div>
+                            </div>
+                        </li>
+                        <li tabindex="0" class="s3--fig" aria-label="화상미팅,실사아바타로는 모자르다! 서로 얼굴을 보면서 이야기를 나눌 수 있는 화상미팅, 최대 15인까지 참여하여 진행할 수 있습니다!">
+                            <div class="s3--fig-img" style="background-image: url('./img/landing_s3_fig06.png');"></div>
+                            <div class="s3--fig-txt">
+                                <div class="s3--fig-txt01">화상미팅</div>
+                                <div class="s3--fig-txt02">실사아바타로는 모자르다! <br>서로 얼굴을 보면서 이야기를 나눌 수 있는 화상미팅, <br>최대 15인까지 참여하여 진행할 수 있습니다!</div>
+                            </div>
+                        </li>
+                        <li tabindex="0" class="s3--fig" aria-label="TTS 및 번역, 이야기는 나누고 싶어도 다른나라의 사람이라 못한다면? 걱정 마세요! TTS와 번역기능으로 마음껏 소통이 가능합니다.">
+                            <div class="s3--fig-img" style="background-image: url('./img/landing_s3_fig07.png');"></div>
+                            <div class="s3--fig-txt">
+                                <div class="s3--fig-txt01">TTS 및 번역</div>
+                                <div class="s3--fig-txt02">이야기는 나누고 싶어도 다른나라의 사람이라 못한다면? <br>걱정 마세요! TTS와 번역기능으로 마음껏 소통이 가능합니다.</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="s3--img"><img src="./img/landing_text.png" alt=""></div>
+    </div>
+    <div class="s4">
+        <div class="s4--wrap">
+            <div class="s4--item"><p>POINT1</p><p>나만의 귀여운 아바타부터, 내 얼굴을 넣어서 나와 꼭닮은 아바타까지!</p></div>
+            <div class="s4--item"><p>POINT2</p><p>포토존, 전시, 컨퍼런스, 홍보관, 2030 부산세계박람회까지!</p></div>
+            <div class="s4--item"><p>POINT3</p><p>벡스코 공간에서 선보이는 부산세계장애인대회!</p></div>
+        </div>
+        <div class="s4--wrap">
+            <div class="s4--item"><p>POINT1</p><p>나만의 귀여운 아바타부터, 내 얼굴을 넣어서 나와 꼭닮은 아바타까지!</p></div>
+            <div class="s4--item"><p>POINT2</p><p>포토존, 전시, 컨퍼런스, 홍보관, 2030 부산세계박람회까지!</p></div>
+            <div class="s4--item"><p>POINT3</p><p>벡스코 공간에서 선보이는 부산세계장애인대회!</p></div>
+        </div>
+        <div class="s4--wrap">
+            <div class="s4--item"><p>POINT1</p><p>나만의 귀여운 아바타부터, 내 얼굴을 넣어서 나와 꼭닮은 아바타까지!</p></div>
+            <div class="s4--item"><p>POINT2</p><p>포토존, 전시, 컨퍼런스, 홍보관, 2030 부산세계박람회까지!</p></div>
+            <div class="s4--item"><p>POINT3</p><p>벡스코 공간에서 선보이는 부산세계장애인대회!</p></div>
+        </div>
+        <div class="s4--wrap">
+            <div class="s4--item"><p>POINT1</p><p>나만의 귀여운 아바타부터, 내 얼굴을 넣어서 나와 꼭닮은 아바타까지!</p></div>
+            <div class="s4--item"><p>POINT2</p><p>포토존, 전시, 컨퍼런스, 홍보관, 2030 부산세계박람회까지!</p></div>
+            <div class="s4--item"><p>POINT3</p><p>벡스코 공간에서 선보이는 부산세계장애인대회!</p></div>
+        </div>
+    </div>
+    <div class="s5" style="background-image: url('./img/landing_s5_bg.png');" aria-labelledby="tab4">
+        <div class="public--wrap">
+            <div class="s5--wrap">
+                <div class="s5--info">
+                    <div class="s5--txt">
+                        <div class="s5--txt01">2023 부산세계장애인대회</div>
+                        <div class="s5--txt02">메타버스에서 만나요!</div>
+                    </div>
+                    <div class="s5--btnWrap">
+                        <div class="s5--btn-fig">
+                            <p class="s5--btn s5--btn01">Desktop app</p>
+                            <a title="윈도우용 앱 다운로드" href=""><p>Desktop app for Windows</p><img src="./img/s5link_arrow.svg" alt=""></a>
+                            <a title="맥용 앱 다운로드" href=""><p>Desktop app for macOS</p><img src="./img/s5link_arrow.svg" alt=""></a>
+                        </div>
+                        <div class="s5--btn-fig">
+                            <p class="s5--btn s5--btn02">Mobile app</p>
+                            <a href="" title="안드로이드용 앱 다운로드"><p>Hauterium for android</p><img src="./img/s5link_arrow.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="s5--mock">
+                    <img src="./img/landing_s5_mock.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="s6">
+        <div class="s6--switch">
+            <div class="public--wrap">
+                <div class="s6--switch-wrap">
+                    <div class="s6--switch-text"><p>다운로드 권장/최소사양</p>
+                        <button tabindex="0" class="s6--switch-text-btn" aria-label="운영체제는 Windows 10을 권장합니다. 설치용량은 10GB 이상입니다. CPU는 i5 7500 최소사양이며 i5 9400 4Core 이상을 권장합니다. RAM은 8GB 최소사양이며 16GB 이상을 권장합니다. GPU는 gtx960 2GB이상 최소사양이며 gtx 1660이상을 권장합니다."><img src="./img/icon/Help--filled-cr70.svg" alt="권장사양 및 최소사양 보기" aria-controls="spec"></button>
+                        <div id="spec" class="s6--switch-pop">
+                            <div class="s6--switch-popWrap">
+                                <div class="s6--switch-pop-row black">
+                                    <div class="td">WINDOW</div>
+                                    <div class="td">최소사양</div>
+                                    <div class="td">권장사양</div>
+                                </div>
+                                <div class="s6--switch-pop-row">
+                                    <div class="td">운영체제</div>
+                                    <div class="td2">Windows 10 권장</div>
+                                </div>
+                                <div class="s6--switch-pop-row">
+                                    <div class="td">설치용량</div>
+                                    <div class="td2">10GB 이상</div>
+                                </div>
+                                <div class="s6--switch-pop-row">
+                                    <div class="td">CPU</div>
+                                    <div class="td">i5 - 7500</div>
+                                    <div class="td">i5 9400 (4Core 이상)</div>
+                                </div>
+                                <div class="s6--switch-pop-row">
+                                    <div class="td">RAM</div>
+                                    <div class="td">8GB</div>
+                                    <div class="td">16GB</div>
+                                </div>
+                                <div class="s6--switch-pop-row">
+                                    <div class="td">GPU</div>
+                                    <div class="td">gtx960 (2GB 이상)</div>
+                                    <div class="td">gtx(1660 이상)</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button aria-controls="download-guide" tabindex="0" class="s6--switch-down" aria-label="다운로드 가이드 보기" >
+                        <img src="./img/icon/Chevron--down-g3.svg" alt="see detail option arrow">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="s6--cont" aria-hidden="true" id="download-guide">
+            <div class="public--wrap">
+                <div class="s6--wrap">
+                    <div class="s6--fig">
+                        <div class="s6--txt">
+                            <div class="s6--txt01">WINDOWS에서 다운로드 하기</div>
+                            <div class="s6--txt02">
+                                Windows에서 Haute-rium을 다운로드 받으시다가 불편사항을 겪으셨다면, 아래 pdf 파일을 확인해주세요. <br>
+                                - Microsoft Edge 브라우저에서 발생되는 오류사항 <br>
+                                - Installer 파일 설치 시 <br>
+                                - 다운로드 후 발생되는 팝업
+                            </div>
+                        </div>
+                        <a class="s6--download" href="" download title="윈도우용 다운로드 가이드"><p>WINDOW GUIDE.PDF</p></a>
+                    </div>
+                    <div class="s6--fig">
+                        <div class="s6--txt">
+                            <div class="s6--txt01">MAC에서 다운로드 하기</div>
+                            <div class="s6--txt02">
+                                MAC에서 Haute-rium을 다운로드 받으시다가 불편사항을 겪으셨다면, 아래 pdf 파일을 확인해주세요. <br>
+                                - Installer 파일 설치가 되지 않을 경우, 설정하는 방법
+                            </div>
+                        </div>
+                        <a class="s6--download" href="" download title="맥용 다운로드 가이드"><p>MAC GUIDE.PDF</p></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="foot">
+        <div class="public--wrap">
+            <div class="foot--wrap">
+                <div class="foot--row01">
+                    <a class="foot--logo" href="/" title="메인페이지로 이동"><img src="./img/logo_hautrium_foot.png" alt=""></a>
+                    <ul class="foot--agreement">
+                        <li><a href="" title="이용약관 페이지로 이동">이용약관</a></li>
+                        <li><a href="" title="개인정보처리방침 페이지로 이동" style="font-weight: 700;">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="foot--row02">
+                    <p>(주) 오뜨리움</p>
+                    <span></span>
+                    <ul>
+                        <li><a href="" title="행사개설문의 페이지로 이동">행사개설문의 : haute-rium@hauterium.com</a></li>
+                    </ul>
+                </div>
+                <div class="foot--row03">
+                    <div>대표이사. 홍회진</div>
+                    <div>사업자등록번호. 120-86-58455</div>
+                    <div>주소. 서울 강남구 학동로33길 41</div>
+                    <div>고객센터. 02-6956-6826</div>
+                    <div>이메일. ecomice@ecomice.com</div>
+                </div>
+                <div class="foot--row04">Ⓒ 2023 ECOMICE. ALL RIGHTS RESERVED.</div>
+            </div>
+        </div>
+    </div>
+    <div class="landing--fixed">
+        <a class="landing--fixed-btn landing--fixed-home" href="https://bwdc2023.org" title="2023 부산세계 장애인대회 홈페이지로 새창 이동" target="_blank">
+            <img class="white" src="./img/icon/Home-g3_black.svg" alt="">
+            <img class="color" src="./img/icon/Home-g3_white.svg" alt="">
+        </a>
+        <button class="landing--fixed-toTop landing--fixed-btn" aria-label="맨 위로 이동">
+            <img class="white" src="./img/icon/Arrow--up-g3.svg" alt="">
+            <img class="color" src="./img/icon/Arrow--up-g3_gray70.svg" alt="">
+        </button>
+    </div>
+    <script>
+        // 스크롤 시 landing--fixed-btn의 bottom이 s2의 top보다 아래일 경우 landing--fixed에 color 클래스 부여
+        const landingFixed = document.querySelector('.landing--fixed');
+        const s2 = document.querySelector('.s2');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY + landingFixed.offsetHeight < s2.offsetTop) {
+                landingFixed.classList.remove('color');
+            } else {
+                landingFixed.classList.add('color');
+            }
+        });
+        // .landing--fixed-toTop 버튼 클릭 시 스크롤 맨 위로
+        const toTopBtn = document.querySelector('.landing--fixed-toTop');
+        toTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth',
+            });
+        });
+        // header--anchor-btn 클릭시 클릭한 요소의 data-to-scroll값과 일치하는 data-scroll 속성을 가진 요소로 이동
+        const anchorBtn = document.querySelectorAll('.header--anchor-btn');
+        anchorBtn.forEach((btn) => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                const target = document.querySelector(btn.dataset.toScroll);
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start',
+                });
+            });
+            // 웹접근성을 위해 header--anchor-btn에 keydown 이벤트 추가
+            btn.addEventListener('keydown', (e) => {
+                if (e.keyCode === 13) {
+                    e.preventDefault();
+                    const target = document.querySelector(btn.dataset.toScroll);
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start',
+                    });
+                }
+            });
+        });
+        // window scroll top값이 s2에 닿으면 header에 white 클래스 추가, s2보다 위로 스크롤이 올라가면 white 클래스 제거
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY >= s2.offsetTop) {
+                header.classList.add('black');
+            } else {
+                header.classList.remove('black');
+            }
+            document.querySelectorAll('.header--gnbPop').forEach((el)=>{
+                    el.classList.remove('show');
+                })
+        });
+        // scroll up 시 .header에 hide 클래스 제거, ,scroll down 시 .header에 hide 클래스 추가, 웹접근성 문제로 해당 기능은 비활성화.
+        // let lastScroll = 0;
+        // window.addEventListener('scroll', () => {
+        //     const currentScroll = window.pageYOffset;
+        //     if (currentScroll <= 0) {
+        //         header.classList.remove('hide');
+        //         return;
+        //     }
+        //     if (currentScroll > lastScroll && !header.classList.contains('hide')) {
+        //         header.classList.add('hide');
+        //     } else if (currentScroll < lastScroll && header.classList.contains('hide')) {
+        //         header.classList.remove('hide');
+        //     }
+        //     lastScroll = currentScroll;
+        // });
+        // .showGnbPopBtn 요소 클릭시 해당 부모 요소에 show 클래스 추가
+        const headerGnbPop = document.querySelectorAll('.header--gnbPop');
+        const showGnbPopBtn = document.querySelectorAll('.showGnbPopBtn');
+        const showGnbPopParents = document.querySelectorAll('.gnbPopParent');
+        showGnbPopBtn.forEach((button) => {
+            const parent = button.parentNode;
+            const gnbPop = parent.querySelector('.header--gnbPop');
+
+            button.addEventListener('click', () => {
+                var isOpen = parent.classList.contains('show');
+                for(let item of showGnbPopParents) {
+                    item.classList.remove('show');
+                }
+                for(let item of showGnbPopBtn) {
+                    item.setAttribute('aria-expanded', 'false');
+                }
+                for(let item of headerGnbPop) {
+                    item.setAttribute('aria-hidden', 'true');
+                }
+                if(isOpen){
+                    button.setAttribute('aria-expanded', 'false');
+                    gnbPop.setAttribute('aria-hidden', 'true')
+                    parent.classList.remove('show');
+                }else{
+                    button.setAttribute('aria-expanded', 'true');
+                    gnbPop.setAttribute('aria-hidden', 'false')
+                    parent.classList.add('show');
+                }
+            });
+        });
+        const gnbPop = document.querySelector('.gnbPop');
+        // .s2--fig 요소에 focus, hover 이벤트 시 focus 클래스 추가
+        const s2Fig = document.querySelectorAll('.s2--fig');
+        s2Fig.forEach((el) => {
+            el.addEventListener('focus', () => el.classList.add('focus'));
+            el.addEventListener('blur', () => el.classList.remove('focus'));
+            el.addEventListener('mouseenter', () => el.classList.add('focus') );
+            el.addEventListener('mouseleave', () => el.classList.remove ('focus'));
+        });
+        // header--gnbPop 자식 요소 a에 focus중이면 header--gnbPop에 show 클래스 추가
+        document.querySelectorAll('*').forEach(el => {
+            el.addEventListener('focus',function(e){
+                
+                if(!e.target.classList.contains('gnbPopBtn')){
+                    for(let item of showGnbPopParents) {
+                    item.classList.remove('show');
+                }
+                for(let item of showGnbPopBtn) {
+                    item.setAttribute('aria-expanded', 'false');
+                }
+                for(let item of headerGnbPop) {
+                    item.setAttribute('aria-hidden', 'true');
+                }
+                }
+            })
+        })
+        // s6--switch-text-btn 클릭 시 권장/세부사양 팝업 토글 focus 이벤트 동일
+        const s6SwitchTextBtn = document.querySelector('.s6--switch-text-btn');
+        const s6SwitchPop = document.querySelector('.s6--switch-pop');
+        s6SwitchTextBtn.addEventListener('mouseenter', () => s6SwitchPop.classList.add('show'));
+        s6SwitchTextBtn.addEventListener('mouseleave', () => s6SwitchPop.classList.remove('show'));
+        s6SwitchTextBtn.addEventListener('focus', () => s6SwitchPop.classList.add('show'));
+        s6SwitchTextBtn.addEventListener('blur', () => s6SwitchPop.classList.remove('show'));
+        // s6--switch-down 클릭 시 s6에 show 클래스 추가
+        const s6SwitchDown = document.querySelector('.s6--switch-down');
+        const s6 = document.querySelector('.s6');
+        const s6Cont = s6.querySelector('.s6--cont');
+        s6SwitchDown.addEventListener('click', () => {
+            var isOpen = s6.classList.contains('show')
+            if(isOpen){
+                s6SwitchDown.setAttribute('aria-expanded', 'false');
+                s6Cont.setAttribute('aria-hidden', 'true');
+                s6.classList.remove('show');
+            }else{
+                s6SwitchDown.setAttribute('aria-expanded', 'true');
+                s6Cont.setAttribute('aria-hidden', 'false');
+                s6.classList.add('show');
+            }
+        });
+
+        // .s4--wrap 3초에 걸쳐 x축 -100% 이동 with gsap 무한루프에 애니메이션 타입은 linear
+        const s4Wrap = document.querySelectorAll('.s4--wrap');
+        gsap.to(s4Wrap, {
+            x: '-100%',
+            duration: 30,
+            ease: 'linear',
+            repeat: -1,
+        });
+    </script>
+</body>
+</html>

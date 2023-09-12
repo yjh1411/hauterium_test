@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <!-- global css -->
+    <link rel="stylesheet" href="../common/css/basic_public.css">
+    <link rel="stylesheet" href="../common/css/layout.css">
+
+    <!-- local css -->
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/view.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="/common/js/anime.js"></script>
+</head>
+<body>
+    <div class="public--innerWrap-new">
+        <div class="public--wrap">
+            <div class="boothV">
+                <div class="boothV--body">
+                    <div class="boothV--bodyTop">
+                        <div class="swiper boothVTopSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="boothVTopSwiper--slide-img" style="background-image: url('/mypage/img/boothVTop_swiperTest.png');"></div></div>
+                            </div>
+                        </div>
+                        <div class="boothVTopSwiper-pagination"></div>
+                        <div class="boothVTopSwiper-nav">
+                            <!-- 230727 swiper nav버튼 안의 이미지 src 변경 -->
+                            <div class="boothV--nav-prev boothVTopSwiper-nav-prev"><img src="./img/icon/Chevron--left-g3-white.svg" alt=""></div>
+                            <div class="boothV--nav-next boothVTopSwiper-nav-next"><img src="./img/icon/Chevron--right-g3-white.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="boothV--aside-box mob">
+                        <div class="boothV--aside-row1">
+                            <div class="boothV--aside-logo"><img src="./img/bwdc_logo.png" alt=""></div>
+                            <div class="boothV--aside-flag"><p>Seller</p></div>
+                        </div>
+                        <div class="boothV--aside-row2">
+                            <div class="boothV--aside-company">
+                                <div class="boothV--aside-company01">종합박람회</div>
+                                <div class="boothV--aside-company02"><p>부산세계장애인대회</p><div class="link"><img src="./img/icon/Link.svg" alt=""></div></div>
+                                <div class="boothV--aside-company03">Conference & Fair</div>
+                            </div>
+                            <div class="boothV--aside-btn">
+                                <!-- 요소 속성을 a에서 div로 변경해도 좋습니다 -->
+                                <a class="boothV--aside-btn-item" href=""><img src="./img/icon/Share_purple.svg" alt=""></a>
+                                <a class="boothV--aside-btn-item" href=""><img src="./img/icon/Favorite_purple.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="boothV--aside-info">
+                            <div class="boothV--aside-info-row"><img src="./img/user-g3.svg" alt=""><p>2023부산세계장애인대회 조직위원회</p></div>
+                            <div class="boothV--aside-info-row"><img src="./img/icon/Phone-g3_gray50.svg" alt=""><p>0317068484</p></div>
+                            <div class="boothV--aside-info-row"><img src="./img/icon/Email-g3_gray50.svg" alt=""><p>secretariat.bwdc2023@gmail.com</p></div>
+                        </div>
+                        <div class="boothV--aside-sellerMode">
+                            <a class="boothV--aside-sellerMode-btn" href="/mypage/mypage.html">
+                                <img src="./img/icon/Edit_purple.svg" alt="">
+                                <p>Edit on <b>Mypage</b></p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="boothV--aside-apply mob">
+                        <p>2023.08.07(월) - 2023.08.11(금), 5일간</p>
+                        <a href="javascript:void(0)" class="boothV--aside-apply-btn alertReady">부스 신청하기</a>
+                    </div>
+                    <a href="javascript:void(0)" class="boothV--aside-joinEvent alertReady mob">행사 참여하기</a>
+                    <div class="boothV--tit">2023부산세계장애인대회</div>
+                    <div class="boothV--bodyWrap">
+                        <div class="boothV--body-menu">
+                            <div class="boothV--body-menu-list">
+                                <div class="boothV--body-menu-item on">행사 소개</div>
+                                <div class="boothV--body-menu-item">행사 장소</div>
+                                <div class="boothV--body-menu-item">취소/환불</div>
+                                <div class="boothV--body-menu-item">채널 정보</div>
+                                <div class="boothV--body-menu-item">공지/안내</div>
+                                <div class="boothV--body-menu-item">문의하기</div>
+                            </div>
+                        </div>
+                        <div class="boothV--body-fig boothV--intro">
+                            <div class="boothV--intro-chart">
+                                <div class="boothV--intro-chart-row">
+                                    <div class="boothV--intro-chart-tit">일시</div>
+                                    <div class="boothV--intro-chart-desc">2023. 08. 07(월) 14:00 - 2023. 08. 11(금) 17:00, 5일간</div>
+                                </div>
+                                <div class="boothV--intro-chart-row">
+                                    <div class="boothV--intro-chart-tit">신청</div>
+                                    <div class="boothV--intro-chart-desc">2023. 06. 22(목) 14:00 - 2023. 08. 02(수) 17:00, <span class="now">모집중</span></div>
+                                </div>
+                                <div class="boothV--intro-chart-row">
+                                    <div class="boothV--intro-chart-tit">비용</div>
+                                    <div class="boothV--intro-chart-desc">무료~100,000원(부스별 비용 상이)</div>
+                                </div>
+                                <div class="boothV--intro-chart-row">
+                                    <div class="boothV--intro-chart-tit">장소</div>
+                                    <div class="boothV--intro-chart-desc">부산 벡스코(BEXCO) / 오뜨리움 메타버스 앱 공간 동시개최</div>
+                                </div>
+                            </div>
+                            <div class="boothV--intro-poster">
+                                <img src="./img/poster.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="boothV--body-fig boothV--place">
+                            <div class="boothV--subTit"><p>행사 장소</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="./img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="./img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--intro-chart">
+                                <div class="boothV--intro-chart-row">
+                                    <div class="boothV--intro-chart-tit">장소</div>
+                                    <div class="boothV--intro-chart-desc">오프라인 : 서울 코엑스 Hall D / 온라인 : 오뜨리움 메타버스 앱 공간 동시개최</div>
+                                </div>
+                                <div class="boothV--intro-chart-row">
+                                    <div class="boothV--intro-chart-tit">주소</div>
+                                    <div class="boothV--intro-chart-desc">서울특별시 강남구 영동대로 513 (삼성동, 코엑스) 06164</div>
+                                </div>
+                            </div>
+                            <div class="boothV--place-map">
+                                <!-- * 카카오맵 - 지도퍼가기 -->
+                                <!-- 1. 지도 노드 -->
+                                <div style="width:100%;height: 100%;" id="daumRoughmapContainer1694483865999" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+                                <!--
+                                	2. 설치 스크립트
+                                	* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+                                -->
+                                <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+                                <!-- 3. 실행 스크립트 -->
+                                <script charset="UTF-8">
+                                	new daum.roughmap.Lander({
+                                		"timestamp" : "1694483865999",
+                                		"key" : "2g6a8",
+                                	}).render();
+                                </script>
+                            </div>
+                        </div>
+                        <div class="boothV--body-fig boothV--rule">
+                            <div class="boothV--subTit"><p>취소 및 환불 규정</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="./img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="./img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--rule-list">
+                                <div class="boothV--rule-item">- 행사의 취소/환불 기간은 행사 호스트가 설정한 신청기간과 동일합니다.</div>
+                                <div class="boothV--rule-item">- 신청한 행사의 신청 정보 수정 및 취소/환불은 ‘마이페이지-신청 행사’에서 할 수 있습니다.</div>
+                                <div class="boothV--rule-item">- 결제 수단, 환불 신청 시점, 환불 사유에 따라 환불 수수료가 부과될 수 있습니다.</div>
+                                <div class="boothV--rule-item">- 위에 대한 자세한 내용은 ‘취소 및 환불규정’에서 확인할 수 있습니다.</div>
+                                <div class="boothV--rule-item">- 신청기간 마감 이후의 신청 정보 수정 및 취소/환불은 행사 호스트에게 문의 부탁드립니다.</div>
+                                <div class="boothV--rule-item">- 행사에 관련된 사항은 하단의‘문의하기’를 통해 행사 호스트에게 문의 부탁 드립니다.</div>
+                                <div class="boothV--rule-item red">*오뜨리움은 통신판매 중개자이며, 해당 행사의 호스트가 아닙니다.</div>
+                            </div>
+                        </div>
+                        <div class="boothV--body-fig boothV--ch">
+                            <div class="boothV--subTit"><p>채널 정보</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="./img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="./img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--ch-btn">
+                                <a class="alertReady" href="javascript:void(0)">
+                                    <p>2023부산세계장애인대회 조직위원회</p>
+                                    <img src="./img/icon/view_ico_go.svg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="boothV--body-fig boothV--notice">
+                            <div class="boothV--subTit"><p>공지 / 안내</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="./img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="./img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--notice-none">등록된 공지 / 안내가 없습니다</div>
+                            <!-- <div class="boothV--noticeWrap">
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                            </div>
+                            <div class="boothV--notice-more">
+                                <div class="boothV--notice-more-btn"><img src="./img/icon/arrow-down-s-line.svg" alt=""><p>more view</p></div>
+                            </div> -->
+                        </div>
+                        <div class="boothV--body-fig boothV--ask">
+                            <div class="boothV--subTit"><p>문의하기</p><a class="boothV--subLink alertReady" href="javascript:void(0)"><p>호스트에게 문의하기</p><img src="./img/icon/view_ico_go.svg" alt=""></a></div>
+                            <div class="boothV--notice-none">등록된 문의가 없습니다</div>
+                            <!-- <div class="boothV--noticeWrap">
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                            </div>
+                            <div class="boothV--notice-more">
+                                <div class="boothV--notice-more-btn"><img src="./img/icon/arrow-down-s-line.svg" alt=""><p>more view</p></div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="boothV--aside-sticky">
+                    <div class="boothV--aside">
+                        <div class="boothV--aside-box">
+                            <div class="boothV--aside-row1">
+                                <div class="boothV--aside-logo"><img src="./img/bwdc_logo.png" alt=""></div>
+                                <div class="boothV--aside-flag"><p>모집중</p></div>
+                            </div>
+                            <div class="boothV--aside-row2">
+                                <div class="boothV--aside-company">
+                                    <div class="boothV--aside-company01">종합박람회</div>
+                                    <div class="boothV--aside-company02"><p>부산세계장애인대회</p><div class="link"><img src="./img/icon/Link.svg" alt=""></div></div>
+                                    <div class="boothV--aside-company03">Conference & Fair</div>
+                                </div>
+                                <div class="boothV--aside-btn">
+                                    <!-- 요소 속성을 a에서 div로 변경해도 좋습니다 -->
+                                    <a class="boothV--aside-btn-item" href=""><img src="./img/icon/Share_purple.svg" alt=""></a>
+                                    <a class="boothV--aside-btn-item" href=""><img src="./img/icon/Favorite_purple.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="boothV--aside-info">
+                                <div class="boothV--aside-info-row"><img src="./img/user-g3.svg" alt=""><p>2023부산세계장애인대회 조직위원회</p></div>
+                                <div class="boothV--aside-info-row"><img src="./img/icon/Phone-g3_gray50.svg" alt=""><p>0317068484</p></div>
+                                <div class="boothV--aside-info-row"><img src="./img/icon/Email-g3_gray50.svg" alt=""><p>secretariat.bwdc2023@gmail.com</p></div>
+                            </div>
+                            <div class="boothV--aside-sellerMode">
+                                <a class="boothV--aside-sellerMode-btn" href="/mypage/mypage.html">
+                                    <img src="./img/icon/Edit_purple.svg" alt="">
+                                    <p>Edit on <b>Mypage</b></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="boothV--aside-apply">
+                            <p>2023.08.07(월) - 2023.08.11(금), 5일간</p>
+                            <a href="javascript:void(0)" class="boothV--aside-apply-btn alertReady">부스 신청하기</a>
+                        </div>
+                        <a href="javascript:void(0)" class="boothV--aside-joinEvent alertReady">행사 참여하기</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ft">
+        <div class="ft--s2">
+            <div class="ft--s2-wrap">
+                <div class="ft--s2-l">
+                    <div class="ft--s2-l-logo"><img src="/assets/img/ft_logo_black.svg" alt=""></div>
+                    <div class="ft--s2-l-txt01">세계 어디에도 없는 메타버스 MICE센터에서 <br>당신이 원하는 비즈니스를 펼쳐보세요</div>
+                    <a class="ft--s2-l-link" href="">행사개설문의 <img src="/assets/img/icon_goArrow.svg" alt=""></a>
+                </div>
+                <div class="ft--s2-r">
+                    <div class="ft--s2-r-col">
+                        <div class="ft--s2-r-tit"><a href="">About</a></div>
+                    </div>
+                    <div class="ft--s2-r-col">
+                        <div class="ft--s2-r-tit"><p>행사안내</p><span></span></div>
+                        <div class="ft--s2-r-list">
+                            <a href="" class="ft--s2-r-item">전체 일정</a>
+                            <a href="" class="ft--s2-r-item">종합박람회</a>
+                            <a href="" class="ft--s2-r-item">전시회</a>
+                            <a href="" class="ft--s2-r-item">컨퍼런스</a>
+                            <a href="" class="ft--s2-r-item">페스티벌</a>
+                            <a href="" class="ft--s2-r-item">비즈니스 상담회</a>
+                            <a href="" class="ft--s2-r-item">이벤트</a>
+                            <a href="" class="ft--s2-r-item">웨비나</a>
+                            <a href="" class="ft--s2-r-item">해외 행사</a>
+                        </div>
+                    </div>
+                    <div class="ft--s2-r-col">
+                        <div class="ft--s2-r-tit"><p>오뜨리움 Features</p><span></span></div>
+                        <div class="ft--s2-r-list">
+                            <a href="" class="ft--s2-r-item">통합 운영 관리자</a>
+                            <a href="" class="ft--s2-r-item">데이터 애널리틱스</a>
+                            <a href="" class="ft--s2-r-item">브랜딩</a>
+                            <a href="" class="ft--s2-r-item">온라인 부스</a>
+                            <a href="" class="ft--s2-r-item">비즈매칭</a>
+                            <a href="" class="ft--s2-r-item">멀티미디어 스트리밍</a>
+                            <a href="" class="ft--s2-r-item">온라인 네트워킹</a>
+                            <a href="" class="ft--s2-r-item">메타버스</a>
+                        </div>
+                    </div>
+                    <div class="ft--s2-r-col">
+                        <div class="ft--s2-r-tit"><p>Customer</p><span></span></div>
+                        <div class="ft--s2-r-list">
+                            <a href="" class="ft--s2-r-item">자주묻는 질문</a>
+                            <a href="" class="ft--s2-r-item">1:1 문의</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ft--s3">
+            <div class="ft--s3-info">
+                <div class="ft--s3-info-txt">
+                    <div class="ft--s3-info-txt01">
+                        <a href="">개인정보처리방침</a>
+                        <a href="">이용약관</a>
+                    </div>
+                    <div class="ft--s3-info-txt02">
+                        <p>대표이사. 김태윤</p>
+                        <p>사업자등록번호. 559-87-01929</p>
+                        <p>주소. 서울 강남구 학동로33길 41 영진빌딩</p>
+                        <p>통신판매업 신고번호. 제2023-서울강남-1493호</p>
+                        <p>고객센터. 02-3144-2125</p>
+                        <p>이메일. cs@huaterium.com</p>
+                    </div>
+                </div>
+                <div class="ft--s3-info-logo"><img src="/assets/img/hd_logo_white.png" alt=""></div>
+            </div>
+            <div class="ft--s3-switch">
+                <div class="ft--s3-switch-wrap">
+                        <div class="ft--s3-switch-text"><p>다운로드 권장/최소사양</p>
+                            <button tabindex="0" class="ft--s3-switch-text-btn" aria-label="운영체제는 Windows 10을 권장합니다. 설치용량은 10GB 이상입니다. CPU는 i5 7500 최소사양이며 i5 9400 4Core 이상을 권장합니다. RAM은 8GB 최소사양이며 16GB 이상을 권장합니다. GPU는 gtx960 2GB이상 최소사양이며 gtx 1660이상을 권장합니다."><img src="/assets/img/Help--filled-cr70.svg" alt="권장사양 및 최소사양 보기" aria-controls="spec"></button>
+                            <div id="spec" class="ft--s3-switch-pop">
+                                <div class="ft--s3-switch-popWrap">
+                                    <div class="ft--s3-switch-pop-row black">
+                                        <div class="td">WINDOW</div>
+                                        <div class="td">최소사양</div>
+                                        <div class="td">권장사양</div>
+                                    </div>
+                                    <div class="ft--s3-switch-pop-row">
+                                        <div class="td">운영체제</div>
+                                        <div class="td2">Windows 10 권장</div>
+                                    </div>
+                                    <div class="ft--s3-switch-pop-row">
+                                        <div class="td">설치용량</div>
+                                        <div class="td2">10GB 이상</div>
+                                    </div>
+                                    <div class="ft--s3-switch-pop-row">
+                                        <div class="td">CPU</div>
+                                        <div class="td">i5 - 7500</div>
+                                        <div class="td">i5 9400 (4Core 이상)</div>
+                                    </div>
+                                    <div class="ft--s3-switch-pop-row">
+                                        <div class="td">RAM</div>
+                                        <div class="td">8GB</div>
+                                        <div class="td">16GB</div>
+                                    </div>
+                                    <div class="ft--s3-switch-pop-row">
+                                        <div class="td">GPU</div>
+                                        <div class="td">gtx960 (2GB 이상)</div>
+                                        <div class="td">gtx(1660 이상)</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button aria-controls="download-guide" tabindex="0" class="ft--s3-switch-down" aria-label="다운로드 가이드 보기" >
+                            <img src="/assets/img/Chevron--down-g3.svg" alt="see detail option arrow">
+                        </button>
+                </div>
+            </div>
+            <div class="ft--s3-cont" aria-hidden="true" id="download-guide">
+                <div class="ft--s3-wrap">
+                        <div class="ft--s3-fig">
+                            <div class="ft--s3-txt">
+                                <div class="ft--s3-txt01">WINDOWS에서 다운로드 하기</div>
+                                <div class="ft--s3-txt02">
+                                    Windows에서 Haute-rium을 다운로드 받으시다가 불편사항을 겪으셨다면, 아래 pdf 파일을 확인해주세요. <br>
+                                    - Microsoft Edge 브라우저에서 발생되는 오류사항 <br>
+                                    - Installer 파일 설치 시 <br>
+                                    - 다운로드 후 발생되는 팝업
+                                </div>
+                            </div>
+                            <a class="ft--s3-download" href="" download title="윈도우용 다운로드 가이드"><p>WINDOW GUIDE.PDF</p></a>
+                        </div>
+                        <div class="ft--s3-fig">
+                            <div class="ft--s3-txt">
+                                <div class="ft--s3-txt01">MAC에서 다운로드 하기</div>
+                                <div class="ft--s3-txt02">
+                                    MAC에서 Haute-rium을 다운로드 받으시다가 불편사항을 겪으셨다면, 아래 pdf 파일을 확인해주세요. <br>
+                                    - Installer 파일 설치가 되지 않을 경우, 설정하는 방법
+                                </div>
+                            </div>
+                            <a class="ft--s3-download" href="" download title="맥용 다운로드 가이드"><p>MAC GUIDE.PDF</p></a>
+                        </div>
+                </div>
+            </div>
+            <div class="ft--s3-copy">
+                <p>Ⓒ 2023. ECOMICE CONSORTIUM. ALL RIGHTS RESERVED.</p>
+                <img src="/assets/img/hd_logo_white.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script src="/common/js/layout.js"></script>
+    <script>// boothV--bodyTop swiper
+        const boothVTopSwiper = new Swiper('.boothVTopSwiper', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            // loop: true,
+            pagination: {
+                el: '.boothVTopSwiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.boothVTopSwiper-nav-next',
+                prevEl: '.boothVTopSwiper-nav-prev',
+            },
+        });
+    </script>
+    <script>//더 보기 버튼
+        const boothVNoticeMoreBtn = document.querySelectorAll('.boothV--notice-more-btn');
+        const boothNotice = document.querySelectorAll('.boothV--Notice');
+        boothVNoticeMoreBtn.forEach(function(el,idx){
+            el.addEventListener('click', function(){
+                boothNotice[idx].classList.toggle('open');
+            });
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <link rel="shortcut icon" href="https://hauterium.com/beta/img/favi.ico">
+    <title>Hauterium</title>
+    <link rel="stylesheet" href="css/base.css">
+
+    <link rel="stylesheet" href="css/basic_font.css">
+    <link rel="stylesheet" href="css/basic_public.css">
+
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/mypage.css">
+
+    
+</head>
+<body>
+    
+
+<!-- cs_header -->
+<div id="cs_header" class="hd_wrap">
+    <div class="hd_left">
+        <div class="hd_logo">
+            <a href="#">
+                <div class="l_img"><embed src="img/admin_logo.svg" type="image/svg+xml" aria-label="Hauterium Logo"></div>
+                <div class="l_txt">Host-Center</div>
+            </a>
+        </div>
+        <ul class="hd_menu">
+            <li><a href="#">내행사</a></li>
+            <li><a href="#">채널관리</a></li>
+            <li class="on"><a href="/console/booth/boothset.html">부스관리</a></li>
+            <li><a href="#">CRM</a></li><!-- 슬래쉬, 에코마이스만 출력 -->
+            <li><a href="#">스페이스관리</a></li><!-- 슬래쉬만 출력-->
+            <li><a href="#" class="link_st01 bg-gra01">행사개최</a></li>
+        </ul>
+    </div>
+
+    <div class="hd_right">
+        
+        <div class="hd_lang hd_toggle_parents">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1.5C9.9233 1.5 7.89323 2.11581 6.16652 3.26957C4.4398 4.42332 3.09399 6.0632 2.29927 7.98182C1.50455 9.90045 1.29661 12.0116 1.70176 14.0484C2.1069 16.0852 3.10693 17.9562 4.57538 19.4246C6.04383 20.8931 7.91476 21.8931 9.95156 22.2982C11.9884 22.7034 14.0996 22.4955 16.0182 21.7007C17.9368 20.906 19.5767 19.5602 20.7304 17.8335C21.8842 16.1068 22.5 14.0767 22.5 12C22.5 9.21523 21.3938 6.54451 19.4246 4.57538C17.4555 2.60625 14.7848 1.5 12 1.5ZM21 11.25H16.5C16.4125 8.48781 15.6969 5.78186 14.4075 3.3375C16.1839 3.82342 17.7685 4.84263 18.9474 6.25757C20.1263 7.6725 20.8427 9.41504 21 11.25ZM12 21C11.8327 21.0112 11.6648 21.0112 11.4975 21C9.94372 18.5221 9.08139 15.6736 9 12.75H15C14.9254 15.6715 14.0709 18.5199 12.525 21C12.3502 21.0123 12.1748 21.0123 12 21ZM9 11.25C9.07462 8.32851 9.92914 5.48012 11.475 3C11.809 2.96247 12.1461 2.96247 12.48 3C14.0417 5.4756 14.9119 8.3243 15 11.25H9ZM9.57001 3.3375C8.28848 5.78373 7.5806 8.48959 7.5 11.25H3C3.15728 9.41504 3.87371 7.6725 5.0526 6.25757C6.23149 4.84263 7.81608 3.82342 9.5925 3.3375H9.57001ZM3.0375 12.75H7.53751C7.61577 15.5098 8.32108 18.2156 9.60001 20.6625C7.82915 20.1714 6.25109 19.1499 5.07792 17.7354C3.90475 16.3209 3.19271 14.5811 3.0375 12.75ZM14.4075 20.6625C15.6969 18.2181 16.4125 15.5122 16.5 12.75H21C20.8427 14.585 20.1263 16.3275 18.9474 17.7424C17.7685 19.1574 16.1839 20.1766 14.4075 20.6625Z" fill="white"/>
+            </svg>
+            
+            <div class="hd_toggle hd_toggle_lang">
+                <div class="btn">한국어</div>
+                <div class="btn">English</div>
+            </div>
+        </div>
+
+        <div class="hd_user hd_toggle_parents">
+            <div class="u_img">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6C11.2583 6 10.5333 6.21993 9.91662 6.63199C9.29993 7.04404 8.81928 7.62971 8.53546 8.31494C8.25163 9.00016 8.17736 9.75416 8.32206 10.4816C8.46675 11.209 8.82391 11.8772 9.34835 12.4017C9.8728 12.9261 10.541 13.2833 11.2684 13.4279C11.9958 13.5726 12.7498 13.4984 13.4351 13.2145C14.1203 12.9307 14.706 12.4501 15.118 11.8334C15.5301 11.2167 15.75 10.4917 15.75 9.75C15.75 8.75544 15.3549 7.80161 14.6517 7.09835C13.9484 6.39509 12.9946 6 12 6ZM12 12C11.555 12 11.12 11.868 10.75 11.6208C10.38 11.3736 10.0916 11.0222 9.92128 10.611C9.75098 10.1999 9.70642 9.7475 9.79324 9.31105C9.88005 8.87459 10.0943 8.47368 10.409 8.15901C10.7237 7.84434 11.1246 7.63005 11.5611 7.54323C11.9975 7.45642 12.4499 7.50097 12.861 7.67127C13.2722 7.84157 13.6236 8.12996 13.8708 8.49997C14.118 8.86998 14.25 9.30499 14.25 9.75C14.2493 10.3465 14.0121 10.9184 13.5903 11.3402C13.1684 11.7621 12.5965 11.9993 12 12Z" fill="white"/>
+                    <path d="M12 1.5C9.9233 1.5 7.89323 2.11581 6.16652 3.26957C4.4398 4.42332 3.09399 6.0632 2.29927 7.98182C1.50455 9.90045 1.29661 12.0116 1.70176 14.0484C2.1069 16.0852 3.10693 17.9562 4.57538 19.4246C6.04383 20.8931 7.91476 21.8931 9.95156 22.2982C11.9884 22.7034 14.0996 22.4955 16.0182 21.7007C17.9368 20.906 19.5767 19.5602 20.7304 17.8335C21.8842 16.1068 22.5 14.0767 22.5 12C22.4969 9.21619 21.3896 6.5473 19.4212 4.57884C17.4527 2.61039 14.7838 1.50314 12 1.5ZM7.5 19.7824V18.75C7.50066 18.1535 7.73792 17.5815 8.15974 17.1597C8.58155 16.7379 9.15347 16.5007 9.75 16.5H14.25C14.8465 16.5007 15.4185 16.7379 15.8403 17.1597C16.2621 17.5815 16.4993 18.1535 16.5 18.75V19.7824C15.1344 20.5798 13.5814 21 12 21C10.4186 21 8.86563 20.5798 7.5 19.7824ZM17.9944 18.6944C17.9795 17.7105 17.5786 16.772 16.8782 16.0809C16.1778 15.3899 15.2339 15.0017 14.25 15H9.75C8.76608 15.0017 7.8222 15.3899 7.1218 16.0809C6.42139 16.772 6.02054 17.7105 6.00563 18.6944C4.64555 17.4799 3.68643 15.881 3.25526 14.1093C2.82408 12.3377 2.9412 10.4769 3.59111 8.77324C4.24101 7.06963 5.39304 5.6036 6.89466 4.56927C8.39627 3.53495 10.1766 2.98112 12 2.98112C13.8234 2.98112 15.6037 3.53495 17.1054 4.56927C18.607 5.6036 19.759 7.06963 20.4089 8.77324C21.0588 10.4769 21.1759 12.3377 20.7448 14.1093C20.3136 15.881 19.3545 17.4799 17.9944 18.6944Z" fill="white"/>
+                </svg>                        
+            </div>
+            <div class="u_name">사용자이름</div>
+            <div class="u_arr">
+                <div class="">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 10.9969L3 5.99687L3.7 5.29688L8 9.59688L12.3 5.29688L13 5.99687L8 10.9969Z" fill="white"/>
+                    </svg>                        
+                </div>    
+            </div>
+
+            <div class="hd_toggle hd_toggle_user">
+                <div class="btn_tuser">
+                    <p class="n">Niepce 님</p>
+                    <p class="e">1234@gmail.com</p>
+                </div>
+                <div class="btn"><a href="#" class="link_st04">나의 부스 관리하기</a></div>
+                <div class="btn">마이페이지</div>
+                <div class="btn">로그아웃</div>
+            </div>
+        </div>
+
+        <div class="hd_home">
+            <a href="javascript:void(0);" class="link_st02 bg-b10">
+                <div class="img">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.30615 1.10687C8.2174 1.03762 8.10805 1 7.99547 1C7.8829 1 7.77355 1.03762 7.6848 1.10687L0.5 6.70967L1.12135 7.49552L2 6.81042V13C2.00054 13.265 2.10607 13.5191 2.29349 13.7065C2.48091 13.8939 2.73495 13.9994 3 14H13C13.2651 13.9995 13.5191 13.894 13.7066 13.7065C13.894 13.5191 13.9995 13.265 14 13V6.81497L14.8786 7.49997L15.5 6.71407L8.30615 1.10687ZM9 13H7V8.99997H9V13ZM10 13V8.99997C9.9997 8.73485 9.89424 8.48067 9.70677 8.2932C9.5193 8.10573 9.26512 8.00028 9 7.99997H7C6.73486 8.00024 6.48066 8.10568 6.29319 8.29316C6.10571 8.48064 6.00026 8.73484 6 8.99997V13H3V6.03072L8 2.13572L13 6.03597V13H10Z" fill="#21272A"/>
+                    </svg>                        
+                </div>
+                <div class="t">오뜨리움 홈</div>
+            </a>
+        </div>
+
+    </div>
+</div>
+<!-- End cs_header -->
+
+
+<!-- main -->
+<div id="cs_main" class="cs_main_wrap">
+
+    <!-- aside -->
+    <div id="cs_aside" class="cs_aside_wrap booth_aside_wrap">
+        <div class="as_event_wrap">
+            <div class="as_u_channel">
+                <div class="u_ch_name">
+                    <div class="na">선택한 행사명</div>
+                    <div class="arr">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 11.0008L3 6.00078L3.7 5.30078L8 9.60078L12.3 5.30078L13 6.00078L8 11.0008Z" fill="#F2F4F8"/>
+                        </svg>                            
+                    </div>
+                </div>
+                <ul class="u_ch_list">
+                    <li class="on"><a href="#">선택한 행사명</a></li>
+                    <li><a href="#">행사명</a></li>
+                </ul>
+            </div>
+
+            <div class="as_u_channel_link">
+                <a href="#">
+                    <div class="link_na">부스 페이지 바로가기</div>
+                    <div class="link_arr">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 3V4H11.295L3 12.295L3.705 13L12 4.705V11H13V3H5Z" fill="#878D96"/>
+                        </svg>                            
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="as_menu_wrap">
+            <div class="as_menu_box">
+                <div class="as_menu_title"><span>나의 부스 관리</span></div>
+                <dl class="as_menu_list">
+                    <!-- #01 -->
+                    <dt class="as_m_dept01 ">
+                        <a href="boothedit.html" class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_name">부스 기본정보</div>
+                            </div>
+                        </a>
+                    </dt>
+
+                    <!-- #02 -->
+                    <dt class="as_m_dept01 menu_on">
+                        <a href="boothcon01.html" class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_name">콘텐츠 관리</div>
+                            </div>
+                        </a>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+
+    </div>
+    <!-- End aside -->
+
+    <!-- section -->
+        <div id="cs_section" class="cs_aside_section_wrap">
+            
+
+            <div id="cs_article_wrap" class=" sec_article_wrap">
+                <div class="section_inner">
+                    
+                    <div id="article_boothContent" class="cs_article">
+
+                        <div class="cs_article_header">
+                            <div class="art_hd_inner">
+                                <div class="art_hd_tit">
+                                    <div class="tit">콘텐츠 관리하기</div>
+                                </div>
+                                <div class="art_hd_con">
+                                    <div class="con">참여 중인 행사의 부스에 콘텐츠를 관리해보세요.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="adm_article_information">
+                            <div class="art_info_inner">
+                                <div class="art_info_tit">
+                                    <div class="tit"><span class="cred">부스 디자인 변경</span>을 해보세요!</div>
+                                </div>
+                                <div class="art_info_con">
+                                    <div class="con">
+                                        나의 부스관리 - 부스 기본정보에서 디자인을 변경해보세요.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art_info_btns">
+                                <a href="boothset.html" class="upload_st01">
+                                    <div class="txt">부스 기본정보</div>
+                                </a>
+                            </div>
+                        </div>
+
+
+                        <!-- 부스 타입 선택 -->
+                        <div class="cs_article_contents">
+                            <div id="boothType" class="booth_type booth_s01 booth_s01_c1">
+                                <div class="booth_type_wrap">
+                                    <div class="booth_type_img">
+                                        <div class="type_img s01_c1"><img src="img/booth_type/s01_c1.png" /></div>
+                                        <div class="type_img s02_c1"><img src="img/booth_type/s02_c1.png" /></div>
+                                        <div class="type_img s02_c2"><img src="img/booth_type/s02_c2.png" /></div>
+                                        <div class="type_img s02_c3"><img src="img/booth_type/s02_c3.png" /></div>
+                                        <div class="type_img m01_c1"><img src="img/booth_type/m01_c1.png" /></div>
+                                        <div class="type_img m01_c2"><img src="img/booth_type/m01_c2.png" /></div>
+                                        <div class="type_img m02_c1"><img src="img/booth_type/m02_c1.png" /></div>
+                                        <div class="type_img m02_c2"><img src="img/booth_type/m02_c2.png" /></div>
+                                        <div class="type_img m02_c3"><img src="img/booth_type/m02_c3.png" /></div>
+                                        <div class="type_img m02_c4"><img src="img/booth_type/m02_c4.png" /></div>
+                                        <div class="type_img b01_c1"><img src="img/booth_type/b01_c1.png" /></div>
+                                        <div class="type_img b01_c2"><img src="img/booth_type/b01_c2.png" /></div>
+                                    </div>
+                                    <div class="booth_type_btns">
+                                        <div class="btn booth_btn_logo"><div class="btn_tit">LOGO</div></div>
+
+                                        <div class="btn booth_btn_logo2"><div class="btn_tit">LOGO</div></div>
+
+                                        <div class="btn booth_btn_company">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Building-g3.svg" alt=""></div>
+                                                <div class="con">기업정보</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn booth_btn_video">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Media-g3.svg" alt=""></div>
+                                                <div class="con">영상01</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn booth_btn_video2">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Media-g3.svg" alt=""></div>
+                                                <div class="con">영상02</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="btn booth_btn_video3">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Media-g3.svg" alt=""></div>
+                                                <div class="con">영상03</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn booth_btn_gallery active">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Image-g3.svg" alt=""></div>
+                                                <div class="con">사진01</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn booth_btn_gallery2 active">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Image-g3.svg" alt=""></div>
+                                                <div class="con">사진02</div>
+                                            </div>
+                                        </div>
+
+                                        <div class="btn booth_btn_gallery3 active">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Image-g3.svg" alt=""></div>
+                                                <div class="con">사진03</div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="btn booth_btn_brochure">
+                                            <div class="btn_tit">
+                                                <div class="img"><img src="/mypage/img/icon/white-16/Image-g3.svg" alt=""></div>
+                                                <div class="con">브로셔</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="cs_article_contents mp">
+                            <div class="mp--body">
+                                <div class="public--innerWrap">
+                                    
+                                    
+                                    <ul class="art_tab_wrap">
+                                        <li><a href="boothcon01.html">기업정보</a></li>
+                                        <li><a href="boothcon02.html">홍보영상</a></li>
+                                        <li><a href="boothcon03.html" class="on">갤러리</a></li>
+                                        <li><a href="boothcon04.html">브로셔</a></li>
+                                    </ul>
+
+                                    <div class="adm_article_information">
+                                        <div class="art_info_inner">
+                                            <div class="art_info_tit">
+                                                <div class="tit">원하는 영역에 이미지를 추가해보세요.</div>
+                                            </div>
+                                            <div class="art_info_con">
+                                                <div class="con">
+                                                    <p>나의 부스에 영상을 업로드하고, 대표를 설정해주세요.</p>
+                                                    <p class="cred flex-vc">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.5 11V7H6.5V8H7.5V11H6V12H10V11H8.5Z" fill="#FA4D56"></path>
+                                                            <path d="M8 4C7.85167 4 7.70666 4.04399 7.58333 4.1264C7.45999 4.20881 7.36386 4.32595 7.30709 4.46299C7.25033 4.60004 7.23547 4.75084 7.26441 4.89632C7.29335 5.04181 7.36478 5.17544 7.46967 5.28033C7.57456 5.38522 7.7082 5.45665 7.85369 5.48559C7.99917 5.51453 8.14997 5.49968 8.28701 5.44291C8.42406 5.38615 8.54119 5.29002 8.6236 5.16668C8.70602 5.04334 8.75 4.89834 8.75 4.75C8.75 4.55109 8.67098 4.36033 8.53033 4.21967C8.38968 4.07902 8.19892 4 8 4Z" fill="#FA4D56"></path>
+                                                            <path d="M8 15C6.61553 15 5.26216 14.5895 4.11101 13.8203C2.95987 13.0511 2.06266 11.9579 1.53285 10.6788C1.00303 9.3997 0.86441 7.99224 1.13451 6.63437C1.4046 5.2765 2.07129 4.02922 3.05026 3.05026C4.02922 2.07129 5.2765 1.4046 6.63437 1.13451C7.99224 0.86441 9.3997 1.00303 10.6788 1.53285C11.9579 2.06266 13.0511 2.95987 13.8203 4.11101C14.5895 5.26216 15 6.61553 15 8C15 9.85652 14.2625 11.637 12.9497 12.9497C11.637 14.2625 9.85652 15 8 15ZM8 2C6.81332 2 5.65328 2.3519 4.66658 3.01119C3.67989 3.67047 2.91085 4.60755 2.45673 5.7039C2.0026 6.80026 1.88378 8.00666 2.11529 9.17054C2.3468 10.3344 2.91825 11.4035 3.75736 12.2426C4.59648 13.0818 5.66558 13.6532 6.82946 13.8847C7.99335 14.1162 9.19975 13.9974 10.2961 13.5433C11.3925 13.0892 12.3295 12.3201 12.9888 11.3334C13.6481 10.3467 14 9.18669 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2Z" fill="#FA4D56"></path>
+                                                        </svg> 국문과 영문을 구분하여 등록해주세요.
+                                                    </p>
+                                                    <p class="cred flex-vc">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.5 11V7H6.5V8H7.5V11H6V12H10V11H8.5Z" fill="#FA4D56"></path>
+                                                            <path d="M8 4C7.85167 4 7.70666 4.04399 7.58333 4.1264C7.45999 4.20881 7.36386 4.32595 7.30709 4.46299C7.25033 4.60004 7.23547 4.75084 7.26441 4.89632C7.29335 5.04181 7.36478 5.17544 7.46967 5.28033C7.57456 5.38522 7.7082 5.45665 7.85369 5.48559C7.99917 5.51453 8.14997 5.49968 8.28701 5.44291C8.42406 5.38615 8.54119 5.29002 8.6236 5.16668C8.70602 5.04334 8.75 4.89834 8.75 4.75C8.75 4.55109 8.67098 4.36033 8.53033 4.21967C8.38968 4.07902 8.19892 4 8 4Z" fill="#FA4D56"></path>
+                                                            <path d="M8 15C6.61553 15 5.26216 14.5895 4.11101 13.8203C2.95987 13.0511 2.06266 11.9579 1.53285 10.6788C1.00303 9.3997 0.86441 7.99224 1.13451 6.63437C1.4046 5.2765 2.07129 4.02922 3.05026 3.05026C4.02922 2.07129 5.2765 1.4046 6.63437 1.13451C7.99224 0.86441 9.3997 1.00303 10.6788 1.53285C11.9579 2.06266 13.0511 2.95987 13.8203 4.11101C14.5895 5.26216 15 6.61553 15 8C15 9.85652 14.2625 11.637 12.9497 12.9497C11.637 14.2625 9.85652 15 8 15ZM8 2C6.81332 2 5.65328 2.3519 4.66658 3.01119C3.67989 3.67047 2.91085 4.60755 2.45673 5.7039C2.0026 6.80026 1.88378 8.00666 2.11529 9.17054C2.3468 10.3344 2.91825 11.4035 3.75736 12.2426C4.59648 13.0818 5.66558 13.6532 6.82946 13.8847C7.99335 14.1162 9.19975 13.9974 10.2961 13.5433C11.3925 13.0892 12.3295 12.3201 12.9888 11.3334C13.6481 10.3467 14 9.18669 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2Z" fill="#FA4D56"></path>
+                                                        </svg> 첫번째 이미지는 1:1.3 비율로 조절되어 업로드됨을 참고해주세요.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="mp--upImg">
+                                        <div class="mp--upImgList">
+
+                                            <!-- #게시물 -->
+                                            <div class="mp--upImgWrap">
+                                                <div class="mp--upImg-fig">
+                                                    
+                                                    <div class="mp--upImg-row">
+                                                        <div class="mp--upImg-l"><p>대표 설정</p></div>
+                                                        <div class="mp--upImg-r">
+                                                            <div class="mp--upImg-fileInput">
+                                                                <select name="" class="selcet_st01">
+                                                                    <option>미설정</option>
+                                                                    <option>Gallery 01</option>
+                                                                    <option>Gallery 02</option>
+                                                                    <option>Gallery 03</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mp--upImg-row">
+                                                        <div class="mp--upImg-l"><p>제목</p></div>
+                                                        <div class="mp--upImg-r">
+                                                            <div class="mp--upImg-textInput">
+                                                                <input type="text" placeholder="제목">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mp--upImg-row">
+                                                        <div class="mp--upImg-l"><p>내용</p></div>
+                                                        <div class="mp--upImg-r">
+                                                            <div class="mp--upImg-textInput">
+                                                                <textarea name="" id="" cols="20" rows="6" placeholder="내용"></textarea>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mp--upImg-row">
+                                                        <div class="mp--upImg-l"><p>썸네일</p></div>
+                                                        <div class="mp--upImg-r mp--upImg-rCol">
+                                                        
+                                                            <div class="mp--upImg-fileInput">
+                                                                <input id="file01" type="file" placeholder="파일찾기">
+                                                                <label for="file01"><div class="mp--upImg-fileName">파일찾기</div><p class="mp--upImg-fileLabel">파일찾기</p></label>
+                                                            </div>
+
+                                                            <div class="mp--upImg-fileExp">
+                                                                <p class="flex-vc">
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M8.5 11V7H6.5V8H7.5V11H6V12H10V11H8.5Z" fill="#878d96"></path>
+                                                                        <path d="M8 4C7.85167 4 7.70666 4.04399 7.58333 4.1264C7.45999 4.20881 7.36386 4.32595 7.30709 4.46299C7.25033 4.60004 7.23547 4.75084 7.26441 4.89632C7.29335 5.04181 7.36478 5.17544 7.46967 5.28033C7.57456 5.38522 7.7082 5.45665 7.85369 5.48559C7.99917 5.51453 8.14997 5.49968 8.28701 5.44291C8.42406 5.38615 8.54119 5.29002 8.6236 5.16668C8.70602 5.04334 8.75 4.89834 8.75 4.75C8.75 4.55109 8.67098 4.36033 8.53033 4.21967C8.38968 4.07902 8.19892 4 8 4Z" fill="#878d96"></path>
+                                                                        <path d="M8 15C6.61553 15 5.26216 14.5895 4.11101 13.8203C2.95987 13.0511 2.06266 11.9579 1.53285 10.6788C1.00303 9.3997 0.86441 7.99224 1.13451 6.63437C1.4046 5.2765 2.07129 4.02922 3.05026 3.05026C4.02922 2.07129 5.2765 1.4046 6.63437 1.13451C7.99224 0.86441 9.3997 1.00303 10.6788 1.53285C11.9579 2.06266 13.0511 2.95987 13.8203 4.11101C14.5895 5.26216 15 6.61553 15 8C15 9.85652 14.2625 11.637 12.9497 12.9497C11.637 14.2625 9.85652 15 8 15ZM8 2C6.81332 2 5.65328 2.3519 4.66658 3.01119C3.67989 3.67047 2.91085 4.60755 2.45673 5.7039C2.0026 6.80026 1.88378 8.00666 2.11529 9.17054C2.3468 10.3344 2.91825 11.4035 3.75736 12.2426C4.59648 13.0818 5.66558 13.6532 6.82946 13.8847C7.99335 14.1162 9.19975 13.9974 10.2961 13.5433C11.3925 13.0892 12.3295 12.3201 12.9888 11.3334C13.6481 10.3467 14 9.18669 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2Z" fill="#878d96"></path>
+                                                                    </svg>
+                                                                    이미지는 5mb 이하의 jpg, png만 가능합니다. (최대 8개)
+                                                                </p>
+                                                                <p class="cred flex-vc">
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M8.5 11V7H6.5V8H7.5V11H6V12H10V11H8.5Z" fill="#FA4D56"></path>
+                                                                        <path d="M8 4C7.85167 4 7.70666 4.04399 7.58333 4.1264C7.45999 4.20881 7.36386 4.32595 7.30709 4.46299C7.25033 4.60004 7.23547 4.75084 7.26441 4.89632C7.29335 5.04181 7.36478 5.17544 7.46967 5.28033C7.57456 5.38522 7.7082 5.45665 7.85369 5.48559C7.99917 5.51453 8.14997 5.49968 8.28701 5.44291C8.42406 5.38615 8.54119 5.29002 8.6236 5.16668C8.70602 5.04334 8.75 4.89834 8.75 4.75C8.75 4.55109 8.67098 4.36033 8.53033 4.21967C8.38968 4.07902 8.19892 4 8 4Z" fill="#FA4D56"></path>
+                                                                        <path d="M8 15C6.61553 15 5.26216 14.5895 4.11101 13.8203C2.95987 13.0511 2.06266 11.9579 1.53285 10.6788C1.00303 9.3997 0.86441 7.99224 1.13451 6.63437C1.4046 5.2765 2.07129 4.02922 3.05026 3.05026C4.02922 2.07129 5.2765 1.4046 6.63437 1.13451C7.99224 0.86441 9.3997 1.00303 10.6788 1.53285C11.9579 2.06266 13.0511 2.95987 13.8203 4.11101C14.5895 5.26216 15 6.61553 15 8C15 9.85652 14.2625 11.637 12.9497 12.9497C11.637 14.2625 9.85652 15 8 15ZM8 2C6.81332 2 5.65328 2.3519 4.66658 3.01119C3.67989 3.67047 2.91085 4.60755 2.45673 5.7039C2.0026 6.80026 1.88378 8.00666 2.11529 9.17054C2.3468 10.3344 2.91825 11.4035 3.75736 12.2426C4.59648 13.0818 5.66558 13.6532 6.82946 13.8847C7.99335 14.1162 9.19975 13.9974 10.2961 13.5433C11.3925 13.0892 12.3295 12.3201 12.9888 11.3334C13.6481 10.3467 14 9.18669 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2Z" fill="#FA4D56"></path>
+                                                                    </svg>
+                                                                    부스에 출력되는 썸네일은 1:1.3 비율로 넣어주세요. 비율이 맞지 않을 경우 자동 조절되어 업로드됩니다.
+                                                                </p>
+                                                            </div>
+                                                            
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mp--upImg-row">
+                                                        <div class="mp--upImg-l"><p>이미지</p></div>
+                                                        <div class="mp--upImg-r mp--upImg-rCol">
+
+                                                            <div class="mp--upImg-fileInput">
+                                                                <input id="file01" type="file" placeholder="파일찾기">
+                                                                <label for="file01"><div class="mp--upImg-fileName">파일찾기</div><p class="mp--upImg-fileLabel">파일찾기</p></label>
+                                                            </div>
+                                                            
+                                                            <div class="mp--upImg-fileExp">
+                                                                <p class="flex-vc">
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M8.5 11V7H6.5V8H7.5V11H6V12H10V11H8.5Z" fill="#878d96"></path>
+                                                                        <path d="M8 4C7.85167 4 7.70666 4.04399 7.58333 4.1264C7.45999 4.20881 7.36386 4.32595 7.30709 4.46299C7.25033 4.60004 7.23547 4.75084 7.26441 4.89632C7.29335 5.04181 7.36478 5.17544 7.46967 5.28033C7.57456 5.38522 7.7082 5.45665 7.85369 5.48559C7.99917 5.51453 8.14997 5.49968 8.28701 5.44291C8.42406 5.38615 8.54119 5.29002 8.6236 5.16668C8.70602 5.04334 8.75 4.89834 8.75 4.75C8.75 4.55109 8.67098 4.36033 8.53033 4.21967C8.38968 4.07902 8.19892 4 8 4Z" fill="#878d96"></path>
+                                                                        <path d="M8 15C6.61553 15 5.26216 14.5895 4.11101 13.8203C2.95987 13.0511 2.06266 11.9579 1.53285 10.6788C1.00303 9.3997 0.86441 7.99224 1.13451 6.63437C1.4046 5.2765 2.07129 4.02922 3.05026 3.05026C4.02922 2.07129 5.2765 1.4046 6.63437 1.13451C7.99224 0.86441 9.3997 1.00303 10.6788 1.53285C11.9579 2.06266 13.0511 2.95987 13.8203 4.11101C14.5895 5.26216 15 6.61553 15 8C15 9.85652 14.2625 11.637 12.9497 12.9497C11.637 14.2625 9.85652 15 8 15ZM8 2C6.81332 2 5.65328 2.3519 4.66658 3.01119C3.67989 3.67047 2.91085 4.60755 2.45673 5.7039C2.0026 6.80026 1.88378 8.00666 2.11529 9.17054C2.3468 10.3344 2.91825 11.4035 3.75736 12.2426C4.59648 13.0818 5.66558 13.6532 6.82946 13.8847C7.99335 14.1162 9.19975 13.9974 10.2961 13.5433C11.3925 13.0892 12.3295 12.3201 12.9888 11.3334C13.6481 10.3467 14 9.18669 14 8C14 6.4087 13.3679 4.88258 12.2426 3.75736C11.1174 2.63214 9.5913 2 8 2Z" fill="#878d96"></path>
+                                                                    </svg>
+                                                                    이미지는 5mb 이하의 jpg, png만 가능합니다.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            
+                                            <!-- #추가 -->
+                                            <div class="mp--upImg-add">
+                                                <p><svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 7.5V4H8V7.5H4.5V8.5H8V12H9V8.5H12.5V7.5H9Z" fill="#8A3FFC"/></svg></p>
+                                                <p>파일 추가</p>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<!-- -->
+                    
+                    <div class="art_result_btns">
+                        <a href="javascript:void(0);" class="upload_st01">
+                            <div class="txt">저장하기</div>
+                        </a>
+                    </div>
+
+<!-- -->
+                </div>
+            </div>
+        </div>
+    <!-- End section -->
+</div>
+<!-- End main -->
+
+
+
+<!-- footer -->
+    <div id="footer" class="ft_wrap">
+        <div class="ft_copy">© hauterium</div>
+    </div>
+<!-- End footer -->
+
+<style>
+    
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('.u_ch_name').click(function () {
+        if($(this).hasClass('on')) {
+            $(this).removeClass('on');
+            $(this).siblings('.u_ch_list').slideUp(200);
+        }else {
+            $(this).addClass('on');
+            $(this).siblings('.u_ch_list').slideDown(200);
+        }
+    })
+
+    $('.as_m_dept01').click(function () {
+        if($(this).hasClass('on')) {
+            $(this).removeClass('on');
+            $(this).next('.as_m_dept02').slideUp(200).removeClass('on');
+        }else {
+            $('.as_m_dept01').removeClass('on')
+            $('.as_m_dept02').slideUp(200).removeClass('on')
+            $(this).addClass('on');
+            $(this).next('.as_m_dept02').slideDown(200).addClass('on');
+        }
+    })
+</script>
+
+<script>
+    const hd_toggle_parents = document.querySelectorAll('.hd_toggle_parents')
+    hd_toggle_parents.forEach(function(el,idx){
+        el.addEventListener('click',function(){
+            if(el.classList.contains('active')){
+                el.classList.remove('active');
+            } else {
+                for(let item of hd_toggle_parents){
+                    item.classList.remove('active')
+                }
+                el.classList.add('active');
+            }
+        })
+    })
+</script>
+
+<script>
+    // .mp--upImg-fileInput input[type=file] change 펑션
+    const mpUpImgFileInput = document.querySelectorAll('.mp--upImg-fileInput input[type=file]')
+    mpUpImgFileInput.forEach(function(el){
+        el.addEventListener('change',function(){
+            el.closest('.mp--upImg-fileInput').classList.add('changed')
+            el.closest('.mp--upImg-fileInput').querySelector('.mp--upImg-fileName').innerText = el.files[0].name
+        })
+    })
+    // .mp--upData-img-thumb 클릭 펑션
+    const mpUpDataImg = document.querySelectorAll('.mp--upData-img-thumb')
+    mpUpDataImg.forEach(function(el){
+        el.addEventListener('click',function(){
+            if(  !confirm("대표이미지로 바꾸시겠습니까?") ){
+               return;
+            }else{
+                for(let item of mpUpDataImg){
+                    item.closest('.mp--upData-img').classList.remove('active')
+                }
+                el.closest('.mp--upData-img').classList.add('active')
+            }
+        })
+    })
+    // .mp--upData-dlt 클릭 펑션
+    const mpUpDataDlt = document.querySelectorAll('.mp--upData-img-dlt')
+    mpUpDataDlt.forEach(function(el){
+        el.addEventListener('click',function(){
+            if(  !confirm("이미지를 삭제하시겠습니까?") ){
+               return;
+            }else{
+                el.closest('.mp--upData-img').remove()
+            }
+        })
+    })
+    // mp--mybooth-tag클릭 시 다른 mp--mybooth-tag요소의 active클래스를 제거하고 클릭한 mp--mybooth-tag요소에 active클래스 부여하는 이벤트
+    // 230727 클릭 시 스크롤 위치 이동 이벤트 추가
+    const mpMyboothTag = document.querySelectorAll('.mp--mybooth-tag')
+    const mpMyboothTagMob = document.querySelectorAll('.mp--mybooth-mob-nav-item')
+    mpMyboothTag.forEach(function(el,idx){
+        el.addEventListener('click',function(){
+            for(let item of mpMyboothTagMob){
+                item.classList.remove('active')
+            }
+            for(let item of mpMyboothTag){
+                item.classList.remove('active')
+            }
+            mpMyboothTagMob[idx].classList.add('active')
+            el.classList.add('active')
+            // mp--mybooth-mob요소위치로 body 스크롤 이동
+            const mpMyboothMob = document.querySelector('.mp--mybooth-mob')
+            const mpMyboothMobTop = mpMyboothMob.getBoundingClientRect().top
+            const mpMyboothMobTopY = mpMyboothMobTop + window.pageYOffset - 100
+            window.scrollTo({top:mpMyboothMobTopY,behavior:'smooth'})
+        })
+    })
+    mpMyboothTagMob.forEach(function(el,idx){
+        el.addEventListener('click',function(){
+            for(let item of mpMyboothTagMob){
+                item.classList.remove('active')
+            }
+            for(let item of mpMyboothTag){
+                item.classList.remove('active')
+            }
+            mpMyboothTag[idx].classList.add('active')
+            el.classList.add('active')
+        })
+    })
+
+        
+    </script>
+    <script>// 마이페이지용 aside 스위치 이벤트
+        var winY = window.scrollY
+        var savedWinY = winY
+        window.addEventListener('resize',e => {
+            winY = window.scrollY
+        })
+        window.addEventListener('scroll',e => {
+            winY = window.scrollY
+        })
+        function bodyScrollStop(){
+            savedWinY = winY
+            document.body.style.position = 'fixed';
+            document.body.style.top = `-${winY}px`;
+        }
+        function bodyScrollGo(){
+            document.body.style.position = 'relative';
+            document.body.style.top = '';
+            window.scrollTo(savedWinY,savedWinY)
+        }
+        document.querySelector('.header--mp-asideSwitch').addEventListener('click',function(){
+            if(document.querySelector('.header--mp-asideSwitch').classList.contains('open')){
+                document.querySelector('.header--mp-asideSwitch').classList.remove('open')
+                document.querySelector('.mp--aside').classList.remove('show')
+                bodyScrollGo()
+            }else{
+                document.querySelector('.header--mp-asideSwitch').classList.add('open')
+                document.querySelector('.mp--aside').classList.add('show')
+                bodyScrollStop()
+            
+            }
+        })
+        document.querySelector('.mp--aside-dim').addEventListener('click',function(){
+            document.querySelector('.header--mp-asideSwitch').classList.remove('open')
+            document.querySelector('.mp--aside').classList.remove('show')
+            bodyScrollGo()
+        })
+</script>
+
+</body>
+</html>

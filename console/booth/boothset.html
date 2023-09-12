@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Hauterium</title>
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+    
+
+<!-- cs_header -->
+<div id="cs_header" class="hd_wrap">
+    <div class="hd_left">
+        <div class="hd_logo">
+            <a href="#">
+                <div class="l_img"><embed src="img/admin_logo.svg" type="image/svg+xml" aria-label="Hauterium Logo"></div>
+                <div class="l_txt">Host-Center</div>
+            </a>
+        </div>
+        <ul class="hd_menu">
+            <li><a href="#">내행사</a></li>
+            <li><a href="#">채널관리</a></li>
+            <li class="on"><a href="/console/booth/boothset.html">부스관리</a></li>
+            <li><a href="#">CRM</a></li><!-- 슬래쉬, 에코마이스만 출력 -->
+            <li><a href="#">스페이스관리</a></li><!-- 슬래쉬만 출력-->
+            <li><a href="#" class="link_st01 bg-gra01">행사개최</a></li>
+        </ul>
+    </div>
+
+    <div class="hd_right">
+        
+        <div class="hd_lang hd_toggle_parents">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 1.5C9.9233 1.5 7.89323 2.11581 6.16652 3.26957C4.4398 4.42332 3.09399 6.0632 2.29927 7.98182C1.50455 9.90045 1.29661 12.0116 1.70176 14.0484C2.1069 16.0852 3.10693 17.9562 4.57538 19.4246C6.04383 20.8931 7.91476 21.8931 9.95156 22.2982C11.9884 22.7034 14.0996 22.4955 16.0182 21.7007C17.9368 20.906 19.5767 19.5602 20.7304 17.8335C21.8842 16.1068 22.5 14.0767 22.5 12C22.5 9.21523 21.3938 6.54451 19.4246 4.57538C17.4555 2.60625 14.7848 1.5 12 1.5ZM21 11.25H16.5C16.4125 8.48781 15.6969 5.78186 14.4075 3.3375C16.1839 3.82342 17.7685 4.84263 18.9474 6.25757C20.1263 7.6725 20.8427 9.41504 21 11.25ZM12 21C11.8327 21.0112 11.6648 21.0112 11.4975 21C9.94372 18.5221 9.08139 15.6736 9 12.75H15C14.9254 15.6715 14.0709 18.5199 12.525 21C12.3502 21.0123 12.1748 21.0123 12 21ZM9 11.25C9.07462 8.32851 9.92914 5.48012 11.475 3C11.809 2.96247 12.1461 2.96247 12.48 3C14.0417 5.4756 14.9119 8.3243 15 11.25H9ZM9.57001 3.3375C8.28848 5.78373 7.5806 8.48959 7.5 11.25H3C3.15728 9.41504 3.87371 7.6725 5.0526 6.25757C6.23149 4.84263 7.81608 3.82342 9.5925 3.3375H9.57001ZM3.0375 12.75H7.53751C7.61577 15.5098 8.32108 18.2156 9.60001 20.6625C7.82915 20.1714 6.25109 19.1499 5.07792 17.7354C3.90475 16.3209 3.19271 14.5811 3.0375 12.75ZM14.4075 20.6625C15.6969 18.2181 16.4125 15.5122 16.5 12.75H21C20.8427 14.585 20.1263 16.3275 18.9474 17.7424C17.7685 19.1574 16.1839 20.1766 14.4075 20.6625Z" fill="white"/>
+            </svg>
+            
+            <div class="hd_toggle hd_toggle_lang">
+                <div class="btn">한국어</div>
+                <div class="btn">English</div>
+            </div>
+        </div>
+
+        <div class="hd_user hd_toggle_parents">
+            <div class="u_img">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6C11.2583 6 10.5333 6.21993 9.91662 6.63199C9.29993 7.04404 8.81928 7.62971 8.53546 8.31494C8.25163 9.00016 8.17736 9.75416 8.32206 10.4816C8.46675 11.209 8.82391 11.8772 9.34835 12.4017C9.8728 12.9261 10.541 13.2833 11.2684 13.4279C11.9958 13.5726 12.7498 13.4984 13.4351 13.2145C14.1203 12.9307 14.706 12.4501 15.118 11.8334C15.5301 11.2167 15.75 10.4917 15.75 9.75C15.75 8.75544 15.3549 7.80161 14.6517 7.09835C13.9484 6.39509 12.9946 6 12 6ZM12 12C11.555 12 11.12 11.868 10.75 11.6208C10.38 11.3736 10.0916 11.0222 9.92128 10.611C9.75098 10.1999 9.70642 9.7475 9.79324 9.31105C9.88005 8.87459 10.0943 8.47368 10.409 8.15901C10.7237 7.84434 11.1246 7.63005 11.5611 7.54323C11.9975 7.45642 12.4499 7.50097 12.861 7.67127C13.2722 7.84157 13.6236 8.12996 13.8708 8.49997C14.118 8.86998 14.25 9.30499 14.25 9.75C14.2493 10.3465 14.0121 10.9184 13.5903 11.3402C13.1684 11.7621 12.5965 11.9993 12 12Z" fill="white"/>
+                    <path d="M12 1.5C9.9233 1.5 7.89323 2.11581 6.16652 3.26957C4.4398 4.42332 3.09399 6.0632 2.29927 7.98182C1.50455 9.90045 1.29661 12.0116 1.70176 14.0484C2.1069 16.0852 3.10693 17.9562 4.57538 19.4246C6.04383 20.8931 7.91476 21.8931 9.95156 22.2982C11.9884 22.7034 14.0996 22.4955 16.0182 21.7007C17.9368 20.906 19.5767 19.5602 20.7304 17.8335C21.8842 16.1068 22.5 14.0767 22.5 12C22.4969 9.21619 21.3896 6.5473 19.4212 4.57884C17.4527 2.61039 14.7838 1.50314 12 1.5ZM7.5 19.7824V18.75C7.50066 18.1535 7.73792 17.5815 8.15974 17.1597C8.58155 16.7379 9.15347 16.5007 9.75 16.5H14.25C14.8465 16.5007 15.4185 16.7379 15.8403 17.1597C16.2621 17.5815 16.4993 18.1535 16.5 18.75V19.7824C15.1344 20.5798 13.5814 21 12 21C10.4186 21 8.86563 20.5798 7.5 19.7824ZM17.9944 18.6944C17.9795 17.7105 17.5786 16.772 16.8782 16.0809C16.1778 15.3899 15.2339 15.0017 14.25 15H9.75C8.76608 15.0017 7.8222 15.3899 7.1218 16.0809C6.42139 16.772 6.02054 17.7105 6.00563 18.6944C4.64555 17.4799 3.68643 15.881 3.25526 14.1093C2.82408 12.3377 2.9412 10.4769 3.59111 8.77324C4.24101 7.06963 5.39304 5.6036 6.89466 4.56927C8.39627 3.53495 10.1766 2.98112 12 2.98112C13.8234 2.98112 15.6037 3.53495 17.1054 4.56927C18.607 5.6036 19.759 7.06963 20.4089 8.77324C21.0588 10.4769 21.1759 12.3377 20.7448 14.1093C20.3136 15.881 19.3545 17.4799 17.9944 18.6944Z" fill="white"/>
+                </svg>                        
+            </div>
+            <div class="u_name">사용자이름</div>
+            <div class="u_arr">
+                <div class="">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8 10.9969L3 5.99687L3.7 5.29688L8 9.59688L12.3 5.29688L13 5.99687L8 10.9969Z" fill="white"/>
+                    </svg>                        
+                </div>    
+            </div>
+
+            <div class="hd_toggle hd_toggle_user">
+                <div class="btn_tuser">
+                    <p class="n">Niepce 님</p>
+                    <p class="e">1234@gmail.com</p>
+                </div>
+                <div class="btn"><a href="#" class="link_st04">나의 부스 관리하기</a></div>
+                <div class="btn">마이페이지</div>
+                <div class="btn">로그아웃</div>
+            </div>
+        </div>
+
+        <div class="hd_home">
+            <a href="javascript:void(0);" class="link_st02 bg-b10">
+                <div class="img">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.30615 1.10687C8.2174 1.03762 8.10805 1 7.99547 1C7.8829 1 7.77355 1.03762 7.6848 1.10687L0.5 6.70967L1.12135 7.49552L2 6.81042V13C2.00054 13.265 2.10607 13.5191 2.29349 13.7065C2.48091 13.8939 2.73495 13.9994 3 14H13C13.2651 13.9995 13.5191 13.894 13.7066 13.7065C13.894 13.5191 13.9995 13.265 14 13V6.81497L14.8786 7.49997L15.5 6.71407L8.30615 1.10687ZM9 13H7V8.99997H9V13ZM10 13V8.99997C9.9997 8.73485 9.89424 8.48067 9.70677 8.2932C9.5193 8.10573 9.26512 8.00028 9 7.99997H7C6.73486 8.00024 6.48066 8.10568 6.29319 8.29316C6.10571 8.48064 6.00026 8.73484 6 8.99997V13H3V6.03072L8 2.13572L13 6.03597V13H10Z" fill="#21272A"/>
+                    </svg>                        
+                </div>
+                <div class="t">오뜨리움 홈</div>
+            </a>
+        </div>
+        <div class="hd_ham"><span></span><span></span><span></span><span></span></div>
+
+    </div>
+</div>
+<!-- End cs_header -->
+
+<!-- Header Sub Menu-->
+<div id="cs_headerSub" class="hd_sub_wrap">
+    <div class="hd_sub_inner w_inner">
+        <div class="hd_sub_left">
+            <ul class="hd_sub_smenu">
+                <li class="on"><a href="/console/booth/boothset.html">기업정보</a></li>
+                <li class=""><a href="/console/booth/boothlist.html">참여 부스 리스트</a></li>
+            </ul>
+        </div>
+        <!-- <div class="hd_sub_right"></div> -->
+    </div>
+</div>
+<!-- End Header Sub Menu-->
+
+<!-- main -->
+<div id="cs_main" class="booth_main_wrap">
+
+    <!-- section -->
+        <div id="cs_section" class="cs_wide_section_wrap ">
+            
+            <div id="cs_article_wrap" class=" sec_article_wrap">
+                <div class="w_inner">
+
+                    <!-- #01 -->
+                    <div id="article_boothSetting" class="cs_article">
+
+                        <div class="cs_article_header">
+                            <div class="art_hd_inner">
+                                <div class="art_hd_tit">
+                                    <div class="tit">기업정보 관리</div>
+                                </div>
+                                <div class="art_hd_con">
+                                    <div class="con">기본 기업 정보를 설정해주세요.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+
+                        <div class="cs_article_contents">
+                            <div class="cs_article_title">
+                                <div class="cs_article_title_left">
+                                    <div class="tit">기업 기본정보</div>
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>회사명(국문)</p><p class="cred">*</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <input type="text" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="회사명(국문)" aria-required="true" />
+                                        </div>
+                                        <div>
+                                            <input type="text" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="회사명(영문)" aria-required="true" />
+                                        </div>
+                                        <div class="form_content_alert">
+                                            <p>사업자등록증의 회사명과 동일해야합니다.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>회사 간략소개</p><p class="cred">*</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <input type="text" required name="" id="" class="form-control col-11" aria-value="" value="" placeholder="국문 회사소개 (90자)" aria-required="true" />
+                                        </div>
+                                        <div>
+                                            <input type="text" required name="" id="" class="form-control col-11" aria-value="" value="" placeholder="영문 회사소개 (90자)" aria-required="true" />
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+                            
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>로고</p><p class="cred">*</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div class="form_fileUpload_st02">
+                                            <label for="file_logo" class="form-control col-11">
+                                                <span class="file_name">파일을 업로드해주세요.</span>
+                                                <!-- <span class="file_name on">파일명.png</span> // 파일명 업로드시 on 클래스 추가 - 파일명 출력 -->
+                                                <span class="file_btn">Upload</span>
+                                            </label>
+                                            <input type="file" name="file_logo" id="file_logo" class="" />
+                                        </div>
+                                        <div class="form_content_alert right">
+                                            <p>5mb 이하의 jpg, png만 가능합니다.</p>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>대표자</p><p class="cred">*</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <input type="text" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="대표자명(국문)" aria-required="true" />
+                                        </div>
+                                        <div>
+                                            <input type="text" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="대표자명(영문)" aria-required="true" />
+                                        </div>
+                                        <div class="form_content_alert">
+                                            <p>사업자등록증의 대표자명과 동일해야합니다.</p>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>사업자등록번호</p><p class="cred">*</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <input type="text" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="사업자등록번호" aria-required="true" />
+                                        </div>
+                                        <div class="form_content_alert">
+                                            <p>사업자등록증의 등록번호와 동일해야합니다.</p>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="cs_article_title">
+                                <div class="cs_article_title_left">
+                                    <div class="tit">기업 상세정보</div>
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>설립년도</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <select name="" class="form-control col-4">
+                                                <option>2023</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>주소</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="회사소재지(국문)"  />
+                                        </div>
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="회사소재지(영문)"  />
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>대표번호</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="">
+                                        <div>
+                                            <select name="" class="form-control col-4">
+                                                <option>대한민국 +82</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-1" aria-value="" value="" placeholder=""  />
+                                        </div>
+                                    </li>
+                                    <li>-</li>
+                                    <li>
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-1" aria-value="" value="" placeholder=""  />
+                                        </div>
+                                    </li>
+                                    <li>-</li>
+                                    <li>
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-1" aria-value="" value="" placeholder=""  />
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>팩스번호</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="">
+                                        <div>
+                                            <select name="" class="form-control col-4">
+                                                <option>대한민국 +82</option>
+                                            </select>
+                                        </div>
+                                    </li>
+                                    <li class="">
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-1" aria-value="" value="" placeholder=""  />
+                                        </div>
+                                    </li>
+                                    <li>-</li>
+                                    <li>
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-1" aria-value="" value="" placeholder=""  />
+                                        </div>
+                                    </li>
+                                    <li>-</li>
+                                    <li>
+                                        <div>
+                                            <input type="text"  name="" id="" class="form-control col-1" aria-value="" value="" placeholder=""  />
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>대표 이메일</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <input type="text" required="" name="" id="" class="form-control col-4" aria-value="" value="" placeholder="대표 이메일" aria-required="true">
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>연동 url</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <!-- <div>
+                                            <select name="" class="form-control col-11">
+                                                <option>선택</option>
+                                                <option>홈페이지</option>
+                                                <option>블로그</option>
+                                                <option>페이스북</option>
+                                                <option>인스타그램</option>
+                                                <option>유튜브</option>
+                                                <option>카카오</option>
+                                            </select>
+                                        </div> -->
+                                        <!-- 셀렉트 박스 선택시 해당 input 출력 (230802 삭제)-->
+                                        <div class="form_con_row">
+                                            <div class="form-con-f tit">홈페이지</div>
+                                            <div class="form-con-f btn cloase">삭제</div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="http://"  />
+                                        </div>
+                                        <div class="form_con_row">
+                                            <div class="form-con-f tit">블로그</div>
+                                            <div class="form-con-f btn cloase">삭제</div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="http://"  />
+                                        </div>
+                                        <div class="form_con_row">
+                                            <div class="form-con-f tit">페이스북</div>
+                                            <div class="form-con-f btn cloase">삭제</div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="http://"  />
+                                        </div>
+                                        <div class="form_con_row">
+                                            <div class="form-con-f tit">인스타그램</div>
+                                            <div class="form-con-f btn cloase">삭제</div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="http://"  />
+                                        </div>
+                                        <div class="form_con_row">
+                                            <div class="form-con-f tit">유튜브</div>
+                                            <div class="form-con-f btn cloase">삭제</div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="http://"  />
+                                        </div>
+                                        <div class="form_con_row">
+                                            <div class="form-con-f tit">카카오</div>
+                                            <div class="form-con-f btn cloase">삭제</div>
+                                            <input type="text"  name="" id="" class="form-control col-11" aria-value="" value="" placeholder="http://"  />
+                                        </div>
+                                        
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>회사 상세 소개</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div>
+                                            <textarea name="" id="" class="form-control col-11 row-5" placeholder="회사소개를 기입해주세요.(국문)"></textarea>
+                                        </div>
+                                        <div>
+                                            <textarea name="" id="" class="form-control col-11 row-5" placeholder="회사소개를 기입해주세요.(영문)"></textarea>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>회사소개 이미지</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div class="form_fileUpload_st01">
+                                            <!-- 파일등록 -->
+                                            <div class="fileUpload-group">
+                                                <div class="fileRegiBtn">
+                                                    <label for="myFileUp" class="fileUpload_box">
+                                                        <div class="img"><embed src="img/icon_add.svg" type="image/svg+xml" aria-label="Add File"></div>
+                                                        <div class="tit">파일 추가하기</div>
+                                                        <div class="con">5mb이하의 jpg, png만 가능(최대 3장)</div>
+                                                    </label>
+                                                    <input type="file" id="myFileUp">
+                                                </div>
+                                            </div>
+
+                                            <!-- 썸네일 -->
+                                            <div class="fileUpload-group">
+                                                <div class="selectCover fileUpload_box">
+                                                    <button type="" class="file_delete">
+                                                        <svg width="14" height="12" viewBox="0 0 14 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <mask id="mask0_522_9298" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="14" height="12">
+                                                            <rect x="1" width="12.0333" height="11.9666" transform="rotate(0.159129 1 0)" fill="#D9D9D9"/>
+                                                            </mask>
+                                                            <g mask="url(#mask0_522_9298)">
+                                                            <path d="M6.9966 6.9793L8.90468 8.89803C9.03451 9.02858 9.1972 9.09346 9.39274 9.09268C9.58826 9.09189 9.75131 9.02659 9.88187 8.89676C10.0124 8.76692 10.078 8.60424 10.0785 8.4087C10.079 8.21318 10.0144 8.05014 9.88458 7.91958L7.97647 6.00486L9.8952 4.09678C10.0257 3.96694 10.0913 3.80425 10.0918 3.60872C10.0924 3.4132 10.0277 3.25016 9.89791 3.1196C9.76807 2.98905 9.60539 2.9235 9.40987 2.92296C9.21434 2.92242 9.05129 2.98706 8.92073 3.11688L7.00203 5.02498L5.09395 3.10626C4.96411 2.97571 4.80209 2.91016 4.60789 2.90962C4.41369 2.90908 4.25131 2.97373 4.12075 3.10355C3.9902 3.23339 3.92465 3.39607 3.92411 3.59159C3.92357 3.78712 3.98821 3.95017 4.11804 4.08073L6.02215 5.99943L4.10343 7.90751C3.97288 8.03734 3.90799 8.19936 3.90878 8.39357C3.90957 8.58777 3.97488 8.75015 4.10471 8.88071C4.23454 9.01126 4.39723 9.07681 4.59276 9.07735C4.78828 9.0779 4.95132 9.01325 5.08189 8.88343L6.9966 6.9793ZM2.36346 12.1248C1.94365 12.1236 1.58633 11.9748 1.29149 11.6783C0.996659 11.3819 0.849825 11.0237 0.850991 10.6039L0.876647 1.36629C0.877813 0.946477 1.02663 0.589156 1.32311 0.294323C1.61958 -0.000510478 1.97773 -0.147344 2.39754 -0.146178L11.6352 -0.120522C12.055 -0.119356 12.4123 0.0294645 12.7071 0.32594C13.002 0.622416 13.1488 0.980557 13.1476 1.40037L13.122 10.638C13.1208 11.0578 12.972 11.4151 12.6755 11.71C12.379 12.0048 12.0209 12.1516 11.6011 12.1505L2.36346 12.1248Z" fill="#FA4D56"/>
+                                                            </g>
+                                                            </svg>
+                                                    </button>
+                                                    <div class="file_thumb" id="cover"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="cs_article_title">
+                                <div class="cs_article_title_left">
+                                    <div class="tit">입금/정산 관련 서류 (필요시)</div>
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>사업자등록증</p><p class="cred">*</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div class="form_fileUpload_st02">
+                                            <label for="file_logo" class="form-control col-11">
+                                                <span class="file_name">파일을 업로드해주세요.</span>
+                                                <!-- <span class="file_name on">파일명.png</span> // 파일명 업로드시 on 클래스 추가 - 파일명 출력 -->
+                                                <span class="file_btn">Upload</span>
+                                            </label>
+                                            <input type="file" name="file_logo" id="file_logo" class="">
+                                        </div>
+                                        <div class="form_content_alert">
+                                            <p>사업자등록증 사본을 업로드해주세요. (jpg, png, pdf / 5mb이하)</p>
+                                        </div>
+                                    </li>
+                                    
+                                </ul>
+                            </div>
+
+                            <div class="form_group">
+                                <div class="form_label">
+                                    <label class="form_lable" for="">
+                                        <div class="t"><p>통장사본</p><p class="cred">*</p></div>
+                                    </label>
+                                </div>
+                                <ul class="form_content">
+                                    <li class="form_content_rows">
+                                        <div class="form_fileUpload_st02">
+                                            <label for="file_logo" class="form-control col-11">
+                                                <span class="file_name">파일을 업로드해주세요.</span>
+                                                <!-- <span class="file_name on">파일명.png</span> // 파일명 업로드시 on 클래스 추가 - 파일명 출력 -->
+                                                <span class="file_btn">Upload</span>
+                                            </label>
+                                            <input type="file" name="file_logo" id="file_logo" class="">
+                                        </div>
+                                        <div class="form_content_alert">
+                                            <p>은행계좌 소유 확인을 위하여, 통장 사본을 업로드해주세요.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="art_result_btns">
+                        <a href="javascript:void(0);" class="download_st01">
+                            <div class="img"><embed src="img/icon_reset.svg" type="image/svg+xml" aria-label="file Download"></div>
+                            <div class="txt">초기화</div>
+                        </a>
+                        <a href="javascript:void(0);" class="upload_st01">
+                            <div class="txt">저장하기</div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    <!-- End section -->
+</div>
+<!-- End main -->
+<!-- mobGnb -->
+<!-- SJM 230801 요소 추가 mobGnb -->
+<div class="mobGnb">
+    <div class="mobGnb--cont">
+        <div class="mobGnb--wrap">
+            <div class="mobGnb--row">
+                <div class="mobGnb--top">
+                    <p class="mobGnb--logo">Niepce</p>
+                    <div class="mobGnb--close"><span></span><span></span></div>
+                </div>
+                <div class="mobGnb--home">
+                    <a href="javascript:void(0);" class="link_st02 bg-b10">
+                        <div class="img">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.30615 1.10687C8.2174 1.03762 8.10805 1 7.99547 1C7.8829 1 7.77355 1.03762 7.6848 1.10687L0.5 6.70967L1.12135 7.49552L2 6.81042V13C2.00054 13.265 2.10607 13.5191 2.29349 13.7065C2.48091 13.8939 2.73495 13.9994 3 14H13C13.2651 13.9995 13.5191 13.894 13.7066 13.7065C13.894 13.5191 13.9995 13.265 14 13V6.81497L14.8786 7.49997L15.5 6.71407L8.30615 1.10687ZM9 13H7V8.99997H9V13ZM10 13V8.99997C9.9997 8.73485 9.89424 8.48067 9.70677 8.2932C9.5193 8.10573 9.26512 8.00028 9 7.99997H7C6.73486 8.00024 6.48066 8.10568 6.29319 8.29316C6.10571 8.48064 6.00026 8.73484 6 8.99997V13H3V6.03072L8 2.13572L13 6.03597V13H10Z" fill="#21272A"/>
+                            </svg>                        
+                        </div>
+                        <div class="t">오뜨리움 홈</div>
+                    </a>
+                </div>
+                <div class="mobGnb--menu">
+                    <div class="mobGnb--menu-lv1"><a href="">내 행사</a></div>
+                    <div class="mobGnb--menu-lv1"><a href="">채널관리</a></div>
+                    <div class="mobGnb--menu-slide open">
+                        <div class="mobGnb--menu-lv1 on"><a href="">부스관리</a><div class="arrow"></div></div>
+                        <div class="mobGnb--menu-lv2">
+                            <div><a href="">기업 정보</a></div>
+                            <div class="on"><a href="">기업 참여 부스 리스트</a></div>
+                        </div>
+                    </div>
+                    <div class="mobGnb--menu-lv1"><a href="">CRM</a></div>
+                    <div class="mobGnb--menu-lv1"><a href="">스페이스관리</a></div>
+                    <div class="mobGnb--menu-btn"><a href="">행사개최</a></div>
+                </div>
+            </div>
+            <div class="mobGnb--logout"><a href="">로그아웃</a></div>
+        </div>
+    </div>
+</div>
+<!-- End mobGnb -->
+
+
+
+<!-- footer -->
+    <div id="footer" class="ft_wrap">
+        <div class="ft_copy">© hauterium</div>
+    </div>
+<!-- End footer -->
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+                $('#cover').css('background-image', 'url('+e.target.result+')');  
+                $('#fileName').val(input.files[0].name);  
+            }
+        reader.readAsDataURL(input.files[0]);
+        }
+    }
+    $("#myFileUp").change(function(){
+        readURL(this);
+    });
+</script>
+
+<script>
+    const hd_toggle_parents = document.querySelectorAll('.hd_toggle_parents')
+    hd_toggle_parents.forEach(function(el,idx){
+        el.addEventListener('click',function(){
+            if(el.classList.contains('active')){
+                el.classList.remove('active');
+            } else {
+                for(let item of hd_toggle_parents){
+                    item.classList.remove('active')
+                }
+                el.classList.add('active');
+            }
+        })
+    })
+</script>
+<script>
+    var winY = window.scrollY
+    var savedWinY = winY
+    window.addEventListener('resize',e => {
+        winY = window.scrollY
+    })
+    window.addEventListener('scroll',e => {
+        winY = window.scrollY
+    })
+    function bodyScrollStop(){
+        savedWinY = winY
+        document.body.style.position = 'fixed';
+        document.body.style.top = `-${winY}px`;
+    }
+    function bodyScrollGo(){
+        document.body.style.position = 'relative';
+        document.body.style.top = '';
+        window.scrollTo(savedWinY,savedWinY)
+    }
+    const mobGnbClose = document.querySelector('.mobGnb--close')
+    mobGnbClose.addEventListener('click',function(){
+        bodyScrollGo()
+        document.querySelector('.mobGnb').classList.remove('show')
+    })
+    const hd_ham = document.querySelector('.hd_ham')
+    hd_ham.addEventListener('click',function(){
+        bodyScrollStop()
+        document.querySelector('.mobGnb').classList.add('show')
+    })
+</script>
+
+
+</body>
+</html>

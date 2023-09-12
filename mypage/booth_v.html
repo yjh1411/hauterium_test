@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/mypage/css/basic_font.css">
+    <link rel="stylesheet" href="/mypage/css/basic_public.css">
+    
+    <link rel="stylesheet" href="/mypage/css/swiper.css">
+    <link rel="stylesheet" href="/mypage/css/layout.css">
+    <link rel="stylesheet" href="/mypage/css/booth_v.css">
+    <script src="/mypage/js/jquery.js"></script>
+    <script src="/mypage/js/jqueryui.js"></script>
+    <script src="/mypage/js/jqueryui-touchpunch.js"></script>
+    <script src="/mypage/js/swiper.js"></script>
+</head>
+<body>
+    <div class="header">
+        <div class="public--wrap">
+            <div class="header--wrap">
+                <div class="header--l">
+                    <!-- .header--mp-asideSwitch 요소는 마이페이지 에서만 출력됩니다. -->
+                    <div class="header--mp-asideSwitch"><span></span><span></span><span></span><span></span></div>
+                    <div class="header--logo"><a href=""><img src="/mypage/img/logo_hauterium_head.png" alt=""></a></div>
+                </div>
+                <div class="header--r">
+                    <div class="header--member">
+                        <img src="/mypage/img/icon_member_header.png" alt="">
+                        <div class="header--member-btn">
+                            <p>Niepce</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="public--innerWrap">
+        <div class="public--wrap">
+            <div class="boothV">
+                <div class="boothV--body">
+                    <div class="boothV--bodyTop">
+                        <div class="swiper boothVTopSwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><div class="boothVTopSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div></div>
+                                <div class="swiper-slide"><div class="boothVTopSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div></div>
+                                <div class="swiper-slide"><div class="boothVTopSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div></div>
+                                <div class="swiper-slide"><div class="boothVTopSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div></div>
+                            </div>
+                        </div>
+                        <div class="boothVTopSwiper-pagination"></div>
+                        <div class="boothVTopSwiper-nav">
+                            <!-- 230727 swiper nav버튼 안의 이미지 src 변경 -->
+                            <div class="boothV--nav-prev boothVTopSwiper-nav-prev"><img src="/mypage/img/icon/Chevron--left-g3-black.svg" alt=""></div>
+                            <div class="boothV--nav-next boothVTopSwiper-nav-next"><img src="/mypage/img/icon/Chevron--right-g3-black.svg" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="boothV--aside-box mob">
+                        <div class="boothV--aside-row1">
+                            <div class="boothV--aside-logo"><img src="/mypage/img/test_logo.png" alt=""></div>
+                            <div class="boothV--aside-flag"><p>Seller</p></div>
+                        </div>
+                        <div class="boothV--aside-row2">
+                            <div class="boothV--aside-company">
+                                <div class="boothV--aside-company01">기업정보</div>
+                                <div class="boothV--aside-company02"><p>니에프스</p><div class="link"><img src="/mypage/img/icon/Link.svg" alt=""></div></div>
+                                <div class="boothV--aside-company03">Construction & Equipment</div>
+                            </div>
+                            <div class="boothV--aside-btn">
+                                <!-- 요소 속성을 a에서 div로 변경해도 좋습니다 -->
+                                <a class="boothV--aside-btn-item" href=""><img src="/mypage/img/icon/Chat-g3_purple.svg" alt=""></a>
+                                <a class="boothV--aside-btn-item" href=""><img src="/mypage/img/icon/Share_purple.svg" alt=""></a>
+                                <a class="boothV--aside-btn-item" href=""><img src="/mypage/img/icon/Favorite_purple.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="boothV--aside-info">
+                            <div class="boothV--aside-info-row"><img src="/mypage/img/icon/Home-g3_gray50.svg" alt=""><p>#1206, 97, Baekhyeon-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea 13595</p></div>
+                            <div class="boothV--aside-info-row"><img src="/mypage/img/icon/Phone-g3_gray50.svg" alt=""><p>12345678</p></div>
+                            <div class="boothV--aside-info-row"><img src="/mypage/img/icon/Email-g3_gray50.svg" alt=""><p>test@test.com</p></div>
+                        </div>
+                        <div class="boothV--aside-sellerMode">
+                            <a class="boothV--aside-sellerMode-btn" href="/mypage/mypage.html">
+                                <img src="/mypage/img/icon/Edit_purple.svg" alt="">
+                                <p>Edit on <b>Mypage</b></p>
+                            </a>
+                        </div>
+                    </div>
+                    <script>// boothV--bodyTop swiper
+                        const boothVTopSwiper = new Swiper('.boothVTopSwiper', {
+                            slidesPerView: 1,
+                            spaceBetween: 0,
+                            loop: true,
+                            pagination: {
+                                el: '.boothVTopSwiper-pagination',
+                                clickable: true,
+                            },
+                            navigation: {
+                                nextEl: '.boothVTopSwiper-nav-next',
+                                prevEl: '.boothVTopSwiper-nav-prev',
+                            },
+                        });
+                    </script>
+                    <div class="boothV--tit">니에프스</div>
+                    <div class="boothV--bodyWrap">
+                        <div class="boothV--body-fig boothV--aboutCompany">
+                            <div class="boothV--subTit"><p>about Company</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--aboutCompany-desc">
+                                -Neowine Co., Ltd. is a Fabless company that designs and sells security semiconductors
+                                -Founded in 2002, it has been developing security semiconductor ASIC for 18 years
+                                - Develops anti-replication semiconductors, data security/authentication semiconductors and security solutions and supplies them to the market
+                                Currently sell products through 16 distributors in China, Taiwan and Japan, and 6 in Korea.
+                                -Neowine Co., Ltd. is a Fabless company that designs and sells security semiconductors
+                                -Founded in 2002, it has been developing security semiconductor ASIC for 18 years
+                                - Develops anti-replication semiconductors, data security/authentication semiconductors and security solutions and supplies them to the market
+                                Currently sell products through 16 distributors in China, Taiwan and Japan, and 6 in Korea.
+                                -Neowine Co., Ltd. is a Fabless company that designs and sells security semiconductors
+                                -Founded in 2002, it has been developing security semiconductor ASIC for 18 years
+                                - Develops anti-replication semiconductors, data security/authentication semiconductors and security solutions and supplies them to the market
+                                Currently sell products through 16 distributors in China, Taiwan and Japan, and 6 in Korea.
+                            </div>
+                            <div class="boothV--aboutCompany-more">
+                                <div class="boothV--aboutCompany-more-btn"><img src="/mypage/img/icon/arrow-down-s-line.svg" alt=""><p>more view</p></div>
+                            </div>
+                        </div>
+                        <script>//더 보기 버튼
+                            const boothVAboutCompanyMoreBtn = document.querySelector('.boothV--aboutCompany-more-btn');
+                            const boothVAboutCompany = document.querySelector('.boothV--aboutCompany');
+                            boothVAboutCompanyMoreBtn.addEventListener('click', function(){
+                                boothVAboutCompany.classList.toggle('open');
+                            });
+                        </script>
+                        <div class="boothV--body-fig boothV--gallery">
+                            <div class="boothV--subTit"><p>Gallery</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--gallery-wrap">
+                                <div class="boothV--gallery-item"><img src="/mypage/img/test_booth.png" alt=""></div>
+                                <div class="boothV--gallery-item"><img src="/mypage/img/test_booth2.png" alt=""></div>
+                                <div class="boothV--gallery-item"><img src="/mypage/img/logo_hautrium_app.png" alt=""></div>
+                                <div class="boothV--gallery-item"><img src="/mypage/img/test_booth3.png" alt=""></div>
+                            </div>
+                        </div>
+                        <div class="boothV--body-fig boothV--movie">
+                            <div class="boothV--subTit"><p>Movie</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="booth--movie-wrap">
+                                <iframe src="https://www.youtube.com/embed/MYPVQccHhAQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </div>
+                        </div>
+                        <div class="boothV--body-fig boothV--product">
+                            <div class="boothV--subTit"><p>Product</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--body-figWrap">
+                                <div class="swiper boothVProdSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="boothVProdSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVProdSwiper--slide-text">text</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="boothVProdSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVProdSwiper--slide-text">text</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="boothVProdSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVProdSwiper--slide-text">text</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="boothVProdSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVProdSwiper--slide-text">text</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="boothVTopSwiper-nav">
+                                    <div class="boothV--nav-prev boothVProdSwiper-nav-prev"><img src="/mypage/img/icon/Chevron--left-g3-black.svg" alt=""></div>
+                                    <div class="boothV--nav-next boothVProdSwiper-nav-next"><img src="/mypage/img/icon/Chevron--right-g3-black.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>// boothV--gallery swiper
+                            const boothVProdSwiper = new Swiper('.boothVProdSwiper', {
+                                slidesPerView: 2.3,
+                                spaceBetween: 16,
+                                breakpoints: {
+                                    768: {
+                                        slidesPerView: 2.3,
+                                        spaceBetween: 20,
+                                    },
+                                    1024: {
+                                        slidesPerView: 2.3,
+                                        spaceBetween: 30,
+                                    },
+                                    1400: {
+                                        slidesPerView: 3.3,
+                                        spaceBetween: 30,
+                                    },
+                                },
+                                navigation: {
+                                    nextEl: '.boothVProdSwiper-nav-next',
+                                    prevEl: '.boothVProdSwiper-nav-prev',
+                                },
+                            });
+                        </script>
+                        <div class="boothV--body-fig boothV--Ebroshure">
+                            <div class="boothV--subTit"><p>E-broshure</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--body-figWrap">
+                                <div class="swiper boothVEbrosSwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="boothVEbrosSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVEbrosSwiper--slide-text">text</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="boothVEbrosSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVEbrosSwiper--slide-text">text</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="boothVEbrosSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVEbrosSwiper--slide-text">text</div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="boothVEbrosSwiper--slide-img" style="background-image: url('/mypage//img/boothVTop_swiperTest.png');"></div>
+                                            <div class="boothVEbrosSwiper--slide-text">text</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="boothVEbrosSwiper-nav">
+                                    <div class="boothV--nav-prev boothVEbrosSwiper-nav-prev"><img src="/mypage/img/icon/Chevron--left-g3-black.svg" alt=""></div>
+                                    <div class="boothV--nav-next boothVEbrosSwiper-nav-next"><img src="/mypage/img/icon/Chevron--right-g3-black.svg" alt=""></div>
+                                </div>
+                            </div>
+                        </div>
+                        <script>// boothV--e-broshure swiper
+                            const boothVEborsSwiper = new Swiper('.boothVEbrosSwiper', {
+                                slidesPerView: 2.3,
+                                spaceBetween: 16,
+                                breakpoints: {
+                                    768: {
+                                        slidesPerView: 2.3,
+                                        spaceBetween: 20,
+                                    },
+                                    1024: {
+                                        slidesPerView: 2.3,
+                                        spaceBetween: 30,
+                                    },
+                                    1400: {
+                                        slidesPerView: 3.3,
+                                        spaceBetween: 30,
+                                    },
+                                },
+                                navigation: {
+                                    nextEl: '.boothVEbrosSwiper-nav-next',
+                                    prevEl: '.boothVEbrosSwiper-nav-prev',
+                                },
+                            });
+                        </script>
+                        <div class="boothV--body-fig boothV--Notice">
+                            <div class="boothV--subTit"><p>Notice</p><div class="boothV--sub-setting"><a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a><div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div></div></div>
+                            <div class="boothV--noticeWrap">
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                                <div class="boothV--notice-item">
+                                    <div class="boothV--notice-item-row">
+                                        <div class="boothV--notice-item-subject"><p>Setting New Touchstones in VR-based Experiences with its Leading-edge Solution</p></div>
+                                        <div class="boothV--notice-item-date"><p>2023.08.01 12:01:47</p></div>
+                                    </div>
+                                    <div class="boothV--notice-item-w"><p>Big Congrats, ALPHACIRCLE for ranking in 2nd place at 'Metaverse Pitching day' hosted by Podium Star x KOTRA. Coming #2nd place means you're still further ahead than most people</p></div>
+                                </div>
+                            </div>
+                            <div class="boothV--notice-more">
+                                <div class="boothV--notice-more-btn"><img src="/mypage/img/icon/arrow-down-s-line.svg" alt=""><p>more view</p></div>
+                            </div>
+                        </div>
+                        <script>//더 보기 버튼
+                            const boothVNoticeMoreBtn = document.querySelector('.boothV--notice-more-btn');
+                            const boothNotice = document.querySelector('.boothV--Notice');
+                            boothVNoticeMoreBtn.addEventListener('click', function(){
+                                boothNotice.classList.toggle('open');
+                            });
+                        </script>
+                    </div>
+                    <div class="boothV--last">
+                        <div class="boothV--lastWrap">
+                            <div class="boothV--last-row">
+                                <div class="boothV--last-text01">Do you have any questions <br><b>for 기업명?</b></div>
+                                <div class="boothV--last-btnWrap">
+                                    <!-- 230727 chat 아이콘 src 변경 -->
+                                    <a class="boothV--last-btn" href=""><img src="/mypage/img/icon/Chat_purple_24.svg" alt=""><p>Question</p></a>
+                                    <div class="boothV--last-btn" href=""><img src="/mypage/img/icon/Favorite_line.svg" alt=""><p>Follow</p></div>
+                                </div>
+                            </div>
+                            <div class="boothV--last-text02">Apply for 1:1 consultation, or click the Share button to share with your colleagues.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boothV--aside-sticky">
+                    <div class="boothV--aside">
+                        <div class="boothV--aside-box">
+                            <div class="boothV--aside-row1">
+                                <div class="boothV--aside-logo"><img src="/mypage/img/test_logo.png" alt=""></div>
+                                <div class="boothV--aside-flag"><p>Seller</p></div>
+                            </div>
+                            <div class="boothV--aside-row2">
+                                <div class="boothV--aside-company">
+                                    <div class="boothV--aside-company01">기업정보</div>
+                                    <div class="boothV--aside-company02"><p>니에프스</p><div class="link"><img src="/mypage/img/icon/Link.svg" alt=""></div></div>
+                                    <div class="boothV--aside-company03">Construction & Equipment</div>
+                                </div>
+                                <div class="boothV--aside-btn">
+                                    <!-- 요소 속성을 a에서 div로 변경해도 좋습니다 -->
+                                    <a class="boothV--aside-btn-item" href=""><img src="/mypage/img/icon/Chat-g3_purple.svg" alt=""></a>
+                                    <a class="boothV--aside-btn-item" href=""><img src="/mypage/img/icon/Share_purple.svg" alt=""></a>
+                                    <a class="boothV--aside-btn-item" href=""><img src="/mypage/img/icon/Favorite_purple.svg" alt=""></a>
+                                </div>
+                            </div>
+                            <div class="boothV--aside-info">
+                                <div class="boothV--aside-info-row"><img src="/mypage/img/icon/Home-g3_gray50.svg" alt=""><p>#1206, 97, Baekhyeon-ro, Bundang-gu, Seongnam-si, Gyeonggi-do, Republic of Korea 13595</p></div>
+                                <div class="boothV--aside-info-row"><img src="/mypage/img/icon/Phone-g3_gray50.svg" alt=""><p>12345678</p></div>
+                                <div class="boothV--aside-info-row"><img src="/mypage/img/icon/Email-g3_gray50.svg" alt=""><p>test@test.com</p></div>
+                            </div>
+                            <div class="boothV--aside-sellerMode">
+                                <a class="boothV--aside-sellerMode-btn" href="/mypage/mypage.html">
+                                    <img src="/mypage/img/icon/Edit_purple.svg" alt="">
+                                    <p>Edit on <b>Mypage</b></p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="boothV--aside-menu">
+                            <!-- 요소 속성을 a에서 div로 변경해도 좋습니다 -->
+                            <!-- if common user -->
+                            <div class="boothV--aside-menu-ul boothMenuCommon" style="display:none;">
+                                <div class="boothV--aside-menu-liWrap">
+                                    <div class="boothV--aside-menu-li none"><span></span><p>Category</p></div>
+                                    <div class="boothV--aside-menu-li "><span></span><p>about Company</p></div>
+                                    <div class="boothV--aside-menu-li on"><span></span><p>Gallery</p></div>
+                                    <div class="boothV--aside-menu-li "><span></span><p>Movie</p></div>
+                                    <div class="boothV--aside-menu-li "><span></span><p>Product</p></div>
+                                    <div class="boothV--aside-menu-li "><span></span><p>E-broshure</p></div>
+                                    <div class="boothV--aside-menu-li "><span></span><p>Notice</p></div>
+                                </div>
+                            </div>
+    
+                            <!-- if seller user -->
+                            <div class="boothV--aside-menu-ul">
+                                <div class="boothV--aside-menu-li none"><span></span><p>Category</p></div>
+                                <div class="boothV--aside-menu-liWrap boothMenuSeller" id="boothMenuIndex">
+                                    <div class="boothV--aside-menu-li">
+                                        <div class="modify">
+                                            <div class="drag"><img src="/mypage/img/icon/Draggable.svg" alt=""></div>
+                                            <a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a>
+                                        </div>
+                                        <div class="r">
+                                            <p>about Company</p>
+                                            <div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="boothV--aside-menu-li">
+                                        <div class="modify">
+                                            <div class="drag"><img src="/mypage/img/icon/Draggable.svg" alt=""></div>
+                                            <a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a>
+                                        </div>
+                                        <div class="r">
+                                            <p>Gallery</p>
+                                            <div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="boothV--aside-menu-li">
+                                        <div class="modify">
+                                            <div class="drag"><img src="/mypage/img/icon/Draggable.svg" alt=""></div>
+                                            <a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a>
+                                        </div>
+                                        <div class="r">
+                                            <p>Movie</p>
+                                            <div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="boothV--aside-menu-li">
+                                        <div class="modify">
+                                            <div class="drag"><img src="/mypage/img/icon/Draggable.svg" alt=""></div>
+                                            <a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a>
+                                        </div>
+                                        <div class="r">
+                                            <p>Product</p>
+                                            <div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="boothV--aside-menu-li">
+                                        <div class="modify">
+                                            <div class="drag"><img src="/mypage/img/icon/Draggable.svg" alt=""></div>
+                                            <a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a>
+                                        </div>
+                                        <div class="r">
+                                            <p>E-broshure</p>
+                                            <div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                    <div class="boothV--aside-menu-li">
+                                        <div class="modify">
+                                            <div class="drag"><img src="/mypage/img/icon/Draggable.svg" alt=""></div>
+                                            <a href="/mypage/mypage_manage.html" class="edit"><img src="/mypage/img/icon/Edit.svg" alt=""></a>
+                                        </div>
+                                        <div class="r">
+                                            <p>Notice</p>
+                                            <div class="dlt"><img src="/mypage/img/icon/Subtract--alt.svg" alt=""></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <script>
+                                // #boothMenuIndex 안의 boothV--aside-menu-li를 드래그해서 순서 변경하는 펑션
+                                    $( "#boothMenuIndex" ).sortable();
+                                    $( "#boothMenuIndex" ).disableSelection();
+                                    $('.boothV--aside-menu-li').on({
+                                        'touchstart':function(){
+                                            $(this).addClass('active');
+                                        },
+                                        'touchend':function(){
+                                            $(this).removeClass('active');
+                                        }
+                                    })
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

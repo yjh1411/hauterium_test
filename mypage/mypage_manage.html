@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/mypage/css/basic_font.css">
+    <link rel="stylesheet" href="/mypage/css/basic_public.css">
+
+    <link rel="stylesheet" href="/mypage/css/layout.css">
+    <link rel="stylesheet" href="/mypage/css/mypage.css">
+</head>
+<body>
+    <div class="header">
+        <div class="public--wrap">
+            <div class="header--wrap">
+                <div class="header--l">
+                    <!-- .header--mp-asideSwitch 요소는 마이페이지 에서만 출력됩니다. -->
+                    <div class="header--mp-asideSwitch"><span></span><span></span><span></span><span></span></div>
+                    <div class="header--logo"><a href=""><img src="/mypage/img/logo_hauterium_head.png" alt=""></a></div>
+                </div>
+                <div class="header--r">
+                    <div class="header--member">
+                        <img src="/mypage/img/icon_member_header.png" alt="">
+                        <div class="header--member-btn">
+                            <p>Niepce</p>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="public--wrap">
+            <div class="mp">
+                <div class="mp--aside">
+                    <div class="mp--aside-dim"></div>
+                    <div class="mp--asideWrap">
+                        <div class="mp--aside-logo"><img src="/mypage/img/logo_niepce.png" alt=""></div>
+                        <div class="mp--aside-info">
+                                <div class="mp--aside-info-type"><p>Seller</p></div>
+                                <div class="mp--aside-info-name"><p>니에프스</p></div>
+                                <div class="mp--aside-info-etc"><p>Construction & Equipment</p></div>
+                                <a class="mp--aside-info-setting" href="/mypage_manage.html">나의 부스 관리하기</a>
+                        </div>
+                        <div class="mp--aside-menu">
+                                <div class="mp--aside-menuItem"><a href=""><p>기업정보</p></a></div>
+                                <div class="mp--aside-menuItem"><a class="on-visit" href=""><p>부스 기본정보</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><p>1:1 문의 관리</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><p>화상 미팅 관리</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><p>명함교환 바이어</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><p>통계정보</p></a></div>
+                                <span></span>
+                                <div class="mp--aside-menuItem"><a href=""><p>이벤트</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><p>리뷰</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><p>채널</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><p>행사개설하기</p></a></div>
+                                <div class="mp--aside-menuItem"><a href=""><img class="logo" src="/mypage/img/logo_hautrium_app.png" alt=""><p>앱 설치하기</p></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mp--body">
+                    <div class="public--innerWrap">
+                        <div class="mp--top">
+                            <div class="mp--top-text01"><p>나의 부스 관리하기</p>
+                                <img src="/mypage/img/icon/Help--filled-g3.svg" alt="">
+                            </div>
+                            <div class="mp--top-text02"><p>기업에 맞는 정보를 확인하고, 관리해보세요.</p></div>
+                        </div>
+        
+                        <div class="mp--subTit"><p>나의 부스</p></div>
+        
+                        <div class="mp--guideBox">
+                            <div class="mp--guideBox-text01"><p>부스가 출력되지 않으시나요?!</p></div>
+                            <div class="mp--guideBox-text02">
+                                나의 부스 승인 상태를 확인해주세요. <b>기관 승인 완료 후 행사를 관리</b>하실 수 있습니다.
+                            </div>
+                        </div>
+
+                        <!-- 230727 태그 요소 수정 및 추가 -->
+                        <!-- 230728 Product 및 FAQ 콘텐츠 삭제, boothType 두 개 추가 -->
+                        <div class="boothType01">
+                            <div class="mp--mybooth">
+                                <div class="mp--myboothImg"><img src="/mypage/img/test_booth99.png" alt=""></div>
+                                <div class="mp--mybooth-tagWrap">
+                                    <div class="mp--mybooth-tag company active" style="top: 47%;left:33.8%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Building-g3.svg" alt="">
+                                        </div>
+                                        <p>about<br>Company</p>
+                                    </div>
+                                    <!-- <div class="mp--mybooth-tag products" style="top:61%;left:25%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Box-g3.svg" alt="">
+                                        </div>
+                                        <p>Products</p>
+                                    </div> -->
+                                    <div class="mp--mybooth-tag e-broshure" style="top:62%;left:48.5%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Tablet-g3.svg" alt="">
+                                        </div>
+                                        <p>E-broshure</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag movie" style="top:46%;left:54.2%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag gallery" style="top:45%;left:72%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag-onlyText" style="top:23%;left:26%;"><p>LOGO</p></div>
+                                    <!-- <div class="mp--mybooth-tag-onlyText" style="top:63%;left:64%;"><p>FAQ</p></div> -->
+                                </div>
+                            </div>
+                            <div class="mp--mybooth-mob">
+                                <div class="mp--mybooth-mob-nav">
+                                    <div class="mp--mybooth-mob-nav-item company active">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Building-g3.svg" alt="">
+                                        </div>
+                                        <p>about Company</p>
+                                    </div>
+                                    <!-- <div class="mp--mybooth-mob-nav-item products">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Box-g3.svg" alt="">
+                                        </div>
+                                        <p>Products</p>
+                                    </div> -->
+                                    <div class="mp--mybooth-mob-nav-item e-broshure">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Tablet-g3.svg" alt="">
+                                        </div>
+                                        <p>E-broshure</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item movie">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item gallery">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boothType02">
+                            <div class="mp--mybooth">
+                                <div class="mp--myboothImg"><img src="/mypage/img/test_booth100.png" alt=""></div>
+                                <div class="mp--mybooth-tagWrap">
+                                    <div class="mp--mybooth-tag company active" style="top: 53%;left:11.3%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Building-g3.svg" alt="">
+                                        </div>
+                                        <p>about<br>Company</p>
+                                    </div>
+                                    <!-- <div class="mp--mybooth-tag products" style="top:67%;left:63%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Box-g3.svg" alt="">
+                                        </div>
+                                        <p>Products</p>
+                                    </div> -->
+                                    <div class="mp--mybooth-tag e-broshure" style="top:62%;left:41%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Tablet-g3.svg" alt="">
+                                        </div>
+                                        <p>E-broshure</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag movie" style="top:52%;left:27%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag movie" style="top:52%;left:50.5%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag movie" style="top:52%;left:73.5%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag gallery" style="top:52%;left:38%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag gallery" style="top:52%;left:62.5%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag gallery" style="top:52%;left:89.5%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag-onlyText" style="top:32%;left:26%;"><p>LOGO</p></div>
+                                    <!-- <div class="mp--mybooth-tag-onlyText" style="top:60%;left:51%;"><p>FAQ</p></div> -->
+                                </div>
+                            </div>
+                            <div class="mp--mybooth-mob">
+                                <div class="mp--mybooth-mob-nav">
+                                    <div class="mp--mybooth-mob-nav-item company active">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Building-g3.svg" alt="">
+                                        </div>
+                                        <p>about Company</p>
+                                    </div>
+                                    <!-- <div class="mp--mybooth-mob-nav-item products">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Box-g3.svg" alt="">
+                                        </div>
+                                        <p>Products</p>
+                                    </div> -->
+                                    <div class="mp--mybooth-mob-nav-item e-broshure">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Tablet-g3.svg" alt="">
+                                        </div>
+                                        <p>E-broshure</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item movie">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item movie">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item movie">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item gallery">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item gallery">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item gallery">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="boothType03">
+                            <div class="mp--mybooth">
+                                <div class="mp--myboothImg"><img src="/mypage/img/test_booth101.png" alt=""></div>
+                                <div class="mp--mybooth-tagWrap">
+                                    <div class="mp--mybooth-tag company active" style="top: 57%;left:44.8%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Building-g3.svg" alt="">
+                                        </div>
+                                        <p>about<br>Company</p>
+                                    </div>
+                                    <!-- <div class="mp--mybooth-tag products" style="top:70.5%;left:33%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Box-g3.svg" alt="">
+                                        </div>
+                                        <p>Products</p>
+                                    </div> -->
+                                    <div class="mp--mybooth-tag e-broshure" style="top:76%;left:59%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Tablet-g3.svg" alt="">
+                                        </div>
+                                        <p>E-broshure</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag movie" style="top:53%;left:29.2%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag movie" style="top:59%;left:61.5%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag gallery" style="top:52%;left:79%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag gallery" style="top:55%;left:83.7%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag gallery" style="top:58%;left:89.5%;">
+                                        <div class="mp--mybooth-tag-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-tag-onlyText" style="top:23.6%;left:30%;"><p>LOGO</p></div>
+                                    <!-- <div class="mp--mybooth-tag-onlyText" style="top:69.5%;left:82.5%;"><p>FAQ</p></div> -->
+                                </div>
+                            </div>
+                            <div class="mp--mybooth-mob">
+                                <div class="mp--mybooth-mob-nav">
+                                    <div class="mp--mybooth-mob-nav-item company active">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Building-g3.svg" alt="">
+                                        </div>
+                                        <p>about Company</p>
+                                    </div>
+                                    <!-- <div class="mp--mybooth-mob-nav-item products">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Box-g3.svg" alt="">
+                                        </div>
+                                        <p>Products</p>
+                                    </div> -->
+                                    <div class="mp--mybooth-mob-nav-item e-broshure">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Tablet-g3.svg" alt="">
+                                        </div>
+                                        <p>E-broshure</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item movie">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item movie">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Media-g3.svg" alt="">
+                                        </div>
+                                        <p>Movie</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item gallery">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item gallery">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                    <div class="mp--mybooth-mob-nav-item gallery">
+                                        <div class="mp--mybooth-mob-nav-icon">
+                                            <img src="/mypage/img/icon/white-16/Image-g3.svg" alt="">
+                                        </div>
+                                        <p>Gallery</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 
+                            .mp--mybooth-tag 별 클릭 시 다른 요소가 출력됩니다.
+                            .mp--subTit p 의 text는 mp--mybooth-tag의 p text와 동일해야 합니다.
+                        -->
+
+                        <div class="mp--subTit"><p id="formName">about Company</p></div>
+
+                        <div class="mp--guideBox">
+                            <div class="mp--guideBox-text01"><p>이미지를 첨부해주신 후에 대표 이미지를 선택해주세요!</p></div>
+                            <div class="mp--guideBox-text02">
+                                오뜨리움에서 기업정보를 부스형태로 출력합니다. <b>홈페이지 형태와 메타버스 형태</b>로 나의 기업에 맞는 대표이미지를 설정해보세요.
+                            </div>
+                        </div>
+
+                        <!-- about company 버튼 클릭 시 .mp--upData 요소가 출력됩니다 -->
+                        <div class="mp--upData">
+                            <div class="mp--upData-wrap">
+                                <div class="mp--upData-row mp--upData-textarea">
+                                    <div class="mp--upData-l">기업 소개 작성</div>
+                                    <div class="mp--upData-r"><textarea name="" id="" cols="30" rows="10" placeholder="채널 이름을 입력해주세요"></textarea></div>
+                                </div>
+                                <div class="mp--upData-row">
+                                    <div class="mp--upData-l">이미지 첨부</div>
+                                    <div class="mp--upData-r">
+                                        <div class="mp--upData-imgList">
+
+                                            <div class="mp--upData-img mp--upData-imgAdd">
+                                                <div class="mp--upData-imgAddWrap">
+                                                    <label class="mp--upData-img-label" for="addImg">
+                                                        <div class="mp--upData-img-label-icon"><span></span><span></span></div>
+                                                        <div class="mp--upData-img-label-text01">파일 추가하기</div>
+                                                        <div class="mp--upData-img-label-text02">5mb 이하의 jpg, png만 가능</div>
+                                                    </label>
+                                                    <input type="file" id="addImg">
+                                                </div>
+                                            </div>
+
+                                            <div class="mp--upData-img active">
+                                                <div class="mp--upData-img-thumb" style="background-image: url('/mypage/img/testImg.png');"></div>
+                                                <div class="mp--upData-img-outline"></div>
+                                                <button class="mp--upData-img-dlt"><span></span><span></span></button>
+                                                <div class="mp--upData-img-represent">대표</div>
+                                            </div>
+                                            <div class="mp--upData-img">
+                                                <div class="mp--upData-img-thumb" style="background-image: url('/mypage/img/testImg.png');"></div>
+                                                <div class="mp--upData-img-outline"></div>
+                                                <button class="mp--upData-img-dlt"><span></span><span></span></button>
+                                                <div class="mp--upData-img-represent">대표</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- about company를 제외한 나머지 버튼 클릭 시 .mp--upImg 요소가 출력됩니다. -->
+                        <!-- .mp--upImgWrap 첫 요소에는 삭제버튼이 없습니다. -->
+                        <div class="mp--upImg">
+                            <p class="required">이미지 등록 <b>*</b></p>
+                            <div class="mp--upImgList">
+                                <div class="mp--upImgWrap">
+                                    <div class="mp--upImg-fig">
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>이미지</p></div>
+                                            <div class="mp--upImg-r mp--upImg-rCol">
+                                                <div class="mp--upImg-fileInput">
+                                                    <input id="file01" type="file" placeholder="파일찾기">
+                                                    <label for="file01"><div class="mp--upImg-fileName">파일찾기</div><p class="mp--upImg-fileLabel">파일찾기</p></label>
+                                                </div>
+                                                <div class="mp--upImg-fileExp"><p>5mb 이하의 jpg, png만 가능합니다. (최대 8개)</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>대표 사용여부</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-checkBox">
+                                                    <div class="checkBox-item">
+                                                        <div class="checkBox"><span></span></div>
+                                                        <p>사용</p>
+                                                    </div>
+                                                    <div class="checkBox-item">
+                                                        <div class="checkBox"><span></span></div>
+                                                        <p>미사용</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>제목</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-textInput">
+                                                    <input type="text" placeholder="이미지 제목">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>내용</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-textInput">
+                                                    <textarea name="" id="" cols="20" rows="6" placeholder="이미지 내용"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mp--upImgWrap">
+                                    <div class="mp--upImg-border"></div>
+                                    <div class="mp--upImg-fig">
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>이미지</p></div>
+                                            <div class="mp--upImg-r mp--upImg-rCol">
+                                                <div class="mp--upImg-fileInput">
+                                                    <input id="file02" type="file" placeholder="파일찾기">
+                                                    <label for="file02"><div class="mp--upImg-fileName">파일찾기</div><p class="mp--upImg-fileLabel">파일찾기</p></label>
+                                                </div>
+                                                <div class="mp--upImg-fileExp"><p>5mb 이하의 jpg, png만 가능합니다. (최대 8개)</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>대표 사용여부</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-checkBox">
+                                                    <div class="checkBox-item">
+                                                        <div class="checkBox"><span></span></div>
+                                                        <p>사용</p>
+                                                    </div>
+                                                    <div class="checkBox-item">
+                                                        <div class="checkBox"><span></span></div>
+                                                        <p>미사용</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>제목</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-textInput">
+                                                    <input type="text" placeholder="이미지 제목">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>내용</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-textInput">
+                                                    <textarea name="" id="" cols="20" rows="6" placeholder="이미지 내용"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mp--upImg-dlt">
+                                        <button>삭제</button>
+                                    </div>
+                                </div>
+                                <div class="mp--upImgWrap">
+                                    <div class="mp--upImg-border"></div>
+                                    <div class="mp--upImg-fig">
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>이미지</p></div>
+                                            <div class="mp--upImg-r mp--upImg-rCol">
+                                                <div class="mp--upImg-fileInput">
+                                                    <input id="file03" type="file" placeholder="파일찾기">
+                                                    <label for="file03"><div class="mp--upImg-fileName">파일찾기</div><p class="mp--upImg-fileLabel">파일찾기</p></label>
+                                                </div>
+                                                <div class="mp--upImg-fileExp"><p>5mb 이하의 jpg, png만 가능합니다. (최대 8개)</p></div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>대표 사용여부</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-checkBox">
+                                                    <div class="checkBox-item">
+                                                        <div class="checkBox"><span></span></div>
+                                                        <p>사용</p>
+                                                    </div>
+                                                    <div class="checkBox-item">
+                                                        <div class="checkBox"><span></span></div>
+                                                        <p>미사용</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>제목</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-textInput">
+                                                    <input type="text" placeholder="이미지 제목">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mp--upImg-row">
+                                            <div class="mp--upImg-l"><p>내용</p></div>
+                                            <div class="mp--upImg-r">
+                                                <div class="mp--upImg-textInput">
+                                                    <textarea name="" id="" cols="20" rows="6" placeholder="이미지 내용"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mp--upImg-dlt">
+                                        <button>삭제</button>
+                                    </div>
+                                </div>
+                                <div class="mp--upImg-add">
+                                    <div class="mp--upImg-add-ico"><span></span><span></span></div>
+                                    <p>파일추가</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 모든 메뉴 버튼 (about company, gallery 등) 클릭 시 .mp--submit 요소가 출력됩니다. -->
+                        <div class="mp--submit">
+                            <div class="mp--submit-btn mp--submit-reset"><img src="/mypage/img/icon_reset.svg" alt=""><p>초기화</p></div>
+                            <div class="mp--submit-btn mp--submit-save">저장하기</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        // .mp--upImg-fileInput input[type=file] change 펑션
+        const mpUpImgFileInput = document.querySelectorAll('.mp--upImg-fileInput input[type=file]')
+        mpUpImgFileInput.forEach(function(el){
+            el.addEventListener('change',function(){
+                el.closest('.mp--upImg-fileInput').classList.add('changed')
+                el.closest('.mp--upImg-fileInput').querySelector('.mp--upImg-fileName').innerText = el.files[0].name
+            })
+        })
+        // .mp--upData-img-thumb 클릭 펑션
+        const mpUpDataImg = document.querySelectorAll('.mp--upData-img-thumb')
+        mpUpDataImg.forEach(function(el){
+            el.addEventListener('click',function(){
+                if(  !confirm("대표이미지로 바꾸시겠습니까?") ){
+                   return;
+                }else{
+                    for(let item of mpUpDataImg){
+                        item.closest('.mp--upData-img').classList.remove('active')
+                    }
+                    el.closest('.mp--upData-img').classList.add('active')
+                }
+            })
+        })
+        // .mp--upData-dlt 클릭 펑션
+        const mpUpDataDlt = document.querySelectorAll('.mp--upData-img-dlt')
+        mpUpDataDlt.forEach(function(el){
+            el.addEventListener('click',function(){
+                if(  !confirm("이미지를 삭제하시겠습니까?") ){
+                   return;
+                }else{
+                    el.closest('.mp--upData-img').remove()
+                }
+            })
+        })
+        // mp--mybooth-tag클릭 시 다른 mp--mybooth-tag요소의 active클래스를 제거하고 클릭한 mp--mybooth-tag요소에 active클래스 부여하는 이벤트
+        // 230727 클릭 시 스크롤 위치 이동 이벤트 추가
+        const mpMyboothTag = document.querySelectorAll('.mp--mybooth-tag')
+        const mpMyboothTagMob = document.querySelectorAll('.mp--mybooth-mob-nav-item')
+        mpMyboothTag.forEach(function(el,idx){
+            el.addEventListener('click',function(){
+                for(let item of mpMyboothTagMob){
+                    item.classList.remove('active')
+                }
+                for(let item of mpMyboothTag){
+                    item.classList.remove('active')
+                }
+                mpMyboothTagMob[idx].classList.add('active')
+                el.classList.add('active')
+                // mp--mybooth-mob요소위치로 body 스크롤 이동
+                const mpMyboothMob = document.querySelector('.mp--mybooth-mob')
+                const mpMyboothMobTop = mpMyboothMob.getBoundingClientRect().top
+                const mpMyboothMobTopY = mpMyboothMobTop + window.pageYOffset - 100
+                window.scrollTo({top:mpMyboothMobTopY,behavior:'smooth'})
+            })
+        })
+        mpMyboothTagMob.forEach(function(el,idx){
+            el.addEventListener('click',function(){
+                for(let item of mpMyboothTagMob){
+                    item.classList.remove('active')
+                }
+                for(let item of mpMyboothTag){
+                    item.classList.remove('active')
+                }
+                mpMyboothTag[idx].classList.add('active')
+                el.classList.add('active')
+            })
+        })
+
+            
+        </script>
+        <script>// 마이페이지용 aside 스위치 이벤트
+            var winY = window.scrollY
+            var savedWinY = winY
+            window.addEventListener('resize',e => {
+                winY = window.scrollY
+            })
+            window.addEventListener('scroll',e => {
+                winY = window.scrollY
+            })
+            function bodyScrollStop(){
+                savedWinY = winY
+                document.body.style.position = 'fixed';
+                document.body.style.top = `-${winY}px`;
+            }
+            function bodyScrollGo(){
+                document.body.style.position = 'relative';
+                document.body.style.top = '';
+                window.scrollTo(savedWinY,savedWinY)
+            }
+            document.querySelector('.header--mp-asideSwitch').addEventListener('click',function(){
+                if(document.querySelector('.header--mp-asideSwitch').classList.contains('open')){
+                    document.querySelector('.header--mp-asideSwitch').classList.remove('open')
+                    document.querySelector('.mp--aside').classList.remove('show')
+                    bodyScrollGo()
+                }else{
+                    document.querySelector('.header--mp-asideSwitch').classList.add('open')
+                    document.querySelector('.mp--aside').classList.add('show')
+                    bodyScrollStop()
+                
+                }
+            })
+            document.querySelector('.mp--aside-dim').addEventListener('click',function(){
+                document.querySelector('.header--mp-asideSwitch').classList.remove('open')
+                document.querySelector('.mp--aside').classList.remove('show')
+                bodyScrollGo()
+            })
+</script>
+</body>
+</html>

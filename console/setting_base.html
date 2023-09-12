@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex,nofollow">
+    <title>Hauterium Adminstrator </title>
+    <link rel="stylesheet" href="css/base.css">
+    
+</head>
+<body>
+    
+
+<!-- cs_header -->
+<div id="cs_header" class="hd_wrap">
+    <div class="hd_left">
+        <div class="hd_logo">
+            <a href="#">
+                <div class="l_img"><embed src="img/admin_logo.svg" type="image/svg+xml" aria-label="Hauterium Logo"></div>
+                <div class="l_txt">Host-Center</div>
+            </a>
+        </div>
+        <ul class="hd_menu">
+            <li class="on"><a href="#">내행사</a></li>
+            <li><a href="#">채널관리</a></li>
+            <li><a href="#">CRM</a></li><!-- 슬래쉬, 에코마이스만 출력 -->
+            <li><a href="#">스페이스관리</a></li><!-- 슬래쉬만 출력-->
+            <li><a href="#" class="link_st01">행사개최</a></li>
+        </ul>
+    </div>
+
+    <div class="hd_right">
+        <div class="hd_user">
+            <div class="u_img"><embed src="img/icon_user_noimage.svg" type="image/svg+xml" aria-label="User No image"></div>
+            <div class="u_name">사용자이름</div>
+        </div>
+    </div>
+</div>
+<!-- End cs_header -->
+
+
+<!-- main -->
+<div id="cs_main" class="cs_main_wrap">
+    <!-- aside -->
+    <div id="cs_aside" class="cs_aside_wrap">
+        <div class="as_event_wrap">
+            <div class="as_u_name">사용자이름</div>
+
+            <div class="as_u_channel">
+                <div class="u_ch_name">
+                    <div class="na">선택한 채널명</div>
+                    <div class="arr"><embed src="img/icon_arrow_st01.svg" type="image/svg+xml" aria-label="channel list down"></div>
+                </div>
+                <ul class="u_ch_list">
+                    <li class="on"><a href="#">선택한 채널명</a></li>
+                    <li><a href="#">채널명</a></li>
+                </ul>
+            </div>
+
+            <div class="as_u_channel_link">
+                <a href="#">
+                    <div class="link_na">현재 행사월드 바로가기</div>
+                    <div class="link_arr"><embed src="img/icon_arrow_up.svg" type="image/svg+xml" aria-label="Go To Space"></div>
+                </a>
+            </div>
+        </div>
+
+        <div class="as_menu_wrap">
+            <div class="as_menu_box">
+                <div class="as_menu_title"><span>행사 관리</span></div>
+                <dl class="as_menu_list">
+                    <!-- #01 -->
+                    <dt class="as_m_dept01">
+                        <a href="javascript:void(0);" class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M4 2V4H2V2H4ZM5 1H1V5H5V1ZM9 2V4H7V2H9ZM10 1H6V5H10V1ZM14 2V4H12V2H14ZM15 1H11V5H15V1ZM4 7V9H2V7H4ZM5 6H1V10H5V6ZM9 7V9H7V7H9ZM10 6H6V10H10V6ZM14 7V9H12V7H14ZM15 6H11V10H15V6ZM4 12V14H2V12H4ZM5 11H1V15H5V11ZM9 12V14H7V12H9ZM10 11H6V15H10V11ZM14 12V14H12V12H14ZM15 11H11V15H15V11Z" fill="#697077"/>
+                                    </svg>
+                                </div>
+                                <div class="m_name">대쉬보드</div>
+                            </div>
+                        </a>
+                    </dt>
+
+                    <!-- #02 -->
+                    <dt class="as_m_dept01">
+                        <span class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8 2C8.49445 2 8.9778 2.14662 9.38893 2.42133C9.80005 2.69603 10.1205 3.08648 10.3097 3.54329C10.4989 4.00011 10.5484 4.50277 10.452 4.98773C10.3555 5.47268 10.1174 5.91814 9.76777 6.26777C9.41814 6.6174 8.97268 6.8555 8.48773 6.95196C8.00277 7.04843 7.50011 6.99892 7.04329 6.8097C6.58648 6.62048 6.19603 6.30005 5.92133 5.88893C5.64662 5.4778 5.5 4.99445 5.5 4.5C5.5 3.83696 5.76339 3.20107 6.23223 2.73223C6.70107 2.26339 7.33696 2 8 2ZM8 1C7.30777 1 6.63108 1.20527 6.0555 1.58986C5.47993 1.97444 5.03133 2.52107 4.76642 3.16061C4.50152 3.80015 4.4322 4.50388 4.56725 5.18282C4.7023 5.86175 5.03564 6.48539 5.52513 6.97487C6.01461 7.46436 6.63825 7.7977 7.31718 7.93275C7.99612 8.0678 8.69985 7.99849 9.33939 7.73358C9.97893 7.46867 10.5256 7.02007 10.9101 6.4445C11.2947 5.86892 11.5 5.19223 11.5 4.5C11.5 3.57174 11.1313 2.6815 10.4749 2.02513C9.8185 1.36875 8.92826 1 8 1Z" fill="#697077"/>
+                                        <path d="M13 15H12V12.5C12 12.1717 11.9353 11.8466 11.8097 11.5433C11.6841 11.24 11.4999 10.9644 11.2678 10.7322C11.0356 10.5001 10.76 10.3159 10.4567 10.1903C10.1534 10.0647 9.8283 10 9.5 10H6.5C5.83696 10 5.20107 10.2634 4.73223 10.7322C4.26339 11.2011 4 11.837 4 12.5V15H3V12.5C3 11.5717 3.36875 10.6815 4.02513 10.0251C4.6815 9.36875 5.57174 9 6.5 9H9.5C10.4283 9 11.3185 9.36875 11.9749 10.0251C12.6313 10.6815 13 11.5717 13 12.5V15Z" fill="#697077"/>
+                                    </svg>                                            
+                                </div>
+                                <div class="m_name">사용자 관리</div>
+                            </div>
+                            <div class="m_arr">
+                                <embed src="img/icon_arrow_st02.svg" type="image/svg+xml" aria-label="Menu Drop Down">
+                            </div>
+                        </span>
+                    </dt>
+                    <dd class="as_m_dept02">
+                        <div class="as_m_dept02_btn"><a href="#">사용자목록</a></div>
+                        <div class="as_m_dept02_btn"><a href="#">운영진 설정</a></div>
+                    </dd>
+
+                    <!-- #03 -->
+                    <dt class="as_m_dept01">
+                        <span class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10 3H4V4H10V3Z" fill="#697077"/>
+                                        <path d="M10 5H4V6H10V5Z" fill="#697077"/>
+                                        <path d="M7 7H4V8H7V7Z" fill="#697077"/>
+                                        <path d="M6 12H4V13H6V12Z" fill="#697077"/>
+                                        <path d="M14.8535 9.6465L13.3535 8.1465C13.3071 8.10005 13.252 8.0632 13.1913 8.03806C13.1307 8.01292 13.0657 7.99998 13 7.99998C12.9343 7.99998 12.8693 8.01292 12.8087 8.03806C12.748 8.0632 12.6929 8.10005 12.6465 8.1465L8 12.7929V15H10.2071L14.8535 10.3535C14.9 10.3071 14.9368 10.252 14.9619 10.1913C14.9871 10.1307 15 10.0657 15 10C15 9.93434 14.9871 9.86932 14.9619 9.80867C14.9368 9.74801 14.9 9.69291 14.8535 9.6465ZM9.79295 14H9V13.2071L11.5 10.7071L12.2929 11.5L9.79295 14ZM13 10.7929L12.2071 10L13 9.20705L13.7929 10L13 10.7929Z" fill="#697077"/>
+                                        <path d="M6 15H3C2.73487 14.9997 2.48068 14.8943 2.2932 14.7068C2.10572 14.5193 2.00028 14.2651 2 14V2C2.00028 1.73487 2.10572 1.48068 2.2932 1.2932C2.48068 1.10572 2.73487 1.00028 3 1H11C11.2651 1.00028 11.5193 1.10572 11.7068 1.2932C11.8943 1.48068 11.9997 1.73487 12 2V7H11V2H3V14H6V15Z" fill="#697077"/>
+                                    </svg>                                          
+                                </div>
+                                <div class="m_name">콘텐츠 관리</div>
+                            </div>
+                            <div class="m_arr">
+                                <embed src="img/icon_arrow_st02.svg" type="image/svg+xml" aria-label="Menu Drop Down">
+                            </div>
+                        </span>
+                    </dt>
+                    <dd class="as_m_dept02">
+                        <div class="as_m_dept02_btn"><a href="#">메뉴01</a></div>
+                        <div class="as_m_dept02_btn"><a href="#">메뉴02</a></div>
+                    </dd>
+
+                    <!-- #04 -->
+                    <dt class="as_m_dept01">
+                        <span class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.0001 3V4.085L2.82013 5.935C2.58718 5.9776 2.3769 6.10149 2.22673 6.28461C2.07657 6.46774 1.99627 6.69821 2.00013 6.935V9.105C1.99627 9.34179 2.07657 9.57226 2.22673 9.75539C2.3769 9.93851 2.58718 10.0624 2.82013 10.105L4.00013 10.28V12C4.00013 12.2652 4.10549 12.5196 4.29303 12.7071C4.48056 12.8946 4.73492 13 5.00013 13H9.00013C9.26535 13 9.5197 12.8946 9.70724 12.7071C9.89478 12.5196 10.0001 12.2652 10.0001 12V11.37L13.0001 11.915V13H14.0001V3H13.0001ZM9.00013 12H5.00013V10.465L9.00013 11.19V12ZM3.00013 9.085V6.915L13.0001 5.1V10.9L3.00013 9.085Z" fill="#697077"/>
+                                    </svg>                                                                                    
+                                </div>
+                                <div class="m_name">마케팅 관리</div>
+                            </div>
+                            <div class="m_arr">
+                                <embed src="img/icon_arrow_st02.svg" type="image/svg+xml" aria-label="Menu Drop Down">
+                            </div>
+                        </span>
+                    </dt>
+                    <dd class="as_m_dept02">
+                        <div class="as_m_dept02_btn"><a href="#">메뉴01</a></div>
+                        <div class="as_m_dept02_btn"><a href="#">메뉴02</a></div>
+                    </dd>
+
+                    <!-- #05 -->
+                    <dt class="as_m_dept01">
+                        <span class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 1H1V14C1 14.2652 1.10536 14.5196 1.29289 14.7071C1.48043 14.8946 1.73478 15 2 15H15V14H2V1Z" fill="#697077"/>
+                                        <path d="M15 4.5H11.5V5.5H13.295L9.5 9.295L7.355 7.145C7.30852 7.09814 7.25322 7.06094 7.19229 7.03555C7.13136 7.01017 7.06601 6.9971 7 6.9971C6.93399 6.9971 6.86864 7.01017 6.80771 7.03555C6.74678 7.06094 6.69148 7.09814 6.645 7.145L3 10.795L3.705 11.5L7 8.205L9.145 10.355C9.19148 10.4019 9.24678 10.4391 9.30771 10.4644C9.36864 10.4898 9.43399 10.5029 9.5 10.5029C9.56601 10.5029 9.63136 10.4898 9.69229 10.4644C9.75322 10.4391 9.80852 10.4019 9.855 10.355L14 6.205V8H15V4.5Z" fill="#697077"/>
+                                    </svg>                                                                                                                          
+                                </div>
+                                <div class="m_name">통계</div>
+                            </div>
+                            <div class="m_arr">
+                                <embed src="img/icon_arrow_st02.svg" type="image/svg+xml" aria-label="Menu Drop Down">
+                            </div>
+                        </span>
+                    </dt>
+                    <dd class="as_m_dept02">
+                        <div class="as_m_dept02_btn"><a href="#">메뉴01</a></div>
+                        <div class="as_m_dept02_btn"><a href="#">메뉴02</a></div>
+                    </dd>
+
+                    <!-- #06 -->
+                    <dt class="as_m_dept01 on">
+                        <span class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.4996 8.37971C13.4996 8.25471 13.4996 8.12971 13.4996 7.99971C13.4996 7.86971 13.4996 7.74471 13.4996 7.61471L14.4596 6.77471C14.6366 6.61874 14.7527 6.40523 14.7875 6.17192C14.8223 5.9386 14.7734 5.70051 14.6496 5.49971L13.4696 3.49972C13.382 3.34785 13.2559 3.22171 13.1041 3.13395C12.9522 3.04619 12.78 2.99989 12.6046 2.99971C12.496 2.99888 12.3879 3.01577 12.2846 3.04972L11.0696 3.45972C10.8599 3.32032 10.6411 3.19504 10.4146 3.08472L10.1596 1.82472C10.1139 1.59452 9.98868 1.38774 9.80587 1.24057C9.62305 1.0934 9.39429 1.01522 9.15964 1.01971H6.81964C6.58499 1.01522 6.35623 1.0934 6.17341 1.24057C5.99059 1.38774 5.86536 1.59452 5.81964 1.82472L5.56464 3.08472C5.3366 3.19502 5.11612 3.32029 4.90464 3.45972L3.71464 3.02972C3.61029 3.00253 3.50222 2.9924 3.39464 2.99971C3.21928 2.99989 3.04704 3.04619 2.89522 3.13395C2.7434 3.22171 2.61732 3.34785 2.52964 3.49972L1.34964 5.49971C1.23293 5.70021 1.18956 5.93504 1.22696 6.164C1.26436 6.39295 1.3802 6.60178 1.55464 6.75471L2.49964 7.61971C2.49964 7.74471 2.49964 7.86971 2.49964 7.99971C2.49964 8.12971 2.49964 8.25471 2.49964 8.38472L1.55464 9.22472C1.37527 9.37871 1.25627 9.59128 1.21874 9.82469C1.18121 10.0581 1.22759 10.2973 1.34964 10.4997L2.52964 12.4997C2.61732 12.6516 2.7434 12.7777 2.89522 12.8655C3.04704 12.9532 3.21928 12.9995 3.39464 12.9997C3.50331 13.0005 3.6114 12.9837 3.71464 12.9497L4.92964 12.5397C5.13941 12.6791 5.35823 12.8044 5.58464 12.9147L5.83964 14.1747C5.88536 14.4049 6.01059 14.6117 6.19341 14.7589C6.37623 14.906 6.60499 14.9842 6.83964 14.9797H9.19964C9.43429 14.9842 9.66305 14.906 9.84587 14.7589C10.0287 14.6117 10.1539 14.4049 10.1996 14.1747L10.4546 12.9147C10.6827 12.8044 10.9032 12.6791 11.1146 12.5397L12.3246 12.9497C12.4279 12.9837 12.536 13.0005 12.6446 12.9997C12.82 12.9995 12.9922 12.9532 13.1441 12.8655C13.2959 12.7777 13.422 12.6516 13.5096 12.4997L14.6496 10.4997C14.7663 10.2992 14.8097 10.0644 14.7723 9.83543C14.7349 9.60648 14.6191 9.39765 14.4446 9.24471L13.4996 8.37971ZM12.6046 11.9997L10.8896 11.4197C10.4882 11.7598 10.0293 12.0256 9.53464 12.2047L9.17964 13.9997H6.81964L6.46464 12.2247C5.97385 12.0405 5.5175 11.7751 5.11464 11.4397L3.39464 11.9997L2.21464 9.99971L3.57464 8.79972C3.48219 8.28214 3.48219 7.75229 3.57464 7.23471L2.21464 5.99971L3.39464 3.99972L5.10964 4.57972C5.51111 4.23966 5.96994 3.97384 6.46464 3.79472L6.81964 1.99971H9.17964L9.53464 3.77472C10.0254 3.95893 10.4818 4.22429 10.8846 4.55972L12.6046 3.99972L13.7846 5.99971L12.4246 7.19971C12.5171 7.71729 12.5171 8.24714 12.4246 8.76472L13.7846 9.99971L12.6046 11.9997Z" fill="#697077"/>
+                                        <path d="M7.99964 10.9997C7.40629 10.9997 6.82627 10.8238 6.33293 10.4941C5.83958 10.1645 5.45506 9.69594 5.228 9.14777C5.00094 8.59959 4.94153 7.99639 5.05728 7.41444C5.17304 6.8325 5.45876 6.29795 5.87832 5.8784C6.29788 5.45884 6.83242 5.17312 7.41437 5.05736C7.99631 4.9416 8.59951 5.00101 9.14769 5.22808C9.69587 5.45514 10.1644 5.83966 10.494 6.333C10.8237 6.82635 10.9996 7.40637 10.9996 7.99972C11.0036 8.3948 10.9288 8.78671 10.7794 9.15249C10.6301 9.51828 10.4093 9.8506 10.1299 10.13C9.85052 10.4094 9.51821 10.6302 9.15242 10.7795C8.78663 10.9289 8.39472 11.0037 7.99964 10.9997ZM7.99964 5.99972C7.73531 5.99356 7.47248 6.04108 7.22705 6.13941C6.98161 6.23774 6.75867 6.38483 6.57171 6.57179C6.38476 6.75875 6.23766 6.98169 6.13933 7.22712C6.041 7.47256 5.99348 7.73539 5.99964 7.99972C5.99348 8.26404 6.041 8.52687 6.13933 8.77231C6.23766 9.01774 6.38476 9.24068 6.57171 9.42764C6.75867 9.6146 6.98161 9.76169 7.22705 9.86002C7.47248 9.95835 7.73531 10.0059 7.99964 9.99971C8.26397 10.0059 8.52679 9.95835 8.77223 9.86002C9.01766 9.76169 9.2406 9.6146 9.42756 9.42764C9.61452 9.24068 9.76161 9.01774 9.85994 8.77231C9.95827 8.52687 10.0058 8.26404 9.99964 7.99972C10.0058 7.73539 9.95827 7.47256 9.85994 7.22712C9.76161 6.98169 9.61452 6.75875 9.42756 6.57179C9.2406 6.38483 9.01766 6.23774 8.77223 6.13941C8.52679 6.04108 8.26397 5.99356 7.99964 5.99972Z" fill="#697077"/>
+                                    </svg>                                                                                                                                                                    
+                                </div>
+                                <div class="m_name">환경설정</div>
+                            </div>
+                            <div class="m_arr">
+                                <embed src="img/icon_arrow_st02.svg" type="image/svg+xml" aria-label="Menu Drop Down">
+                            </div>
+                        </span>
+                    </dt>
+                    <dd class="as_m_dept02 on">
+                        <div class="as_m_dept02_btn on"><a href="#">기본설정</a></div>
+                        <div class="as_m_dept02_btn"><a href="#">메뉴</a></div>
+                        <div class="as_m_dept02_btn"><a href="#">메뉴</a></div>
+                        <div class="as_m_dept02_btn"><a href="#">메뉴</a></div>
+                    </dd>
+
+                </dl>
+
+                <div class="as_menu_title"><span>리소스</span></div>
+                <dl class="as_menu_list">
+                    <!-- #01 -->
+                    <dt class="as_m_dept01">
+                        <a href="javascript:void(0);" class="as_m_dept01_btn">
+                            <div class="m_text">
+                                <div class="m_icon">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 1H9C8.45 1 8 1.45 8 2V5C8 5.55 8.45 6 9 6H10.2L11.05 7.5L11.9 7L10.75 5H9V2H14V5H12.5V6H14C14.55 6 15 5.55 15 5V2C15 1.45 14.55 1 14 1Z" fill="#697077"/>
+                                        <path d="M7.35 15.5L6.5 15L8.25 12H11C11.55 12 12 11.55 12 11V8.5H13V11C13 12.1 12.1 13 11 13H8.8L7.35 15.5Z" fill="#697077"/>
+                                        <path d="M5 9C5.27614 9 5.5 8.77614 5.5 8.5C5.5 8.22386 5.27614 8 5 8C4.72386 8 4.5 8.22386 4.5 8.5C4.5 8.77614 4.72386 9 5 9Z" fill="#697077"/>
+                                        <path d="M7 9C7.27614 9 7.5 8.77614 7.5 8.5C7.5 8.22386 7.27614 8 7 8C6.72386 8 6.5 8.22386 6.5 8.5C6.5 8.77614 6.72386 9 7 9Z" fill="#697077"/>
+                                        <path d="M9 9C9.27614 9 9.5 8.77614 9.5 8.5C9.5 8.22386 9.27614 8 9 8C8.72386 8 8.5 8.22386 8.5 8.5C8.5 8.77614 8.72386 9 9 9Z" fill="#697077"/>
+                                        <path d="M6 13H3C1.9 13 1 12.1 1 11V6C1 4.9 1.9 4 3 4H7V5H3C2.45 5 2 5.45 2 6V11C2 11.55 2.45 12 3 12H6V13Z" fill="#697077"/>
+                                    </svg>                                            
+                                </div>
+                                <div class="m_name">고객지원</div>
+                            </div>
+                        </a>
+                    </dt>
+                </dl>
+            </div>
+        </div>
+
+    </div>
+    <!-- End aside -->
+
+    <!-- section -->
+        <div id="cs_section" class="cs_aside_section_wrap">
+            <div id="sec_cs_header" class=" sec_cs_header_wrap">
+                <div class="section_inner sec_hd_box">
+                    <div class="sec_hd_location">
+                        <div class="t">채널명</div>
+                        <div class="img"><embed src="img/icon_arrow_st03.svg" type="image/svg+xml" aria-label="Next"></div>
+                        <div class="t">dept01</div>
+                        <div class="img"><embed src="img/icon_arrow_st03.svg" type="image/svg+xml" aria-label="Next"></div>
+                        <div class="t">dept02</div>
+                    </div>
+
+                    <div class="sec_hd_link">
+                        <a href="javascript:void(0);" class="link_st02">
+                            <div class="img"><embed src="img/icon_home.svg" type="image/svg+xml" aria-label="Go to Hauterium Main"></div>
+                            <div class="t">오뜨리움 홈</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="cs_article_wrap" class=" sec_article_wrap">
+                <div class="section_inner">
+
+                    <!-- #01 -->
+                    <div id="article_eventInfo" class="cs_article">
+
+                        <div class="cs_article_header">
+                            <div class="art_hd_inner">
+                                <div class="art_hd_tit">
+                                    <div class="tit">행사 기본정보</div>
+                                </div>
+                                <div class="art_hd_con">
+                                    <div class="con">성공적으로 행사가 등록되었습니다. 행사정보를 수정할 수 있습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="adm_article_information">
+                            <div class="art_info_inner">
+                                <div class="art_info_tit">
+                                    <div class="tit">행사가 출력되지 않으시나요?!</div>
+                                </div>
+                                <div class="art_info_con">
+                                    <div class="con">
+                                        나의 행사 승인 상태를 확인해주세요. <span class="cred">기관 승인 완료 후 행사를 관리</span>하실 수 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cs_article_contents">
+                            <div class="form_group">
+                                <label class="form_lable" for="">
+                                    <div class="t"><p>승인상태</p><p class="cred">*</p></div>
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" required name="" id="" class="form-control col-4" readonly aria-value="event_approval" value="승인"  aria-required="true" />
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <label class="form_lable" for="">
+                                    <div class="t"><p>행사명</p><p class="cred">*</p></div>
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="행사명을 입력해주세요." aria-required="true" />
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <label class="form_lable" for="">
+                                    <div class="t"><p>행사일정</p><p class="cred">*</p></div>
+                                </label>
+                                <div class="form_content">
+                                    <input type="date" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="시작일자" aria-required="true" />
+                                    <p> ~ </p>
+                                    <input type="date" required name="" id="" class="form-control col-4" aria-value="" value="" placeholder="종료일자" aria-required="true" />
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <label class="form_lable" for="">
+                                    <div class="t"><p>주제</p><p class="cred">*</p></div>
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" required name="" id="" class="form-control col-11" aria-value="" value="" placeholder="행사 주제를 입력해주세요" aria-required="true" />
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <label class="form_lable" for="">
+                                    <div class="t"><p>주최</p></div>
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="" id="" class="form-control col-11" aria-value="" value="" placeholder="행사 주최사를 입력해주세요" />
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <label class="form_lable" for="">
+                                    <div class="t"><p>주관</p></div>
+                                </label>
+                                <div class="form_content">
+                                    <input type="text" name="" id="" class="form-control col-11" aria-value="" value="" placeholder="행사 주관사를 입력해주세요" />
+                                </div>
+                            </div>
+
+                            <div class="form_group">
+                                <label class="form_lable" for="">
+                                    <div class="t"><p>간략설명</p></div>
+                                </label>
+                                <div class="form_content">
+                                    <textarea name="" id="" class="form-control col-11 row-3" placeholder="행사에 대한 간략한 설명을 입력해주세요."></textarea>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- #02 -->
+                    <div id="article_boothRegister" class="cs_article">
+
+                        <div class="cs_article_header">
+                            <div class="art_hd_inner">
+                                <div class="art_hd_tit">
+                                    <div class="tit">부스 등록정보</div>
+                                </div>
+                                <div class="art_hd_con">
+                                    <div class="con">등록된 행사에 참여하는 기업의 부스 목록입니다.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="adm_article_information">
+                            <div class="art_info_inner">
+                                <div class="art_info_tit">
+                                    <div class="tit">참여 기업을 <span class="cred">엑셀로 간편하게 등록</span>해보세요!</div>
+                                </div>
+                                <div class="art_info_con">
+                                    <div class="con">
+                                        등록해야할 부스가 많으시다면, 양식을 다운받아 엑셀 간편하게 등록해보세요!
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="art_info_btns">
+                                <a href="javascript:void(0);" class="download_st01">
+                                    <div class="img"><embed src="img/icon_download.svg" type="image/svg+xml" aria-label="file Download"></div>
+                                    <div class="txt">간편등록 양식 다운로드</div>
+                                </a>
+                                <a href="javascript:void(0);" class="upload_st01">
+                                    <div class="img"><embed src="img/icon_upload.svg" type="image/svg+xml" aria-label="file Upload"></div>
+                                    <div class="txt">참여기업 엑셀 등록</div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="cs_article_contents">
+
+                            <div class="art_con_top">
+                                <div class="art_con_tp_left">
+                                    <select name="list_sort" class="selcet_st01">
+                                        <option vlaue="">최신순</option>
+                                        <option vlaue="">오래된순</option>
+                                        <option vlaue="">오름차순</option>
+                                        <option vlaue="">내림차순</option>
+                                    </select>
+                                    <select name="list_view" class="selcet_st01">
+                                        <option vlaue="">10개씩</option>
+                                        <option vlaue="">20개씩</option>
+                                        <option vlaue="">50개씩</option>
+                                        <option vlaue="">100개씩</option>
+                                    </select>
+                                </div>
+                                <div class="art_con_top_right">
+                                    <a href="javascript:void(0);" class="link_st02">선택 삭제</a>
+                                    <a href="javascript:void(0);" class="link_st03">참여기업 개별 등록하기</a>
+                                </div>
+                            </div>
+
+                            <div class="art_con_bottom">
+                                <table class="tb_st01">
+                                    <colgroup>
+                                        <col width="40rem">
+                                        <col width="60rem">
+                                        <col width="145rem">
+                                        <col width="145rem">
+                                        <col width="240rem">
+                                        <col width="190rem">
+                                        <col width="75rem">
+                                        <col width="190rem">
+                                        <col width="125rem">
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th><input type="checkbox" name="" id="" class=""></th>
+                                            <th>No.</th>
+                                            <th>로고</th>
+                                            <th>회사명</th>
+                                            <th>분류</th>
+                                            <th>홀 위치</th>
+                                            <th>담당자</th>
+                                            <th>이메일</th>
+                                            <th>관리</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_chk"><input type="checkbox" name="" id="" class=""></td>
+                                            <td class="td_no">1</td>
+                                            <td class="td_logo"><img src="img/test_logo1.png" /></td>
+                                            <td class="td_company">니에프스</td>
+                                            <td class="td_category">
+                                                <div class="">Information Security</div>
+                                                <div class="">Information Security</div>
+                                                <div class="">Information Security</div>
+                                            </td>
+                                            <td class="td_Hall">IT & Programming</td>
+                                            <td class="td_name">오정연</td>
+                                            <td class="td_email">ojy@niepce.kr</td>
+                                            <td class="td_btns">
+                                                <div class="td_btns_inner">
+                                                    <a class="link_st02" href="javascript:void(0)">관리</a>
+                                                    <a class="download_st01" href="javascript:void(0)">부스관리</a>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                                <ul class="art_page_wrap">
+                                    <li class="pg off pager_first"><a href="javascript:void(0)"><embed src="img/Icon_page_first.svg" type="image/svg+xml" aria-label="file Upload"></a></li>
+                                    <li class="pg off pager_prev"><a href="javascript:void(0)"><embed src="img/Icon_page_arrow.svg" type="image/svg+xml" aria-label="file Upload"></a></li>
+                                    <li class="on"><a href="javascript:void(0)">1</a></li>
+                                    <li><a href="javascript:void(0)">2</a></li>
+                                    <li><a href="javascript:void(0)">3</a></li>
+                                    <li><a href="javascript:void(0)">4</a></li>
+                                    <li><a href="javascript:void(0)">5</a></li>
+                                    <li><a href="javascript:void(0)">6</a></li>
+                                    <li><a href="javascript:void(0)">7</a></li>
+                                    <li><a href="javascript:void(0)">8</a></li>
+                                    <li><a href="javascript:void(0)">9</a></li>
+                                    <li><a href="javascript:void(0)">10</a></li>
+                                    <li class="pg pager_next"><a href="javascript:void(0)"><embed src="img/Icon_page_first.svg" type="image/svg+xml" aria-label="file Upload"></a></li>
+                                    <li class="pg pager_last"><a href="javascript:void(0)"><embed src="img/Icon_page_arrow.svg" type="image/svg+xml" aria-label="file Upload"></a></li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    <!-- End section -->
+</div>
+<!-- End main -->
+
+
+
+<!-- footer -->
+    <div id="footer" class="ft_wrap">
+        <div class="ft_copy">© hauterium</div>
+    </div>
+<!-- End footer -->
+
+<style>
+    
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('.u_ch_name').click(function () {
+        if($(this).hasClass('on')) {
+            $(this).removeClass('on');
+            $(this).siblings('.u_ch_list').slideUp(200);
+        }else {
+            $(this).addClass('on');
+            $(this).siblings('.u_ch_list').slideDown(200);
+        }
+    })
+
+    $('.as_m_dept01').click(function () {
+        if($(this).hasClass('on')) {
+            $(this).removeClass('on');
+            $(this).next('.as_m_dept02').slideUp(200).removeClass('on');
+        }else {
+            $('.as_m_dept01').removeClass('on')
+            $('.as_m_dept02').slideUp(200).removeClass('on')
+            $(this).addClass('on');
+            $(this).next('.as_m_dept02').slideDown(200).addClass('on');
+        }
+    })
+</script>
+
+</body>
+</html>
