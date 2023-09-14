@@ -1,1 +1,4 @@
 .header{background-color: #fff;height: 70px;border-bottom: 1px solid var(--cr-cool-gray20--);}
+@media all and (max-width:980px) {
+    .header{height:80px;}
+}

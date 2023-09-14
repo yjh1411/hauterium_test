@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="../common/css/basic_public.css">
-    <link rel="stylesheet" href="../common/css/layout.css">
-    <link rel="stylesheet" href="./css/public.css">
-    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./common/css/basic_public.css">
+    <link rel="stylesheet" href="./common/css/layout.css">
+    <link rel="stylesheet" href="./common/css/contact.css">
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="/common/js/anime.js"></script>
 </head>
 <body>
@@ -139,134 +136,67 @@
     </div>
     <div class="public--innerWrap-new">
         <div class="s1">
-            <div class="swiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="s1--item-bg" style="background-image: url('./img/s1_01.png')"></div>
-                        <div class="s1--txt">
-                            <div class="s1--txt01">KMF2023</div>
-                            <div class="s1--txt02">KOREA METAVERSE FESTIVAL</div>
-                            <div class="s1--txt03">AGAIN 메타버스, A.I와 손잡다!</div>
-                            <div class="s1--txt04">2023.10.16(월) ~ 18(수)</div>
+            <div class="s1--txt">
+                <div class="s1--txt01">Contact us</div>
+                <div class="s1--txt02">행사개최하기</div>
+                <div class="s1--txt03">통합 비즈니스 플랫폼, 오뜨리움 <br>실사같은 경험과 글로벌 커뮤니케이션으로 당신의 성공 비즈니스 시작하세요!</div>
+            </div>
+            <div class="s1--wrap">
+                <div class="s1--cont">
+                    <div class="s1--img" style="background-image: url('/assets/img/contact_bg.png');">
+                        <div class="s1--img-txt">
+                            <div class="s1--img-txt01">프로젝트를 알려주세요</div>
+                            <div class="s1--img-txt02">고객센터. 02-3144-2125&nbsp;&nbsp;&nbsp;&nbsp;이메일. cs@huaterium.com<br>주소. 서울 강남구 학동로33길 41 영진빌딩</div>
                         </div>
                     </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-        <div class="s2">
-            <div class="sort--top">
-                <p>진행예정</p>
-                <div class="sort--list">
-                    <div class="sort--item active">추천순</div>
-                    <span></span>
-                    <div class="sort--item">최신순</div>
-                    <span></span>
-                    <div class="sort--item">인기순</div>
-                </div>
-            </div>
-            <div class="view--list">
-                <div class="view--item">
-                    <a href="./view.html" target="_blank" class="view--thumb"><div class="view--thumbImg" style="background-image: url('./img/view01.png');"></div></a>
-                    <div class="view--info">
-                        <a href="./view.html" target="_blank" class="view--txt">
-                            <div class="view--txt01">페스티벌</div>
-                            <div class="view--txt02">KMF2023 - KOREA METAVERSE FESTIVAL <span></span></div>
-                            <div class="view--txt03">2023.10.16-2023.11.18</div>
-                            <div class="view--txt04">KOREA METAVERSE FESTIVAL : AGAIN 메타버스, A.I와 손잡다!</div>
-                        </a>
-                        <a href="./view.html" target="_blank" class="view--link"><p>Read more</p><img src="./img/icon_goArrow.svg" alt=""></a>
+                    <div class="s1--form">
+                        <form action="">
+                            <div class="s1--form-select">
+                                <div class="s1--form-txt01">행사 개최 유형</div>
+                                <div class="s1--form-select-list">
+                                    <!-- selected 클래스 부여 -->
+                                    <div class="s1--form-select-item selected">컨퍼런스</div>
+                                    <div class="s1--form-select-item">강연/세미나</div>
+                                    <div class="s1--form-select-item">회의/커뮤니티</div>
+                                    <div class="s1--form-select-item">박람회/페어</div>
+                                    <div class="s1--form-select-item">축제/공연/전시</div>
+                                </div>
+                            </div>
+                            <div class="s1--form-input">
+                                <div class="label">이메일</div>
+                                <div class="input fixed">이메일</div>
+                            </div>
+                            <div class="s1--form-input">
+                                <div class="label">이름</div>
+                                <div class="input fixed">홍길동</div>
+                            </div>
+                            <div class="s1--form-input">
+                                <div class="label">휴대폰 번호</div>
+                                <div class="input fixed">01012345678</div>
+                            </div>
+                            <div class="s1--form-input">
+                                <label class="label" for=""><p>프로젝트 개요</p><p class="require">*</p></label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="프로젝트 개요를 적어주세요."></textarea>
+                            </div>
+                            <div class="s1--form-input">
+                                <label class="label" for=""><p>문의 내용</p><p class="require">*</p></label>
+                                <textarea name="" id="" cols="30" rows="10" placeholder="문의 내용을 적어주세요."></textarea>
+                            </div>
+                            <div class="s1--form-input s1--form-agree">
+                                <input id="chk" type="checkbox">
+                                <label for="chk"></label>
+                                <p>개인정보 수집 및 이용에 동의합니다.</p>
+                            </div>
+                            <div class="s1--form-submit">
+                                <button type="submit">보내기</button>
+                            </div>
+                        </form>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div class="s3">
-            <div class="sort--top">
-                <p>종료</p>
-                <div class="sort--list">
-                    <div class="sort--item active">2023</div>
-                    <span></span>
-                    <div class="sort--item">2022</div>
-                    <span></span>
-                    <div class="sort--item">2021</div>
-                </div>
-            </div>
-            <div class="view--list">
-                <div class="view--item">
-                    <a href="https://bwdc2023.org/" target="_blank" class="view--thumb"><div class="view--thumbImg" style="background-image: url('./img/view02.png');"></div></a>
-                    <div class="view--info">
-                        <a href="https://bwdc2023.org/" target="_blank" class="view--txt">
-                            <div class="view--txt01">컨퍼런스</div>
-                            <div class="view--txt02">2023부산세계장애인대회 <span></span></div>
-                            <div class="view--txt03">2023.08.07-2023.08.11</div>
-                            <div class="view--txt04">지구촌 대전환, 그 도전과 기회 - Global Transformational Agenda : Current Challenges and Opportunities</div>
-                        </a>
-                        <a href="https://bwdc2023.org/" target="_blank" class="view--link"><p>Read more</p><img src="./img/icon_goArrow.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="view--item">
-                    <a href="http://ncf2022.com/" target="_blank" class="view--thumb"><div class="view--thumbImg" style="background-image: url('./img/view03.png');"></div></a>
-                    <div class="view--info">
-                        <a href="http://ncf2022.com/" target="_blank" class="view--txt">
-                            <div class="view--txt01">컨퍼런스</div>
-                            <div class="view--txt02">NFC 2022 <span></span></div>
-                            <div class="view--txt03">2023.08.07-2023.08.11</div>
-                            <div class="view--txt04">지구촌 대전환, 그 도전과 기회 - Global Transformational Agenda : Current Challenges and Opportunities</div>
-                        </a>
-                        <a href="http://ncf2022.com/" target="_blank" class="view--link"><p>Read more</p><img src="./img/icon_goArrow.svg" alt=""></a>
-                    </div>
-                </div>
-                <div class="view--item">
-                    <a href="https://www.expo2030busan.kr/index.do" target="_blank" class="view--thumb"><div class="view--thumbImg" style="background-image: url('./img/view04.png');"></div></a>
-                    <div class="view--info">
-                        <a href="https://www.expo2030busan.kr/index.do" target="_blank" class="view--txt">
-                            <div class="view--txt01">컨퍼런스</div>
-                            <div class="view--txt02">2030 부산세계엑스포 <span></span></div>
-                            <div class="view--txt03">2023.08.07-2023.08.11</div>
-                            <div class="view--txt04">지구촌 대전환, 그 도전과 기회 - Global Transformational Agenda : Current Challenges and Opportunities</div>
-                        </a>
-                        <a href="https://www.expo2030busan.kr/index.do" target="_blank" class="view--link"><p>Read more</p><img src="./img/icon_goArrow.svg" alt=""></a>
-                    </div>
-                </div>
-            </div>
-            <div class="view--idx">
-                <div class="view--idx-btn view--idx-move view--idx-first">
-                    <img src="./img/ico_idx_first.png" alt="">
-                    <!-- <img src="./img/ico_idx_first_b.png" alt=""> -->
-                </div>
-                <div class="view--idx-btn view--idx-move view--idx-prev">
-                    <img src="./img/ico_idx_prev.png" alt="">
-                    <!-- <img src="./img/ico_idx_prev_b.png" alt=""> -->
-                </div>
-                <div class="view--idx-btn view--idx-num active">1</div>
-                <div class="view--idx-btn view--idx-num">2</div>
-                <div class="view--idx-btn view--idx-num">3</div>
-                <div class="view--idx-btn view--idx-num">4</div>
-                <div class="view--idx-btn view--idx-num">5</div>
-                <div class="view--idx-btn view--idx-num">6</div>
-                <div class="view--idx-btn view--idx-num">7</div>
-                <div class="view--idx-btn view--idx-num">8</div>
-                <div class="view--idx-btn view--idx-num">9</div>
-                <div class="view--idx-btn view--idx-num">10</div>
-                <div class="view--idx-btn view--idx-move view--idx-next">
-                    <!-- <img src="./img/ico_idx_prev.png" alt=""> -->
-                    <img src="./img/ico_idx_prev_b.png" alt="">
-                </div>
-                <div class="view--idx-btn view--idx-move view--idx-last">
-                    <!-- <img src="./img/ico_idx_first.png" alt=""> -->
-                    <img src="./img/ico_idx_first_b.png" alt="">
                 </div>
             </div>
         </div>
     </div>
     <div class="ft">
-        <div class="ft--s1" style="background-image: url('/assets/img/ft_bg.jpg');">
-            <div class="ft--s1-txt">
-                <div class="ft--s1-txt01">행사개최, 글로벌 쇼케이스, 국내외 비즈니스 파트너쉽, 데이터 관리 등</div>
-                <div class="ft--s1-txt02">오뜨리움 공간에서 <br>?당신이 원하는 비즈니스를 펼쳐보세요.</div>
-                <a class="ft--s1-txt03" href="">오뜨리움 회원가입하기 </a>
-            </div>
-        </div>
         <div class="ft--s2">
             <div class="ft--s2-wrap">
                 <div class="ft--s2-l">
@@ -408,18 +338,17 @@
         </div>
     </div>
 
-    <script>
-        const s1swiper = new Swiper('.s1 .swiper', {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-            },
-            pagination: {
-                el: '.s1 .swiper-pagination',
-                clickable: true,
-            },
-        });
-    </script>
     <script src="/common/js/layout.js"></script>
+    <script>
+        const s1formSelectItemArr = document.querySelectorAll('.s1--form-select-item');
+        s1formSelectItemArr.forEach(function(el){
+            el.addEventListener('click', function(){
+                s1formSelectItemArr.forEach(function(el2){
+                    el2.classList.remove('selected');
+                })
+                el.classList.add('selected');
+            })
+        })
+    </script>
 </body>
 </html>

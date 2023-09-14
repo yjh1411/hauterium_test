@@ -1,3 +1,4 @@
+document.querySelector('.header').classList.add('black')
 document.querySelectorAll('.ft--s2-r-tit').forEach((el,idx) => {
     el.addEventListener('click', e => {
         const parent = el.closest('.ft--s2-r-col')
@@ -69,15 +70,33 @@ mobMenuBtn.forEach((el,idx) => {
         parent.querySelector('.mob--menu-openBtn').classList.toggle('open')
     })
 })
-
+// 스크롤 막는 펑션
+function scrollOff(){
+    document.body.style.overflow = 'hidden';
+    document.querySelector('html').scrollTop = window.scrollY;
+}
+function scrollOn(){
+    document.body.style.overflow = null;
+}
 document.querySelector('.header--r-mob-menu').addEventListener('click',function(){
+    scrollOff()
     document.querySelector('.mob--menu').classList.add('open')
 })
 document.querySelector('.mob--menu-close').addEventListener('click',function(){
+    scrollOn()
     document.querySelector('.mob--menu').classList.remove('open')
 })
 window.addEventListener('resize',function(){
     if(window.innerWidth > 1024){
+        scrollOn()
         document.querySelector('.mob--menu').classList.remove('open')
     }
+})
+
+
+// 알럿 
+document.querySelectorAll('.alertReady').forEach(el => {
+    el.addEventListener('click',function(){
+        alert('준비중 입니다.')
+    })
 })
