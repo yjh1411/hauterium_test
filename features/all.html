@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./common/css/basic_public.css">
-    <link rel="stylesheet" href="./common/css/layout.css">
-    <link rel="stylesheet" href="./common/css/about.css">
+    <link rel="stylesheet" href="../common/css/basic_public.css">
+    <link rel="stylesheet" href="../common/css/layout.css">
+    <link rel="stylesheet" href="./css/all.css">
 
     <script src="/common/js/anime.js"></script>
 </head>
 <body>
-    <div class="header">
+    <div class="header black">
         <div class="header--wrap">
             <div class="header--l">
                 <a href="/" class="header--logo">
@@ -73,9 +73,9 @@
                             <img class="black mob" src="/assets/img/hd_ico_lang_mob_black.svg" alt="">
                             <img class="blackHover mob" src="/assets/img/hd_ico_lang_mob_black.svg" alt="">
                         </div>
-                        <div class="header--r-lang-list header--openList translation-links">
-                            <a href="javascript:void(0)" class="header--r-lang-item" data-lang="ko">한국어</a>
-                            <a href="javascript:void(0)" class="header--r-lang-item" data-lang="en">English</a>
+                        <div class="header--r-lang-list header--openList">
+                            <a href="javascript:void(0)" class="header--r-lang-item alertReady">한국어</a>
+                            <a href="javascript:void(0)" class="header--r-lang-item alertReady">English</a>
                         </div>
                 </div>
                 <div class="header--member">
@@ -134,140 +134,84 @@
         </div>
         <div class="mob--menu-logout"><a href="">로그아웃</a></div>
     </div>
-    <div class="s1">
-        <div class="s1--wrap">
+    <div class="public--innerWrap-new">
+        <div class="s1">
             <div class="s1--tit">
-                <div class="s1--tit01">About</div>
-                <div class="s1--tit02">What is Haute-rium?</div>
-            </div>
-            <div class="s1--cont">
-                <div class="s1--txt">
-                    <div class="s1--txt01">시공간을 뛰어넘는 <b>온라인 MICE 생태계</b>를 구축하는 오뜨리움 입니다.</div>
-                    <div class="s1--txt02">오뜨리움은 과기부 메타버스 실증사업을 통해 구현 ∙ 검증된 <br>메타버스 전시 컨벤션 플랫폼으로 MICE 분야별 목적에 맞는 공간, 콘텐츠, <br>커뮤니케이션 서비스를 기반으로 참가업체 셀러와 바이어의 AI 비즈매칭기능과 <br>실사형 공간, 행사별 컨셉에 따른 메타버스 Venue 아트웍을 통해 <br>MICE에 최적화된 메타버스 실감 체험을 제공합니다.</div>
-                </div>
-                <div class="s1--img"><img src="./assets/img/about_s1.png" alt=""></div>
-            </div>
-        </div>
-    </div>
-    <div class="s2">
-        <div class="s2--wrap">
-            <div class="s2--list">
-                <div class="s2--item">
-                    <div class="s2--txt">
-                        <div class="s2--txt01">실사형 공간구현을 통한 <br>실제 행사같은 경험 제공</div>
-                        <div class="s2--txt02">실사공간 기반의 가상공간 융합형 Venue 아트웍을 통해 행사별 최적화된 메타버스 실감 체험 공간을 제공합니다.</div>
-                        <a href="javascript:void(0)" class="s2--txt03 alertReady"><p>Online Booth</p><img src="/assets/img/icon_goArrow.svg" alt=""></a>
-                    </div>
-                    <div class="s2--img">
-                        <div class="s2--thumb"><img src="/assets/img/about_s2_01.gif" alt=""></div>
-                    </div>
-                </div>
-                <div class="s2--item">
-                    <div class="s2--txt">
-                        <div class="s2--txt01">메타버스 행사운영을 위한 <br>최적화 커뮤니케이션</div>
-                        <div class="s2--txt02">실사형 아바타 기반 음성 커뮤니케이션 번역지원 <br>컨퍼런스∙팬미팅 ∙콘서트 ∙아바타 화상회의 커뮤니케이션 서비스를 제공합니다.</div>
-                        <a href="javascript:void(0)" class="s2--txt03 alertReady"><p>Online Networking</p><img src="/assets/img/icon_goArrow.svg" alt=""></a>
-                    </div>
-                    <div class="s2--img">
-                        <div class="s2--thumb"><img src="/assets/img/about_s2_02.gif" alt=""></div>
-                    </div>
-                </div>
-                <div class="s2--item">
-                    <div class="s2--txt">
-                        <div class="s2--txt01">안정적인 <br>글로벌 서비스 운영</div>
-                        <div class="s2--txt02">일반 PC, 네트워크 환경에서 실감형 공간에 최대 1,000명 이상이 동시접속 가능합니다. <br>* TTA 인증완료 '23.02</div>
-                        <a href="javascript:void(0)" class="s2--txt03 alertReady"><p>TTS</p><img src="/assets/img/icon_goArrow.svg" alt=""></a>
-                    </div>
-                    <div class="s2--img">
-                        <div class="s2--thumb"><img src="/assets/img/about_s2_03.gif" alt=""></div>
-                    </div>
-                </div>
-                <div class="s2--item">
-                    <div class="s2--txt">
-                        <div class="s2--txt01">행사별 관리 및 분석 시스템 <br>데이터 애널리틱스</div>
-                        <div class="s2--txt02">실사형 공간과 행사별 컨셉 가상 공간의 메타버트 Venue 공간의 관리와 <br>Seller - Buyer 간의 비즈매칭 등 관리, 분석 기능을 제공합니다.</div>
-                        <a href="javascript:void(0)" class="s2--txt03 alertReady"><p>Data Analytics</p><img src="/assets/img/icon_goArrow.svg" alt=""></a>
-                    </div>
-                    <div class="s2--img">
-                        <div class="s2--thumb"><img src="/assets/img/about_s2_04.gif" alt=""></div>
-                    </div>
+                <div class="s1--tit01">Haute-rium</div>
+                <div class="s1--tit02">Features</div>
+                <div class="s1--tit03">
+                    <p>통합 비스니스 플랫폼, 오뜨리움</p>
+                    <p>실사같은 경험과 글로벌 커뮤니케이션으로 당신의 성공 비즈니스 시작하세요!</p>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="s3">
-        <div class="s3--wrap">
-            <div class="s3--cont">
-                <div class="s3--top">
-                    <div class="s3--top01"><b>오뜨리움</b> 하나면 충분합니다.</div>
-                    <div class="s3--top02">온라인 행사 개최, 비즈니스, AI, 데이터 수집 및 분석, 마케팅 활용까지 다양한 기능을 통해 행사를 업그레이드 시켜보세요</div>
-                    <a href="/features/all.html" class="s3--top03"><p>See More Haute-rium</p><img src="/assets/img/icon_goArrow.svg" alt=""></a>
-                </div>
-                <div class="s3--list">
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">Convention Manager</div>
-                            <div class="s3--item-txt02">온라인 행사</div>
-                            <div class="s3--item-txt03">운영/관리 솔루션</div>
+        <div class="s2">
+            <div class="s2--wrap">
+                <div class="s2--list">
+                    <a href="./detail01.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail01.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. Convention Manager</div>
+                            <div class="s2--info02">통합 운영 관리자 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">이벤트 및 행사를 원활하게 운영하고 관리하기 위해 필요한 다양한 기능을 제공하여 참가자와 주최자 모두에게 편의성을 제공합니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_01.png" alt=""></div>
-                    </div>
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">Realism Avata</div>
-                            <div class="s3--item-txt02">일반형, 실사형 아바타</div>
-                            <div class="s3--item-txt03">커스텀 솔루션</div>
+                    </a>
+                    <a href="./detail02.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail02.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. Data Analytics</div>
+                            <div class="s2--info02">데이터 애널리틱스 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">행사 및 이벤트 데이터를 수집, 분석 및 시각화하여 가치 있는 통찰력과 인사이트를 제공하고 주최자에게 행사의 효율성을 향상시켜줍니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_02.png" alt=""></div>
-                    </div>
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">AI Matching</div>
-                            <div class="s3--item-txt02">Seller - Buyer</div>
-                            <div class="s3--item-txt03">AI 비즈니스 매칭 서비스</div>
+                    </a>
+                    <a href="./detail03.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail03.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. Biz Matching</div>
+                            <div class="s2--info02">AI 비즈니스 매칭 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">AI 알고리즘을 활용하여 프로파일을 분석하고, 효율적인 비즈니스 파트너쉽을 형성하고 상호 이익을 극대화하기 위한 기능을 제공합니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_03.png" alt=""></div>
-                    </div>
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">Data Analytics</div>
-                            <div class="s3--item-txt02">개최 행사</div>
-                            <div class="s3--item-txt03">애널리틱스 수집, 분석</div>
+                    </a>
+                    <a href="./detail04.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail04.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. NPC & Chatbot</div>
+                            <div class="s2--info02">챗봇 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">이벤트 및 행사 관련 참가자들의 편의성을 향상과 커뮤니케이션을 원활하게 도와주는 인공 지능 기반의 가상 어시스턴트입니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_04.png" alt=""></div>
-                    </div>
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">Authoring Tool</div>
-                            <div class="s3--item-txt02">컨벤션, 부스</div>
-                            <div class="s3--item-txt03">콘텐츠 제작도구</div>
+                    </a>
+                    <a href="./detail05.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail05.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. Online Booth</div>
+                            <div class="s2--info02">온라인 부스 저작도구 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">이벤트, 전시회, 컨퍼런스 및 기타 가상 행사에서 부스를 생성하고 관리하는 데 도움을 주며, 참가자들에게 풍부한 경험을 제공하는데 활용됩니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_05.png" alt=""></div>
-                    </div>
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">Communication</div>
-                            <div class="s3--item-txt02">텍스트, 화상, 음성</div>
-                            <div class="s3--item-txt03">커뮤니케이션</div>
+                    </a>
+                    <a href="./detail06.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail06.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. Online networking</div>
+                            <div class="s2--info02">온라인 네트워킹 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">다양한 방식으로 텍스트, 화상, 음성 통한 커뮤니케이션을 제공하여 실시간으로 온라인 상호작용을 가능하게 합니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_06.png" alt=""></div>
-                    </div>
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">TTS</div>
-                            <div class="s3--item-txt02">Text Translation Speak</div>
-                            <div class="s3--item-txt03">다국어 통역 지원</div>
+                    </a>
+                    <a href="./detail07.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail07.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. TTS</div>
+                            <div class="s2--info02">다국어 통역 지원 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">국제 이벤트 및 행사에서 참가자들 간의 언어 장벽을 극복, 소통과 이해를 원활하게 하며, 다양한 언어 환경에서의 협업과 네트워킹을 촉진합니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_07.png" alt=""></div>
-                    </div>
-                    <div class="s3--item">
-                        <div class="s3--item-txt">
-                            <div class="s3--item-txt01">NPC & Chatbot</div>
-                            <div class="s3--item-txt02">행사 안내 패턴지향형</div>
-                            <div class="s3--item-txt03">NPC & 챗봇</div>
+                    </a>
+                    <a href="./detail08.html" class="s2--item">
+                        <div class="s2--img"><div class="s2--imgThumb" style="background-image: url('./img/item_detail08.png');"></div></div>
+                        <div class="s2--info">
+                            <div class="s2--info01">Feature. Realistic Avatar</div>
+                            <div class="s2--info02">실사 아바타 <img src="./img/icon_goArrow.svg" alt=""></div>
+                            <div class="s2--info03">가상 현실 및 메타버스 환경에서 사용자들에게 더욱 현실적이고 인체 중심의 경험을 제공함으로써 가상 세계에서의 활동과 소통을 향상시킵니다.</div>
                         </div>
-                        <div class="s3--item-icon"><img src="/assets/img/about_s3_08.png" alt=""></div>
-                    </div>
+                    </a>                
                 </div>
             </div>
         </div>
@@ -420,28 +364,6 @@
             </div>
         </div>
     </div>
-    <script> // 메인 아이템 펑션
-        const s5Item = document.querySelectorAll('.s5--item');
-        const s5list = document.querySelector('.s5--list')
-        s5Item.forEach((el,i) => {
-            const beltAnime = anime({
-                targets:el.querySelectorAll('.s5--belt-txt'),
-                translate:['-100%','0%'],
-                duration:5000,
-                easing: 'linear',
-                loop:true,
-            })
-            beltAnime.pause()
-            el.addEventListener('mouseenter',function(){
-                s5list.dataset.num = i;
-                beltAnime.play();
-            })
-            el.addEventListener('mouseleave',function(){
-                s5list.dataset.num = null;
-                beltAnime.pause();
-            })
-        })
-    </script>
     <script src="/common/js/layout.js"></script>
 </body>
 </html>

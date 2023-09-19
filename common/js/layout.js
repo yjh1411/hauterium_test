@@ -100,3 +100,123 @@ document.querySelectorAll('.alertReady').forEach(el => {
         alert('준비중 입니다.')
     })
 })
+
+//로그인 처리
+const temp = localStorage.getItem("HAUTE_RIUM_IF");
+let user_info = {
+    email: "",
+    name: "",
+    image: {}
+};
+try {
+    user_info = JSON.parse(temp);
+} catch (e) { }
+let user_k = localStorage.getItem("HAUTE_RIUM_K");
+
+//login_info id 생성
+document.getElementsByClassName("header--member-btn header--openBtn")[0].id = "login_info";
+
+//로그인/회원가입 버튼 생성
+const header_btn = document.getElementsByClassName("header--member");
+//<div id="login_btn" class="header--member-btn header--openBtn">로그인/회원가입</div>
+const make_div = document.createElement('div');
+make_div.classList.add("header--member-btn");
+make_div.classList.add("header--openBtn");
+make_div.id = "login_btn";
+make_div.innerText = "로그인/회원가입";
+header_btn[0].appendChild(make_div);
+
+if (user_info == null || user_info == "" || user_info.email == "") {
+    document.getElementById("login_btn").style.display = "block";
+    document.getElementById("login_info").style.display = "none";
+} else {
+    document.getElementById("login_btn").style.display = "none";
+    document.getElementById("login_info").style.display = "";
+
+    document.getElementById("login_info").innerHTML = `<p>${user_info.name}</p> <span></span>`;
+    document.getElementsByClassName("header--member-name")[0].innerHTML = `${user_info.name} 님`;
+    document.getElementsByClassName("header--member-mail")[0].innerHTML = `${user_info.email}`;
+}
+
+document.getElementById("login_btn").addEventListener('click',function(){
+    window.location.href = "http://hauterium.com/sign/?from=main";
+});
+
+document.querySelector(".header--member-console").addEventListener('click',function(){
+    window.location.href = "http://hauterium.com/console/booth/";
+});
+
+document.querySelector(".header--member-mypage").addEventListener('click',function(){
+    window.location.href = "http://hauterium.com/mypage/";
+});
+
+document.querySelector(".header--cs").addEventListener('click',function(){
+    window.location.href = "http://hauterium.com/console/booth/";
+});
+
+document.querySelector(".header--member-logout").addEventListener('click',function(){
+    localStorage.removeItem("HAUTE_RIUM_IF");
+    localStorage.removeItem("HAUTE_RIUM_K");
+    localStorage.removeItem("HAUTE_RIUM");
+    user_name = null;
+    user_image = null;
+    user_k = null;
+    document.getElementById("login_btn").style.display = "block";
+    document.getElementById("login_info").style.display = "none";
+    document.querySelectorAll(".header--openList").forEach(item => {
+        item.classList.remove("open");
+    })
+});
+
+//구글 번역
+const create_google_translate_element = document.createElement("div");
+create_google_translate_element.id = "google_translate_element";
+create_google_translate_element.style.display = "none";
+document.body.appendChild(create_google_translate_element);
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement(
+        {
+            pageLanguage: 'ko',
+            autoDisplay: true,
+            includedLanguages : 'en,ko'
+        },
+        'google_translate_element'
+    );
+}
+
+var script = document.createElement("script");
+script.src = "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
+document.head.appendChild(script);
+
+document.querySelector('.translation-links').addEventListener('click',function(event) {
+    let el = event.target;
+    if(el != null){
+        while(el.nodeName == 'FONT' || el.nodeName == 'SPAN'){el = el.parentElement;}//data-lang 속성이 있는 태그 찾기
+        const tolang = el.dataset.lang; // 변경할 언어 코드 얻기
+        
+        translatePage(tolang);
+    }
+    return false;
+});
+
+const translatePage = (tolang) => {
+
+    const gtcombo = document.querySelector('.goog-te-combo');
+    if (gtcombo == null) {
+        alert("Error: Could not find Google translate Combolist.");
+        return false;
+    }
+
+    gtcombo.value = tolang; // 변경할 언어 적용
+    gtcombo.dispatchEvent(new Event('change')); // 변경 이벤트 트리거
+    //ko > en 버그 있어서 무조건 한번 더 호출
+    setTimeout(() => {
+        gtcombo.dispatchEvent(new Event('change')); // 변경 이벤트 트리거
+    },100)
+    
+    // sessionStorage.setItem("lang", tolang);
+    document.querySelectorAll(".header--openList").forEach(item => {
+        item.classList.remove("open");
+    })
+}

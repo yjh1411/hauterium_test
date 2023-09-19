@@ -283,3 +283,9 @@ button:focus{outline: none;}
 }
 .public--innerWrap{padding-top: 80px;}
 .public--innerWrap-new{padding-top: 70px;}
+
+
+/* 구글 번역 */
+body > .skiptranslate {
+    display: none;
+}
